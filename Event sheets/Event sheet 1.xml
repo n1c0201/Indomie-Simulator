@@ -2,5 +2,52 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="905405349091705">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="772610246651657" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="354187484588387" type="Sprite">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="851132471315012" type="Sprite2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="673376356858883">
+            <conditions>
+                <condition id="5" name="On any finished" sid="412976014345643" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="134149473397254" type="Sprite">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="569734381060683">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="963830971580466" type="Sprite">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">370</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="224161225338705" type="Sprite">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="370107783414701" type="Sprite">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="143521758807590" type="Sprite2">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="914510098182541" type="Sprite2" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

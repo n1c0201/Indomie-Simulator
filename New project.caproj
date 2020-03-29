@@ -9,15 +9,21 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1qfx721kejmop</unique-id>
     <saved-with-version>26500</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1280</width>
+        <height>720</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -37,7 +43,59 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="TiledBackground" sid="479033963296819">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Background.png" />
+        </object-type>
+        <object-type name="Sprite" sid="435190098820576">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="844731801168754">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848266638460905" speed="5">
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan1.png">
+                        <collision-poly>
+                            <point x="0.238596" y="0.302222" />
+                            <point x="0.498246" y="0.16" />
+                            <point x="0.884211" y="0.146667" />
+                            <point x="0.940351" y="0.497778" />
+                            <point x="0.845614" y="0.804444" />
+                            <point x="0.498246" y="0.822222" />
+                            <point x="0.0631579" y="0.92" />
+                            <point x="0.0736842" y="0.497778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="893416375114898" speed="5">
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan1.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan2.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan3.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan4.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan5.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan6.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan7.png" />
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan8.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="113867605068237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="627996650024274">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="927870009308521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
