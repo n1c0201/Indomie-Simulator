@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Cutscene Start</name>
     <sid>611638656107190</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
@@ -59,7 +59,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>100</speed>
+                                <speed>75</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -105,7 +105,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>640</x>
-                        <y>358</y>
+                        <y>360</y>
                         <z>0</z>
                         <width>1280</width>
                         <height>720</height>
