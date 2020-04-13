@@ -10,7 +10,9 @@
     <unique-id>1qfx721kejmop</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -95,6 +97,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpriteFont" sid="730055962467982">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="487343566613993">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\BackgroundBlurred.png" />
+        </object-type>
+        <object-type name="Mouse" sid="261308194950012">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="HowToPlay" sid="794234957542930">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="820040022701559" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Play" sid="504538423200777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342121708166272" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="633981500823535">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="601644271491833">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="744177225264129" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -105,7 +147,9 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Mouse" uid="8" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
