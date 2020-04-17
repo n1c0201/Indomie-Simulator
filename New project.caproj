@@ -143,11 +143,13 @@
         <layout>Cutscene Start.xml</layout>
         <layout>Main Menu.xml</layout>
         <layout>Dalem Gerobak.xml</layout>
+        <layout>World.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Cutscene Event.xml</event-sheet>
         <event-sheet>Main Menu Event.xml</event-sheet>
         <event-sheet>Dalam Gerobak Event.xml</event-sheet>
+        <event-sheet>World Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />

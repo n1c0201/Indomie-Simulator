@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Dalem Gerobak</name>
-    <sid>377994691020759</sid>
-    <event-sheet>Dalam Gerobak Event</event-sheet>
+    <name>World</name>
+    <sid>378039360715718</sid>
+    <event-sheet>World Event</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="753676125863642">
+        <layer name="Layer 0" sid="228520605800907">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
