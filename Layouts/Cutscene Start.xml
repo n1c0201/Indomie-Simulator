@@ -2,7 +2,7 @@
 <c2layout>
     <name>Cutscene Start</name>
     <sid>611638656107190</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Cutscene Event</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
