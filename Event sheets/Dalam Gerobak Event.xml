@@ -2,5 +2,405 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dalam Gerobak Event</name>
-    <events />
+    <events>
+        <event-block sid="990997685890065">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="464680178958584" type="TutupPot" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="594217157091725">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="898139038918464" type="TutupPot">
+                            <param id="0" name="Object">TutupPotGantung</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="354319643111381" type="TutupPot">
+                            <param id="0" name="X">TutupPotGantung.X</param>
+                            <param id="1" name="Y">TutupPotGantung.Y</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="252686234581370" type="TutupPot">
+                            <param id="0" name="Animation">&quot;Tutup&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="692770231819472">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="986081870941523" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="173348616339782" type="TutupPot">
+                            <param id="0" name="X">TutupPot.SaveX</param>
+                            <param id="1" name="Y">TutupPot.SaveY</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="988909689978379" type="TutupPot">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="538056699043098">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="704651347528380" type="Mangkok" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="667164351560053" type="Mangkok">
+                    <param id="0" name="Instance variable">is_SingleMangkok</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="860572520794290" type="Mangkok">
+                    <param id="0" name="Object">Mangkok</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="526345470890021" type="Mangkok">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="775819170729657" type="Mangkok">
+                    <param id="0" name="Width">107</param>
+                    <param id="1" name="Height">58</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="560470323930227" type="Mangkok">
+                    <param id="0" name="Instance variable">is_SingleMangkok</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="806317173319658">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="405942221717279" type="Mangkok" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="988301415878662">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="243120966811360" type="Mangkok">
+                            <param id="0" name="Object">TempatKain</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="199288861515431" type="Mangkok">
+                            <param id="0" name="Instance variable">is_SingleMangkok</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="359595067668166" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="889436305312841" type="Mangkok">
+                            <param id="0" name="X">Mangkok2.X</param>
+                            <param id="1" name="Y">Mangkok2.Y</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="562016597478976" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="359191243663858">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="646076889676535" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="430556254135363" type="Mangkok" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="429704583629753">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="763193811956553" type="IndomieGoreng" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="754951480150489" type="IndomieGoreng">
+                    <param id="0" name="Instance variable">is_Child</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="137903010798735" type="IndomieGoreng">
+                    <param id="0" name="Object">IndomieGoreng</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="540243060377248" type="IndomieGoreng">
+                    <param id="0" name="Instance variable">is_Child</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="844300113957567">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="936622051933346" type="IndomieGoreng" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="544195420112053">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="145895723416207" type="IndomieGoreng">
+                            <param id="0" name="Object">TempatKain</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="959188345149764" type="IndomieGoreng">
+                            <param id="0" name="Instance variable">is_Child</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="570680337926787" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="901343809103690" type="IndomieGoreng">
+                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="616130616804662" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514599000110359">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="889774311805801" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="675888800749177" type="IndomieGoreng" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="641687953402524">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="583327600419153" type="IndomieBawang" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="319134247382389" type="IndomieBawang">
+                    <param id="0" name="Instance variable">is_Child</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="905245812077408" type="IndomieBawang">
+                    <param id="0" name="Object">IndomieBawang</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="335594620895426" type="IndomieBawang">
+                    <param id="0" name="Instance variable">is_Child</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="515299479435721">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="547340727850103" type="IndomieBawang" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="747057632633870">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="865040059777693" type="IndomieBawang">
+                            <param id="0" name="Object">TempatKain</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="761706587281720" type="IndomieBawang">
+                            <param id="0" name="Instance variable">is_Child</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="243602372268007" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="288158764859293" type="IndomieBawang">
+                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="798598262491798" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="738232003100372">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="295854642026473" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="445498777625508" type="IndomieBawang" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="394244834359738">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="460957826831912" type="IndomieKari" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="238904661390035" type="IndomieKari">
+                    <param id="0" name="Instance variable">is_Child</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="198171352155989" type="IndomieKari">
+                    <param id="0" name="Object">IndomieKari</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="430569352437008" type="IndomieKari">
+                    <param id="0" name="Instance variable">is_Child</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310930733068745">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="761385507053510" type="IndomieKari" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="927776775793866">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="920131412599405" type="IndomieKari">
+                            <param id="0" name="Object">TempatKain</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="107004681473399" type="IndomieKari">
+                            <param id="0" name="Instance variable">is_Child</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="535854361262507" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="120799236150957" type="IndomieKari">
+                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="464092336225186" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="107093092031716">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="433678607588438" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="498255782507320" type="IndomieKari" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="537859305700339">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="902501255241344" type="IndomieSoto" />
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="148755835623912" type="IndomieSoto">
+                    <param id="0" name="Instance variable">is_Child</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="414530236434812" type="IndomieSoto">
+                    <param id="0" name="Object">IndomieSoto</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="928448225495004" type="IndomieSoto">
+                    <param id="0" name="Instance variable">is_Child</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="495585454227309">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="745446341174102" type="IndomieSoto" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="785245005538053">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="824326564800154" type="IndomieSoto">
+                            <param id="0" name="Object">TempatKain</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="235854321020495" type="IndomieSoto">
+                            <param id="0" name="Instance variable">is_Child</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="692864770735389" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="799545260214425" type="IndomieSoto">
+                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="986898459697541" type="TempatKain">
+                            <param id="0" name="Instance variable">is_Filled</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="728812718547124">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="722043868411333" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="856200863353927" type="IndomieSoto" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="742408812622294">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="307430125748413" type="Scissors" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="635150087180762">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="896176795452098" type="Scissors">
+                            <param id="0" name="Object">IndomieGoreng</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="844884380714159" type="IndomieGoreng">
+                            <param id="0" name="Instance variable">is_Child</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="223229560490708" type="Scissors">
+                            <param id="0" name="X">Scissors.SaveX</param>
+                            <param id="1" name="Y">Scissors.SaveY</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="691166346938981" type="Scissors">
+                            <param id="0" name="Object">Mie</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="130489930723432" type="Mie">
+                            <param id="0" name="X">Mie.SaveX</param>
+                            <param id="1" name="Y">Mie.SaveY</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="541321118554931" type="Scissors">
+                            <param id="0" name="Object">SaosGoreng</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="310180554640116" type="SaosGoreng">
+                            <param id="0" name="X">SaosGoreng.SaveX</param>
+                            <param id="1" name="Y">SaosGoreng.SaveY</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="620637978799276" type="Scissors">
+                            <param id="0" name="Object">Bumbu</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="127721819147801" type="Bumbu">
+                            <param id="0" name="X">Bumbu.SaveX</param>
+                            <param id="1" name="Y">Bumbu.SaveY</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="295883554492123">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="380496560049273" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="529941360383719" type="Scissors">
+                            <param id="0" name="X">Scissors.SaveX</param>
+                            <param id="1" name="Y">Scissors.SaveY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>
