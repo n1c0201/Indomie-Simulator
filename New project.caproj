@@ -209,6 +209,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="is_SingleMangkok" sid="649674608037534" type="boolean" />
+                <instance-variable name="MangkokID" sid="805624190227490" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DragDrop" sid="677582870920524">
@@ -253,9 +254,6 @@
         </object-type>
         <object-type name="TempatKain" sid="149001045271539">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="is_Filled" sid="348269852084875" type="boolean" />
-            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481469032077492" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -368,8 +366,7 @@
                 <instance-variable name="SaveY" sid="126227373091586" type="number" />
                 <instance-variable name="XdiKain" sid="937844624423824" type="number" />
                 <instance-variable name="YdiKain" sid="353677222131053" type="number" />
-                <instance-variable name="is_Child" sid="258547232939082" type="boolean" />
-                <instance-variable name="is_Filled" sid="257232634202217" type="boolean" />
+                <instance-variable name="GorengID" sid="526253098427769" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DragDrop" sid="965005937044281">
@@ -394,8 +391,9 @@
         <object-type name="IndomieBawang" sid="417548887190823">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="is_Child" sid="808953024783844" type="boolean" />
-                <instance-variable name="is_Filled" sid="782711993297964" type="boolean" />
+                <instance-variable name="SaveX" sid="640520104082614" type="number" />
+                <instance-variable name="SaveY" sid="986216592162329" type="number" />
+                <instance-variable name="BawangID" sid="613139999445430" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DragDrop" sid="307658944658210">
@@ -420,8 +418,9 @@
         <object-type name="IndomieKari" sid="478263985165388">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="is_Child" sid="604698580305568" type="boolean" />
-                <instance-variable name="is_Filled" sid="932796722507980" type="boolean" />
+                <instance-variable name="SaveX" sid="148702517941988" type="number" />
+                <instance-variable name="SaveY" sid="595270370692912" type="number" />
+                <instance-variable name="KariID" sid="677317069194910" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DragDrop" sid="811617498589210">
@@ -446,8 +445,10 @@
         <object-type name="IndomieSoto" sid="347805177064344">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="is_Child" sid="142615536268281" type="boolean" />
-                <instance-variable name="is_Filled" sid="411576983315040" type="boolean" />
+                <instance-variable name="SaveX" sid="569571480741497" type="number" />
+                <instance-variable name="SaveY" sid="575209442116006" type="number" />
+                <instance-variable name="lifeSaverX" sid="298998376671736" type="number" />
+                <instance-variable name="SotoID" sid="195585410271198" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="DragDrop" sid="152873570849126">

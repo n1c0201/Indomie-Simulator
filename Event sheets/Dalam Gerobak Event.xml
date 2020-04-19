@@ -3,404 +3,1063 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dalam Gerobak Event</name>
     <events>
-        <event-block sid="990997685890065">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="464680178958584" type="TutupPot" />
-            </conditions>
-            <actions />
+        <variable constant="0" name="is_MangkokFilled" sid="617745788087481" static="0" type="number">0</variable>
+        <variable constant="0" name="is_IndomieFilled" sid="237811920513798" static="0" type="number">0</variable>
+        <event-group description="" sid="662152055560072" title="Pot">
             <sub-events>
-                <event-block sid="594217157091725">
+                <event-block sid="990997685890065">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="898139038918464" type="TutupPot">
-                            <param id="0" name="Object">TutupPotGantung</param>
-                        </condition>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="464680178958584" type="TutupPot" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="354319643111381" type="TutupPot">
-                            <param id="0" name="X">TutupPotGantung.X</param>
-                            <param id="1" name="Y">TutupPotGantung.Y</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="252686234581370" type="TutupPot">
-                            <param id="0" name="Animation">&quot;Tutup&quot;</param>
-                            <param id="1" name="From">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="692770231819472">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="986081870941523" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="173348616339782" type="TutupPot">
-                            <param id="0" name="X">TutupPot.SaveX</param>
-                            <param id="1" name="Y">TutupPot.SaveY</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="988909689978379" type="TutupPot">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="594217157091725">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="898139038918464" type="TutupPot">
+                                    <param id="0" name="Object">TutupPotGantung</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="354319643111381" type="TutupPot">
+                                    <param id="0" name="X">TutupPotGantung.X</param>
+                                    <param id="1" name="Y">TutupPotGantung.Y</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="252686234581370" type="TutupPot">
+                                    <param id="0" name="Animation">&quot;Tutup&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="692770231819472">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="986081870941523" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="173348616339782" type="TutupPot">
+                                    <param id="0" name="X">TutupPot.SaveX</param>
+                                    <param id="1" name="Y">TutupPot.SaveY</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="988909689978379" type="TutupPot">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="538056699043098">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="704651347528380" type="Mangkok" />
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="667164351560053" type="Mangkok">
-                    <param id="0" name="Instance variable">is_SingleMangkok</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="860572520794290" type="Mangkok">
-                    <param id="0" name="Object">Mangkok</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="526345470890021" type="Mangkok">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-                <action id="-7" name="Set size" sid="775819170729657" type="Mangkok">
-                    <param id="0" name="Width">107</param>
-                    <param id="1" name="Height">58</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="560470323930227" type="Mangkok">
-                    <param id="0" name="Instance variable">is_SingleMangkok</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="806317173319658">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="405942221717279" type="Mangkok" />
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="" sid="918951156380414" title="Mangkok">
             <sub-events>
-                <event-block sid="988301415878662">
+                <event-block sid="538056699043098">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="243120966811360" type="Mangkok">
-                            <param id="0" name="Object">TempatKain</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="199288861515431" type="Mangkok">
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="704651347528380" type="Mangkok" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="667164351560053" type="Mangkok">
                             <param id="0" name="Instance variable">is_SingleMangkok</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="359595067668166" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="889436305312841" type="Mangkok">
-                            <param id="0" name="X">Mangkok2.X</param>
-                            <param id="1" name="Y">Mangkok2.Y</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="562016597478976" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="359191243663858">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="646076889676535" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="430556254135363" type="Mangkok" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="429704583629753">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="763193811956553" type="IndomieGoreng" />
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="754951480150489" type="IndomieGoreng">
-                    <param id="0" name="Instance variable">is_Child</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="137903010798735" type="IndomieGoreng">
-                    <param id="0" name="Object">IndomieGoreng</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="540243060377248" type="IndomieGoreng">
-                    <param id="0" name="Instance variable">is_Child</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="844300113957567">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="936622051933346" type="IndomieGoreng" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="544195420112053">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="145895723416207" type="IndomieGoreng">
-                            <param id="0" name="Object">TempatKain</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="959188345149764" type="IndomieGoreng">
-                            <param id="0" name="Instance variable">is_Child</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="570680337926787" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="901343809103690" type="IndomieGoreng">
-                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
-                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="616130616804662" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="514599000110359">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="889774311805801" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="675888800749177" type="IndomieGoreng" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="641687953402524">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="583327600419153" type="IndomieBawang" />
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="319134247382389" type="IndomieBawang">
-                    <param id="0" name="Instance variable">is_Child</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="905245812077408" type="IndomieBawang">
-                    <param id="0" name="Object">IndomieBawang</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="335594620895426" type="IndomieBawang">
-                    <param id="0" name="Instance variable">is_Child</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="515299479435721">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="547340727850103" type="IndomieBawang" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="747057632633870">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="865040059777693" type="IndomieBawang">
-                            <param id="0" name="Object">TempatKain</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="761706587281720" type="IndomieBawang">
-                            <param id="0" name="Instance variable">is_Child</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="243602372268007" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="288158764859293" type="IndomieBawang">
-                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
-                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="798598262491798" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="738232003100372">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="295854642026473" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="445498777625508" type="IndomieBawang" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="394244834359738">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="460957826831912" type="IndomieKari" />
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="238904661390035" type="IndomieKari">
-                    <param id="0" name="Instance variable">is_Child</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="198171352155989" type="IndomieKari">
-                    <param id="0" name="Object">IndomieKari</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="430569352437008" type="IndomieKari">
-                    <param id="0" name="Instance variable">is_Child</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="310930733068745">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="761385507053510" type="IndomieKari" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="927776775793866">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="920131412599405" type="IndomieKari">
-                            <param id="0" name="Object">TempatKain</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="107004681473399" type="IndomieKari">
-                            <param id="0" name="Instance variable">is_Child</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="535854361262507" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="120799236150957" type="IndomieKari">
-                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
-                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="464092336225186" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="107093092031716">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="433678607588438" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="498255782507320" type="IndomieKari" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="537859305700339">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="902501255241344" type="IndomieSoto" />
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="148755835623912" type="IndomieSoto">
-                    <param id="0" name="Instance variable">is_Child</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="414530236434812" type="IndomieSoto">
-                    <param id="0" name="Object">IndomieSoto</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="928448225495004" type="IndomieSoto">
-                    <param id="0" name="Instance variable">is_Child</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="495585454227309">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="745446341174102" type="IndomieSoto" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="785245005538053">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="824326564800154" type="IndomieSoto">
-                            <param id="0" name="Object">TempatKain</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="235854321020495" type="IndomieSoto">
-                            <param id="0" name="Instance variable">is_Child</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="692864770735389" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="799545260214425" type="IndomieSoto">
-                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
-                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="986898459697541" type="TempatKain">
-                            <param id="0" name="Instance variable">is_Filled</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="728812718547124">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="722043868411333" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="856200863353927" type="IndomieSoto" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="742408812622294">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="307430125748413" type="Scissors" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="635150087180762">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="896176795452098" type="Scissors">
-                            <param id="0" name="Object">IndomieGoreng</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="844884380714159" type="IndomieGoreng">
-                            <param id="0" name="Instance variable">is_Child</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="223229560490708" type="Scissors">
-                            <param id="0" name="X">Scissors.SaveX</param>
-                            <param id="1" name="Y">Scissors.SaveY</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="691166346938981" type="Scissors">
-                            <param id="0" name="Object">Mie</param>
+                        <action id="0" name="Spawn another object" sid="860572520794290" type="Mangkok">
+                            <param id="0" name="Object">Mangkok</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
-                        <action id="-3" name="Set position" sid="130489930723432" type="Mie">
-                            <param id="0" name="X">Mie.SaveX</param>
-                            <param id="1" name="Y">Mie.SaveY</param>
+                        <action id="-16" name="Set opacity" sid="526345470890021" type="Mangkok">
+                            <param id="0" name="Opacity">100</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="541321118554931" type="Scissors">
-                            <param id="0" name="Object">SaosGoreng</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                        <action id="-7" name="Set size" sid="775819170729657" type="Mangkok">
+                            <param id="0" name="Width">107</param>
+                            <param id="1" name="Height">58</param>
                         </action>
-                        <action id="-3" name="Set position" sid="310180554640116" type="SaosGoreng">
-                            <param id="0" name="X">SaosGoreng.SaveX</param>
-                            <param id="1" name="Y">SaosGoreng.SaveY</param>
+                        <action id="-13" name="Set boolean" sid="560470323930227" type="Mangkok">
+                            <param id="0" name="Instance variable">is_SingleMangkok</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="620637978799276" type="Scissors">
-                            <param id="0" name="Object">Bumbu</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="127721819147801" type="Bumbu">
-                            <param id="0" name="X">Bumbu.SaveX</param>
-                            <param id="1" name="Y">Bumbu.SaveY</param>
+                        <action id="-10" name="Set value" sid="855570883082754" type="Mangkok">
+                            <param id="0" name="Instance variable">MangkokID</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="295883554492123">
+                <event-block sid="607776488839332">
                     <conditions>
-                        <condition id="-22" name="Else" sid="380496560049273" type="System" />
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="949925773138149" type="Mangkok" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="529941360383719" type="Scissors">
-                            <param id="0" name="X">Scissors.SaveX</param>
-                            <param id="1" name="Y">Scissors.SaveY</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="582961403904590">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="546050462541737" type="Mangkok">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="507049538996756">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="245995880759643" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="849872114887279" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="964460964191200" type="Mangkok">
+                                            <param id="0" name="X">Mangkok2.X</param>
+                                            <param id="1" name="Y">Mangkok2.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="784104625899807" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="988677524055494" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="507928094228287">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="104620379079937" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="144512719407862" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="140701533804178" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="737742977297976" type="Mangkok">
+                                            <param id="0" name="X">Mangkok2.X</param>
+                                            <param id="1" name="Y">Mangkok2.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="794990832920134">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="693412759766956" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="930531110191142" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="216023907227603" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="226352566809822" type="Mangkok" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="726113182865535">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="516384263166412" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="768663123704402">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="486529966885638" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="172807265034783" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="184231303557959" type="Mangkok" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="199427687415278">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="381603605198472" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="565727425360950" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="893736941497717" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="557546560348970" type="Mangkok" />
+                                        <action id="-9" name="Set value" sid="592625679173246" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="689765889122939">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="652415880785294" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="353256680730799" type="System">
+                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="347493849726329" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="242809843359064" type="Mangkok" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="220908903943610" title="Scissors">
+            <sub-events>
+                <event-block sid="742408812622294">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="307430125748413" type="Scissors" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="635150087180762">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="896176795452098" type="Scissors">
+                                    <param id="0" name="Object">IndomieGoreng</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="609834304030565" type="IndomieGoreng">
+                                    <param id="0" name="Instance variable">GorengID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="223229560490708" type="Scissors">
+                                    <param id="0" name="X">Scissors.SaveX</param>
+                                    <param id="1" name="Y">Scissors.SaveY</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="691166346938981" type="Scissors">
+                                    <param id="0" name="Object">Mie</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="130489930723432" type="Mie">
+                                    <param id="0" name="X">Mie.SaveX</param>
+                                    <param id="1" name="Y">Mie.SaveY</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="541321118554931" type="Scissors">
+                                    <param id="0" name="Object">SaosGoreng</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="310180554640116" type="SaosGoreng">
+                                    <param id="0" name="X">SaosGoreng.SaveX</param>
+                                    <param id="1" name="Y">SaosGoreng.SaveY</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="620637978799276" type="Scissors">
+                                    <param id="0" name="Object">Bumbu</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="127721819147801" type="Bumbu">
+                                    <param id="0" name="X">Bumbu.SaveX</param>
+                                    <param id="1" name="Y">Bumbu.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="295883554492123">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="380496560049273" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="529941360383719" type="Scissors">
+                                    <param id="0" name="X">Scissors.SaveX</param>
+                                    <param id="1" name="Y">Scissors.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="913196053234052" title="Indomie Goreng">
+            <sub-events>
+                <event-block sid="439516350100349">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="253042735637012" type="IndomieGoreng" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="880106347216677">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="636288654270632" type="IndomieGoreng">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="360651976919782" type="IndomieGoreng">
+                                    <param id="0" name="Instance variable">GorengID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="686749899456327">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="720696525337157" type="IndomieGoreng" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="707665285658916">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="501441219179939" type="IndomieGoreng">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="493005302858795">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="206975659602390" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="305682877947332" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="983912610221210" type="IndomieGoreng">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="528326891332765" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="734040712268815" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="107275345136260" type="System">
+                                            <param id="0" name="Object to create">IndomieGoreng</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">IndomieGoreng.SaveX</param>
+                                            <param id="3" name="Y">IndomieGoreng.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="590395057606575">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="821035507757170" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="812685285240041" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="673486193566853" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="701277062182888" type="IndomieGoreng">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="689666934883255">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="249126659904195" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="617464672686654" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="567539355822096" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="489756337076704" type="IndomieGoreng">
+                                            <param id="0" name="X">IndomieGoreng.SaveX</param>
+                                            <param id="1" name="Y">IndomieGoreng.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="528575271082837">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="790424693668344" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="555944555695294">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="525754099519990" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="851264248821844" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="100117237797856" type="IndomieGoreng">
+                                            <param id="0" name="X">IndomieGoreng.SaveX</param>
+                                            <param id="1" name="Y">IndomieGoreng.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="381914646671254">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="316564407900471" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="928300258782142" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="700828412855312" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="763767602392280" type="IndomieGoreng" />
+                                        <action id="-9" name="Set value" sid="118156964116883" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="331278547242754">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="656401743711967" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="672527571334341" type="IndomieGoreng">
+                                            <param id="0" name="Instance variable">GorengID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="141520334496476" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="617618092618080" type="IndomieGoreng">
+                                            <param id="0" name="X">IndomieGoreng.SaveX</param>
+                                            <param id="1" name="Y">IndomieGoreng.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="419127920004127" title="Indomie Bawang">
+            <sub-events>
+                <event-block sid="440983697717891">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="778544477503517" type="IndomieBawang" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="317567040053844">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="909033827060652" type="IndomieBawang">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="921146222947485" type="IndomieBawang">
+                                    <param id="0" name="Instance variable">BawangID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="716954392227943">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="262775410446202" type="IndomieBawang" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="433405964901177">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="206207886594308" type="IndomieBawang">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="753048096862499">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="689060488928068" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="576891877009324" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="370237431045294" type="IndomieBawang">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="347641852781670" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="226308332754961" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="625971738190522" type="System">
+                                            <param id="0" name="Object to create">IndomieBawang</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">IndomieBawang.SaveX</param>
+                                            <param id="3" name="Y">IndomieBawang.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="369841604482472">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="489049279242380" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="333724210343119" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="926449362121923" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="246355605596120" type="IndomieBawang">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="424056985569737">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="592960407053472" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="388809811652135" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="268621655593243" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="876849011994292" type="IndomieBawang">
+                                            <param id="0" name="X">IndomieBawang.SaveX</param>
+                                            <param id="1" name="Y">IndomieBawang.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="192341241608569">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="187235866176234" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="309924867359413">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="178017585512745" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="509049669692660" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="941229056975038" type="IndomieBawang">
+                                            <param id="0" name="X">IndomieBawang.SaveX</param>
+                                            <param id="1" name="Y">IndomieBawang.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="598917845932088">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="113076838315580" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="187214907888524" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="789284703357428" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="681075896605898" type="IndomieBawang" />
+                                        <action id="-9" name="Set value" sid="151627418514508" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="139085386043478">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="149296597258104" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="334000706930619" type="IndomieBawang">
+                                            <param id="0" name="Instance variable">BawangID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="307666260257662" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="474996536470522" type="IndomieBawang">
+                                            <param id="0" name="X">IndomieBawang.SaveX</param>
+                                            <param id="1" name="Y">IndomieBawang.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="961858089720353" title="Indomie Kari">
+            <sub-events>
+                <event-block sid="716006685461989">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="125421063124557" type="IndomieKari" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="971400780023084">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="332297215436371" type="IndomieKari">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="161210525537489" type="IndomieKari">
+                                    <param id="0" name="Instance variable">KariID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="138416879910043">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="540100565695933" type="IndomieKari" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="601783788522231">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="720268095198792" type="IndomieKari">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="375318762806942">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="740089917969819" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="260167439957129" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="650174598179743" type="IndomieKari">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="890753488674243" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="441891087588523" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="530413020016847" type="System">
+                                            <param id="0" name="Object to create">IndomieKari</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">IndomieKari.SaveX</param>
+                                            <param id="3" name="Y">IndomieKari.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="783864704997296">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="881255338636462" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="633126297674894" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="773309966040164" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="278737655327836" type="IndomieKari">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="641232747870370">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="630788905950583" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="623343599565064" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="751012558465064" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="652789474331169" type="IndomieKari">
+                                            <param id="0" name="X">IndomieKari.SaveX</param>
+                                            <param id="1" name="Y">IndomieKari.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="899489840865799">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="798236648065268" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="261543991839103">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="646734824457254" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="200574375358680" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="595571535104941" type="IndomieKari">
+                                            <param id="0" name="X">IndomieKari.SaveX</param>
+                                            <param id="1" name="Y">IndomieKari.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="765353465187752">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="291735405102734" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="159496067167625" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="158087424181936" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="300790606028132" type="IndomieKari" />
+                                        <action id="-9" name="Set value" sid="484115904640760" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="907855357355880">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="673124030879613" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="741769395748464" type="IndomieKari">
+                                            <param id="0" name="Instance variable">KariID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="978381169073228" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="803295709806595" type="IndomieKari">
+                                            <param id="0" name="X">IndomieKari.SaveX</param>
+                                            <param id="1" name="Y">IndomieKari.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="568310155130826" title="Indomie Soto">
+            <sub-events>
+                <event-block sid="424845751100159">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="519482519008686" type="IndomieSoto" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="191431010374568">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="816483979950461" type="IndomieSoto">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="124629751549481" type="IndomieSoto">
+                                    <param id="0" name="Instance variable">SotoID</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="151532586534550">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="147728091352321" type="IndomieSoto" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="131777452781652">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="792991885916709" type="IndomieSoto">
+                                    <param id="0" name="Object">TempatKain</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="212237509897204">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="593747340093103" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="898139094925056" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="166740129201116" type="IndomieSoto">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="455919973037474" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="395387300074252" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="239813091072259" type="System">
+                                            <param id="0" name="Object to create">IndomieSoto</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">IndomieSoto.SaveX</param>
+                                            <param id="3" name="Y">IndomieSoto.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="793192373801135">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="153567846236952" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="989814870485752" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="642664357890198" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="361714983654291" type="IndomieSoto">
+                                            <param id="0" name="X">IndomieGoreng.XdiKain</param>
+                                            <param id="1" name="Y">IndomieGoreng.YdiKain</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="698476118987551">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="578871105962118" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="602645294389778" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="498313886366367" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="887479006215414" type="IndomieSoto">
+                                            <param id="0" name="X">IndomieSoto.SaveX</param>
+                                            <param id="1" name="Y">IndomieSoto.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="975886773842608">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="663390939126044" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="482559493077354">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="526057141052164" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="488175686646780" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="616838738230589" type="IndomieSoto">
+                                            <param id="0" name="X">IndomieSoto.SaveX</param>
+                                            <param id="1" name="Y">IndomieSoto.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="199473470665067">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="433947366666480" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="125549943830527" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="256840269315895" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="652894702711696" type="IndomieSoto" />
+                                        <action id="-9" name="Set value" sid="951079255859560" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="290209954075706">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="622431180340291" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="370435414260826" type="IndomieSoto">
+                                            <param id="0" name="Instance variable">SotoID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="503541287861958" type="System">
+                                            <param id="0" name="Variable">is_IndomieFilled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="969673446366101" type="IndomieSoto">
+                                            <param id="0" name="X">IndomieSoto.SaveX</param>
+                                            <param id="1" name="Y">IndomieSoto.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
