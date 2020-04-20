@@ -505,14 +505,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <SaveX>1181</SaveX>
+                        <SaveY>713</SaveY>
+                    </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Bullet">
+                        <behavior-instance type="CustomMovement">
                             <properties>
-                                <speed>400</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <stepping-mode>Linear</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -520,8 +521,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1180</x>
-                        <y>729</y>
+                        <x>1181</x>
+                        <y>713</y>
                         <z>0</z>
                         <width>108</width>
                         <height>166</height>

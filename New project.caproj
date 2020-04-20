@@ -19,6 +19,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -47,6 +48,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
+        <object-folder name="New folder" />
         <object-type name="TiledBackground" sid="479033963296819">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Background.png" />
@@ -510,9 +512,13 @@
         </object-type>
         <object-type name="TongSampah" sid="575320397708339">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SaveX" sid="351272657532615" type="number" />
+                <instance-variable name="SaveY" sid="891097119678615" type="number" />
+            </instance-variables>
             <behaviors>
-                <behavior-type name="Bullet" sid="562927489712256">
-                    <behavior id="Bullet" />
+                <behavior-type name="CustomMovement" sid="502717218898387">
+                    <behavior id="custom" />
                 </behavior-type>
             </behaviors>
             <animation-folder>

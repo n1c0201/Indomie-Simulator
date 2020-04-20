@@ -713,12 +713,6 @@
                                                             <param id="0" name="Variable">is_Terbuka</param>
                                                             <param id="1" name="Value">0</param>
                                                         </action>
-                                                        <action behavior="Bullet" id="5" name="Set enabled" sid="147552172847786" type="TongSampah">
-                                                            <param id="0" name="State">1</param>
-                                                        </action>
-                                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="319109832477555" type="TongSampah">
-                                                            <param id="0" name="Angle">270</param>
-                                                        </action>
                                                     </actions>
                                                 </event-block>
                                                 <event-block sid="605998883203845">
@@ -1558,15 +1552,61 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="952522147760914">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="639970248334924" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="981243406519888" type="TongSampah">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="445411114992147" title="Tong Sampah Movement">
+            <sub-events>
+                <event-block sid="705444913366110">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="317732295381842" type="Mouse">
+                            <param id="0" name="Object">TongSampah</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="825792835685838">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="911345715460232" type="TongSampah">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">713</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="775353219282853" type="TongSampah">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">400</param>
+                                </action>
+                                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="946159720638914" type="TongSampah">
+                                    <param id="0" name="Angle">-90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="805853156558306">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="516459495502184" type="System" />
+                                <condition id="-2" name="Compare Y" sid="970192488255813" type="TongSampah">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">679</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="0" name="Stop" sid="496978401103555" type="TongSampah" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="787979318257166">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="623002882061503" type="Mouse">
+                            <param id="0" name="Object">TongSampah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="618841135039809" type="TongSampah">
+                            <param id="0" name="X">TongSampah.SaveX</param>
+                            <param id="1" name="Y">TongSampah.SaveY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
