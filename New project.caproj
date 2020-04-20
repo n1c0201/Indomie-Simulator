@@ -510,6 +510,11 @@
         </object-type>
         <object-type name="TongSampah" sid="575320397708339">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="562927489712256">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604678333647337" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TongSampah.png">

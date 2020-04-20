@@ -713,6 +713,12 @@
                                                             <param id="0" name="Variable">is_Terbuka</param>
                                                             <param id="1" name="Value">0</param>
                                                         </action>
+                                                        <action behavior="Bullet" id="5" name="Set enabled" sid="147552172847786" type="TongSampah">
+                                                            <param id="0" name="State">1</param>
+                                                        </action>
+                                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="319109832477555" type="TongSampah">
+                                                            <param id="0" name="Angle">270</param>
+                                                        </action>
                                                     </actions>
                                                 </event-block>
                                                 <event-block sid="605998883203845">
@@ -1552,5 +1558,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="952522147760914">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="639970248334924" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="981243406519888" type="TongSampah">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
