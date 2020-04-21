@@ -10,6 +10,7 @@
     <unique-id>1qfx721kejmop</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -538,6 +539,124 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Customer1" sid="462136881524696">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="983899825379138">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849345916075134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="953987890974605">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Customer2" sid="755167408500219">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="197480639433484">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301441858032980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.2" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.693333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer3" sid="133788559017378">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="206137201875410">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294234878035738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan3.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0533333" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.714286" y="0.0533333" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.0714286" y="0.986667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer4" sid="372518551992432">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="118805531300990">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860011823349525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan4.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.0866667" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.571429" y="0.08" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer5" sid="683355507183898">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="143031493800476">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405174152681570" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan5.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.146667" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.773333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -554,6 +673,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
+        <global-instance type="Function" uid="30" />
     </global-instances>
     <sounds-folder />
     <music-folder />

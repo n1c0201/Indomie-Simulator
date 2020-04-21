@@ -16,8 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="6">World</layout>
         <event-sheet order="1">Main Menu Event</event-sheet>
         <event-sheet order="3">Cutscene Event</event-sheet>
-        <event-sheet active="1" order="5">Dalam Gerobak Event</event-sheet>
-        <event-sheet order="7">World Event</event-sheet>
+        <event-sheet order="5">Dalam Gerobak Event</event-sheet>
+        <event-sheet active="1" order="7">World Event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -57,5 +57,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/IndomieSoto/" />
         <folder expanded="1" path="animation-folder/SaosKuah/" />
         <folder expanded="1" path="animation-folder/TongSampah/" />
+        <folder expanded="1" path="animation-folder/Customer1/" />
+        <folder expanded="1" path="animation-folder/Customer2/" />
+        <folder expanded="1" path="animation-folder/Customer3/" />
+        <folder expanded="1" path="animation-folder/Customer4/" />
+        <folder expanded="1" path="animation-folder/Customer5/" />
     </folders-expanded>
 </c2uistate>
