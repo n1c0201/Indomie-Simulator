@@ -48,7 +48,460 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-folder name="New folder" />
+        <object-folder name="Indomies">
+            <object-type name="IndomieBawang" sid="417548887190823">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="640520104082614" type="number" />
+                    <instance-variable name="SaveY" sid="986216592162329" type="number" />
+                    <instance-variable name="BawangID" sid="613139999445430" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="307658944658210">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892363298251132" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieBawang.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.952381" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="866352877564770" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieBawangKebuka.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="IndomieGoreng" sid="329707589224570">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="724575378350643" type="number" />
+                    <instance-variable name="SaveY" sid="126227373091586" type="number" />
+                    <instance-variable name="XdiKain" sid="937844624423824" type="number" />
+                    <instance-variable name="YdiKain" sid="353677222131053" type="number" />
+                    <instance-variable name="GorengID" sid="526253098427769" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="965005937044281">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285696808056700" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieGoreng.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.952381" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="452441553314799" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieGorengKebuka.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="IndomieKari" sid="478263985165388">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="148702517941988" type="number" />
+                    <instance-variable name="SaveY" sid="595270370692912" type="number" />
+                    <instance-variable name="KariID" sid="677317069194910" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="811617498589210">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285459052519032" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieKari.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.952381" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="677463754206039" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieKariKebuka.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="IndomieSoto" sid="347805177064344">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="569571480741497" type="number" />
+                    <instance-variable name="SaveY" sid="575209442116006" type="number" />
+                    <instance-variable name="lifeSaverX" sid="298998376671736" type="number" />
+                    <instance-variable name="SotoID" sid="195585410271198" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="152873570849126">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816331713578694" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieSoto.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.952381" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="318279978288961" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\InodmieSotoKebuka.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Isi mie">
+            <object-type name="Bumbu" sid="122873711454345">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="737484754636036" type="number" />
+                    <instance-variable name="SaveY" sid="598245498283524" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="660233644896859">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225985691088939" speed="5">
+                        <frame duration="1" hotspotX="0.526316" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\Bumbu.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Mie" sid="665982777772513">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="450776549626179" type="number" />
+                    <instance-variable name="SaveY" sid="160059283731872" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="486547283722176">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528760845552807" speed="5">
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.529412" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\Mie.png">
+                            <collision-poly>
+                                <point x="0.0689655" y="0.117647" />
+                                <point x="0.482759" y="0" />
+                                <point x="0.965517" y="0.0588235" />
+                                <point x="0.965517" y="0.941176" />
+                                <point x="0.482759" y="1" />
+                                <point x="0.0344828" y="0.941176" />
+                                <point x="0.0344828" y="0.470588" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SaosGoreng" sid="328437634588193">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="960774862036073" type="number" />
+                    <instance-variable name="SaveY" sid="155169396619400" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="955606197969607">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918735784556257" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\SaosGoreng.png">
+                            <collision-poly>
+                                <point x="0.111111" y="0.133333" />
+                                <point x="0.5" y="0.0666667" />
+                                <point x="0.611111" y="0.466667" />
+                                <point x="0.888889" y="0.466667" />
+                                <point x="0.888889" y="0.866667" />
+                                <point x="0.5" y="0.933333" />
+                                <point x="0.111111" y="0.866667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SaosKuah" sid="331838941347683">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="172958554141912" type="number" />
+                    <instance-variable name="SaveY" sid="701436018738005" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="240105347493907">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533428286150893" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\SaosKuah.png">
+                            <collision-poly>
+                                <point x="0.333333" y="0.4" />
+                                <point x="0.777778" y="0.266667" />
+                                <point x="0.888889" y="0.466667" />
+                                <point x="0.888889" y="0.866667" />
+                                <point x="0.111111" y="0.866667" />
+                                <point x="0.333333" y="0.466667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Alat-alat">
+            <object-type name="Mangkok" sid="725799978426996">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="is_SingleMangkok" sid="649674608037534" type="boolean" />
+                    <instance-variable name="MangkokID" sid="805624190227490" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="677582870920524">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672694441949868" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Mangkok.png">
+                            <collision-poly>
+                                <point x="0.0545455" y="0.130435" />
+                                <point x="0.490909" y="0" />
+                                <point x="0.945455" y="0.130435" />
+                                <point x="0.909091" y="0.478261" />
+                                <point x="0.872727" y="0.695652" />
+                                <point x="0.490909" y="1" />
+                                <point x="0.127273" y="0.695652" />
+                                <point x="0.0909091" y="0.478261" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Mangkok2" sid="204047987277243">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808475171666403" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Mangkok.png">
+                            <collision-poly>
+                                <point x="0.0545455" y="0.130435" />
+                                <point x="0.490909" y="0" />
+                                <point x="0.945455" y="0.130435" />
+                                <point x="0.909091" y="0.478261" />
+                                <point x="0.872727" y="0.695652" />
+                                <point x="0.490909" y="1" />
+                                <point x="0.127273" y="0.695652" />
+                                <point x="0.0909091" y="0.478261" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pot" sid="823766205365345">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357779376619237" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Scissors" sid="485488333901074">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="440741514240812" type="number" />
+                    <instance-variable name="SaveY" sid="452380234285093" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="613342341627269">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841077530331540" speed="5">
+                        <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Scissors.png">
+                            <collision-poly>
+                                <point x="0.105263" y="0.0384615" />
+                                <point x="0.473684" y="0.0769231" />
+                                <point x="0.947368" y="0.0192308" />
+                                <point x="0.578947" y="0.5" />
+                                <point x="0.421053" y="0.788462" />
+                                <point x="0.473684" y="0.596154" />
+                                <point x="0.210526" y="0.923077" />
+                                <point x="0.315789" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TempatKain" sid="149001045271539">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481469032077492" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TongSampah" sid="575320397708339">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="351272657532615" type="number" />
+                    <instance-variable name="SaveY" sid="891097119678615" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="CustomMovement" sid="502717218898387">
+                        <behavior id="custom" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604678333647337" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TongSampah.png">
+                            <collision-poly>
+                                <point x="0.0555556" y="0.0361446" />
+                                <point x="0.5" y="0" />
+                                <point x="0.944444" y="0.0361446" />
+                                <point x="0.944444" y="0.493976" />
+                                <point x="0.907407" y="0.939759" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0925926" y="0.939759" />
+                                <point x="0.0555556" y="0.493976" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TutupPot" sid="272811185613249">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="133622959399878" type="number" />
+                    <instance-variable name="SaveY" sid="237547880196808" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="239674209892680">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224190889887286" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPot.png">
+                            <collision-poly>
+                                <point x="0.0754717" y="0.266667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.924528" y="0.266667" />
+                                <point x="0.990566" y="0.5" />
+                                <point x="0.943396" y="0.8" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0566038" y="0.8" />
+                                <point x="0.00943396" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Buka" pingpong="0" repeatcount="1" repeatto="0" sid="779535763221348" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPotGantung.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TutupPotGantung" sid="232701911028158">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293565720575720" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPotGantung.png">
+                            <collision-poly>
+                                <point x="0.155172" y="0.0825688" />
+                                <point x="0.5" y="0.165138" />
+                                <point x="0.568965" y="0.229358" />
+                                <point x="0.741379" y="0.495413" />
+                                <point x="0.810345" y="0.899083" />
+                                <point x="0.5" y="0.87156" />
+                                <point x="0.413793" y="0.779817" />
+                                <point x="0.241379" y="0.495413" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Saringan" sid="535032834049786">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="206270367211418" type="number" />
+                    <instance-variable name="SaveY" sid="578229565159309" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="260743151776522">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192016661990347" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.428571" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.857143" />
+                                <point x="0.15625" y="0.482143" />
+                                <point x="0.15625" y="0.5" />
+                                <point x="0.90625" y="0.946429" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.892857" />
+                                <point x="0.0625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SendokSup" sid="221425517375256">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="465447479867879" type="number" />
+                    <instance-variable name="SaveY" sid="368081738171516" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="512127284949105">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178129579625428" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\SendokSup.png">
+                            <collision-poly>
+                                <point x="0.0833333" y="0.0377358" />
+                                <point x="0.5" y="0.811321" />
+                                <point x="0.375" y="0.283019" />
+                                <point x="0.416667" y="0.490566" />
+                                <point x="0.916667" y="0.962264" />
+                                <point x="0.5" y="0.981132" />
+                                <point x="0.375" y="0.830189" />
+                                <point x="0.333333" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Filled" pingpong="0" repeatcount="1" repeatto="0" sid="204040856356775" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\SendokSupPenuh.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="479033963296819">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Background.png" />
@@ -157,382 +610,58 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TutupPot" sid="272811185613249">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="133622959399878" type="number" />
-                <instance-variable name="SaveY" sid="237547880196808" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="239674209892680">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224190889887286" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPot.png">
-                        <collision-poly>
-                            <point x="0.0754717" y="0.266667" />
-                            <point x="0.5" y="0" />
-                            <point x="0.924528" y="0.266667" />
-                            <point x="0.990566" y="0.5" />
-                            <point x="0.943396" y="0.8" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0566038" y="0.8" />
-                            <point x="0.00943396" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Tutup" pingpong="0" repeatcount="1" repeatto="0" sid="779535763221348" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPotGantung.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TutupPotGantung" sid="232701911028158">
+        <object-type name="SendokSupPenuh" sid="566287099706458">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293565720575720" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TutupPotGantung.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="447588201911023" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\SendokSupPenuh.png">
                         <collision-poly>
-                            <point x="0.155172" y="0.0825688" />
-                            <point x="0.5" y="0.165138" />
-                            <point x="0.568965" y="0.229358" />
-                            <point x="0.741379" y="0.495413" />
-                            <point x="0.810345" y="0.899083" />
-                            <point x="0.5" y="0.87156" />
-                            <point x="0.413793" y="0.779817" />
-                            <point x="0.241379" y="0.495413" />
+                            <point x="0.0833333" y="0.0377358" />
+                            <point x="0.5" y="0.792453" />
+                            <point x="0.375" y="0.283019" />
+                            <point x="0.416667" y="0.490566" />
+                            <point x="0.916667" y="0.962264" />
+                            <point x="0.5" y="0.981132" />
+                            <point x="0.375" y="0.830189" />
+                            <point x="0.333333" y="0.490566" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Mangkok" sid="725799978426996">
+        <object-type name="MieDalamSaringan" sid="631879410805436">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="is_SingleMangkok" sid="649674608037534" type="boolean" />
-                <instance-variable name="MangkokID" sid="805624190227490" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="677582870920524">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672694441949868" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Mangkok.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106472442820469" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png">
                         <collision-poly>
-                            <point x="0.0545455" y="0.130435" />
-                            <point x="0.490909" y="0" />
-                            <point x="0.945455" y="0.130435" />
-                            <point x="0.909091" y="0.478261" />
-                            <point x="0.872727" y="0.695652" />
-                            <point x="0.490909" y="1" />
-                            <point x="0.127273" y="0.695652" />
-                            <point x="0.0909091" y="0.478261" />
+                            <point x="0.0740741" y="0.2" />
+                            <point x="0.481481" y="0" />
+                            <point x="0.925926" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.851852" y="0.6" />
+                            <point x="0.481481" y="1" />
+                            <point x="0.148148" y="0.6" />
+                            <point x="0.0740741" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Mangkok2" sid="204047987277243">
+        <object-type name="TimerSpriteSheet" sid="688138624122608">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808475171666403" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Mangkok.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220215683792636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
                         <collision-poly>
-                            <point x="0.0545455" y="0.130435" />
-                            <point x="0.490909" y="0" />
-                            <point x="0.945455" y="0.130435" />
-                            <point x="0.909091" y="0.478261" />
-                            <point x="0.872727" y="0.695652" />
-                            <point x="0.490909" y="1" />
-                            <point x="0.127273" y="0.695652" />
-                            <point x="0.0909091" y="0.478261" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TempatKain" sid="149001045271539">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481469032077492" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Scissors" sid="485488333901074">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="440741514240812" type="number" />
-                <instance-variable name="SaveY" sid="452380234285093" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="613342341627269">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841077530331540" speed="5">
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Scissors.png">
-                        <collision-poly>
-                            <point x="0.105263" y="0.0384615" />
-                            <point x="0.473684" y="0.0769231" />
-                            <point x="0.947368" y="0.0192308" />
-                            <point x="0.578947" y="0.5" />
-                            <point x="0.421053" y="0.788462" />
-                            <point x="0.473684" y="0.596154" />
-                            <point x="0.210526" y="0.923077" />
-                            <point x="0.315789" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Mie" sid="665982777772513">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="450776549626179" type="number" />
-                <instance-variable name="SaveY" sid="160059283731872" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="486547283722176">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528760845552807" speed="5">
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.529412" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\Mie.png">
-                        <collision-poly>
-                            <point x="0.0689655" y="0.117647" />
-                            <point x="0.482759" y="0" />
-                            <point x="0.965517" y="0.0588235" />
-                            <point x="0.965517" y="0.941176" />
-                            <point x="0.482759" y="1" />
-                            <point x="0.0344828" y="0.941176" />
-                            <point x="0.0344828" y="0.470588" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Bumbu" sid="122873711454345">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="737484754636036" type="number" />
-                <instance-variable name="SaveY" sid="598245498283524" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="660233644896859">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225985691088939" speed="5">
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\Bumbu.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SaosGoreng" sid="328437634588193">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="960774862036073" type="number" />
-                <instance-variable name="SaveY" sid="155169396619400" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="955606197969607">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918735784556257" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\SaosGoreng.png">
-                        <collision-poly>
-                            <point x="0.111111" y="0.133333" />
-                            <point x="0.5" y="0.0666667" />
-                            <point x="0.611111" y="0.466667" />
-                            <point x="0.888889" y="0.466667" />
-                            <point x="0.888889" y="0.866667" />
-                            <point x="0.5" y="0.933333" />
-                            <point x="0.111111" y="0.866667" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="IndomieGoreng" sid="329707589224570">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="724575378350643" type="number" />
-                <instance-variable name="SaveY" sid="126227373091586" type="number" />
-                <instance-variable name="XdiKain" sid="937844624423824" type="number" />
-                <instance-variable name="YdiKain" sid="353677222131053" type="number" />
-                <instance-variable name="GorengID" sid="526253098427769" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="965005937044281">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285696808056700" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieGoreng.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.047619" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="0.952381" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="452441553314799" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieGorengKebuka.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="IndomieBawang" sid="417548887190823">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="640520104082614" type="number" />
-                <instance-variable name="SaveY" sid="986216592162329" type="number" />
-                <instance-variable name="BawangID" sid="613139999445430" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="307658944658210">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892363298251132" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieBawang.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.047619" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="0.952381" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="866352877564770" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieBawangKebuka.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="IndomieKari" sid="478263985165388">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="148702517941988" type="number" />
-                <instance-variable name="SaveY" sid="595270370692912" type="number" />
-                <instance-variable name="KariID" sid="677317069194910" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="811617498589210">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285459052519032" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieKari.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.047619" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="0.952381" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="677463754206039" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\IndomieKariKebuka.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="IndomieSoto" sid="347805177064344">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="569571480741497" type="number" />
-                <instance-variable name="SaveY" sid="575209442116006" type="number" />
-                <instance-variable name="lifeSaverX" sid="298998376671736" type="number" />
-                <instance-variable name="SotoID" sid="195585410271198" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="152873570849126">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816331713578694" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\IndomieSoto.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.5" y="0.047619" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="0.952381" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Terbuka" pingpong="0" repeatcount="1" repeatto="0" sid="318279978288961" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Indomie Kebuka\InodmieSotoKebuka.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SaosKuah" sid="331838941347683">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="172958554141912" type="number" />
-                <instance-variable name="SaveY" sid="701436018738005" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="DragDrop" sid="240105347493907">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533428286150893" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie Elements\SaosKuah.png">
-                        <collision-poly>
-                            <point x="0.333333" y="0.4" />
-                            <point x="0.777778" y="0.266667" />
-                            <point x="0.888889" y="0.466667" />
-                            <point x="0.888889" y="0.866667" />
-                            <point x="0.111111" y="0.866667" />
-                            <point x="0.333333" y="0.466667" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TongSampah" sid="575320397708339">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="SaveX" sid="351272657532615" type="number" />
-                <instance-variable name="SaveY" sid="891097119678615" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="CustomMovement" sid="502717218898387">
-                    <behavior id="custom" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604678333647337" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\TongSampah.png">
-                        <collision-poly>
-                            <point x="0.0555556" y="0.0361446" />
-                            <point x="0.5" y="0" />
-                            <point x="0.944444" y="0.0361446" />
-                            <point x="0.944444" y="0.493976" />
-                            <point x="0.907407" y="0.939759" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0925926" y="0.939759" />
-                            <point x="0.0555556" y="0.493976" />
+                            <point x="0.02" y="0.0228571" />
+                            <point x="0.5" y="0.0514286" />
+                            <point x="0.98" y="0.0228571" />
+                            <point x="1" y="0.497143" />
+                            <point x="0.98" y="0.977143" />
+                            <point x="0.5" y="0.948571" />
+                            <point x="0.02" y="0.977143" />
+                            <point x="0" y="0.497143" />
                         </collision-poly>
                     </frame>
                 </animation>

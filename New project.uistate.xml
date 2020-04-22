@@ -28,13 +28,33 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/New folder/" />
+        <folder expanded="1" path="object-folder/Indomies/" />
+        <folder expanded="1" path="object-folder/Isi mie/" />
+        <folder expanded="1" path="object-folder/Alat-alat/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/IndomieBawang/" />
+        <folder expanded="1" path="animation-folder/IndomieGoreng/" />
+        <folder expanded="1" path="animation-folder/IndomieKari/" />
+        <folder expanded="1" path="animation-folder/IndomieSoto/" />
+        <folder expanded="1" path="animation-folder/Bumbu/" />
+        <folder expanded="1" path="animation-folder/Mie/" />
+        <folder expanded="1" path="animation-folder/SaosGoreng/" />
+        <folder expanded="1" path="animation-folder/SaosKuah/" />
+        <folder expanded="1" path="animation-folder/Mangkok/" />
+        <folder expanded="1" path="animation-folder/Mangkok2/" />
+        <folder expanded="1" path="animation-folder/Pot/" />
+        <folder expanded="1" path="animation-folder/Scissors/" />
+        <folder expanded="1" path="animation-folder/TempatKain/" />
+        <folder expanded="1" path="animation-folder/TongSampah/" />
+        <folder expanded="1" path="animation-folder/TutupPot/" />
+        <folder expanded="1" path="animation-folder/TutupPotGantung/" />
+        <folder expanded="1" path="animation-folder/Saringan/" />
+        <folder expanded="1" path="animation-folder/SendokSup/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/HowToPlay/" />
@@ -42,20 +62,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/MainGerobak/" />
-        <folder expanded="1" path="animation-folder/TutupPot/" />
-        <folder expanded="1" path="animation-folder/TutupPotGantung/" />
-        <folder expanded="1" path="animation-folder/Mangkok/" />
-        <folder expanded="1" path="animation-folder/Mangkok2/" />
-        <folder expanded="1" path="animation-folder/TempatKain/" />
-        <folder expanded="1" path="animation-folder/Scissors/" />
-        <folder expanded="1" path="animation-folder/Mie/" />
-        <folder expanded="1" path="animation-folder/Bumbu/" />
-        <folder expanded="1" path="animation-folder/SaosGoreng/" />
-        <folder expanded="1" path="animation-folder/IndomieGoreng/" />
-        <folder expanded="1" path="animation-folder/IndomieBawang/" />
-        <folder expanded="1" path="animation-folder/IndomieKari/" />
-        <folder expanded="1" path="animation-folder/IndomieSoto/" />
-        <folder expanded="1" path="animation-folder/SaosKuah/" />
-        <folder expanded="1" path="animation-folder/TongSampah/" />
+        <folder expanded="1" path="animation-folder/SendokSupPenuh/" />
+        <folder expanded="1" path="animation-folder/MieDalamSaringan/" />
+        <folder expanded="1" path="animation-folder/TimerSpriteSheet/" />
     </folders-expanded>
 </c2uistate>

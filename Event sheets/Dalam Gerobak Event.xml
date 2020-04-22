@@ -3,6 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dalam Gerobak Event</name>
     <events>
+        <variable constant="0" name="is_SaringanTerisi" sid="383020330771078" static="0" type="number">0</variable>
+        <variable constant="0" name="is_MieInside" sid="475314799691172" static="0" type="number">0</variable>
+        <variable constant="0" name="is_SendokSupTerisi" sid="829438264494556" static="0" type="number">0</variable>
+        <variable constant="0" name="is_PotTerbuka" sid="652716105591722" static="0" type="number">0</variable>
         <variable constant="0" name="is_Terbuka" sid="326770003027359" static="0" type="number">0</variable>
         <variable constant="0" name="is_MangkokFilled" sid="617745788087481" static="0" type="number">0</variable>
         <variable constant="0" name="is_IndomieFilled" sid="237811920513798" static="0" type="number">0</variable>
@@ -20,16 +24,47 @@
                                     <param id="0" name="Object">TutupPotGantung</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="354319643111381" type="TutupPot">
-                                    <param id="0" name="X">TutupPotGantung.X</param>
-                                    <param id="1" name="Y">TutupPotGantung.Y</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="252686234581370" type="TutupPot">
-                                    <param id="0" name="Animation">&quot;Tutup&quot;</param>
-                                    <param id="1" name="From">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="643833916029201">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="935049402195852" type="System">
+                                            <param id="0" name="Variable">is_PotTerbuka</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="495189999267511" type="TutupPot">
+                                            <param id="0" name="X">TutupPotGantung.X</param>
+                                            <param id="1" name="Y">TutupPotGantung.Y</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="768227773375794" type="TutupPot">
+                                            <param id="0" name="Animation">&quot;Buka&quot;</param>
+                                            <param id="1" name="From">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="779430157918367" type="System">
+                                            <param id="0" name="Variable">is_PotTerbuka</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="339917694238735">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="140604792005708" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="392544122430834" type="TutupPot">
+                                            <param id="0" name="X">TutupPotGantung.X</param>
+                                            <param id="1" name="Y">TutupPotGantung.Y</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="898351745625976" type="TutupPot">
+                                            <param id="0" name="Animation">&quot;Buka&quot;</param>
+                                            <param id="1" name="From">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="692770231819472">
                             <conditions>
@@ -43,6 +78,10 @@
                                 <action id="4" name="Set animation" sid="988909689978379" type="TutupPot">
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="302750334539687" type="System">
+                                    <param id="0" name="Variable">is_PotTerbuka</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1605,6 +1644,311 @@
                             <param id="1" name="Y">TongSampah.SaveY</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="350176668465623" title="Mie">
+            <sub-events>
+                <event-block sid="879099341313083">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="609367346127244" type="Mie" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="270366754947458">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="326094540543012" type="Mie">
+                                    <param id="0" name="Object">Pot</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="484700978853142">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="952829428833812" type="System">
+                                            <param id="0" name="Variable">is_PotTerbuka</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="372122261408203" type="Mie" />
+                                        <action id="-9" name="Set value" sid="367964839125779" type="System">
+                                            <param id="0" name="Variable">is_MieInside</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="704301955730471">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="698253034939893" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="395182439456648" type="Mie">
+                                            <param id="0" name="X">Mie.SaveX</param>
+                                            <param id="1" name="Y">Mie.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="773206593027464">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="456998971386418" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="189292411754632" type="Mie">
+                                    <param id="0" name="X">Mie.SaveX</param>
+                                    <param id="1" name="Y">Mie.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="983950802682240" title="SendokSup">
+            <sub-events>
+                <event-block sid="739636595053243">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" name="Is dragging" sid="331514567249293" type="SendokSup" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="112069029486303">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="782481500741774" type="Mouse">
+                                    <param id="0" name="Object">Pot</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="153603693536138">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="346949286664340" type="System">
+                                            <param id="0" name="Variable">is_PotTerbuka</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="426013566569366">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="758707445076063" type="System">
+                                                    <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="724388911308600" type="SendokSup">
+                                                    <param id="0" name="Animation">&quot;Filled&quot;</param>
+                                                    <param id="1" name="From">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="852669858529501" type="System">
+                                                    <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="152721415326285">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="979811272095549" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="555095545899414" type="SendokSup">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="240975743383917">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="943702948984742" type="SendokSup" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="684082253414486">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="190754061751530" type="SendokSup">
+                                    <param id="0" name="Object">Mangkok</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="100029648680288">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="520495203442177" type="Mangkok">
+                                            <param id="0" name="Instance variable">is_SingleMangkok</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="374091723044001">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="161546241315681" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="175927652844166" type="SendokSup">
+                                            <param id="0" name="X">SendokSup.SaveX</param>
+                                            <param id="1" name="Y">SendokSup.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="749299254975151">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="403047651206066" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="568049768358143" type="SendokSup">
+                                    <param id="0" name="X">SendokSup.SaveX</param>
+                                    <param id="1" name="Y">SendokSup.SaveY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="187684912525658" type="System">
+                                    <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="139989951415387" type="SendokSup">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="220567136929666" title="Saringan">
+            <sub-events>
+                <event-block sid="482411740548434">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" name="Is dragging" sid="729236972013891" type="Saringan" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="643892493958305">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="778368854180184" type="Mouse">
+                                    <param id="0" name="Object">Pot</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="631942400887573">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="346080654106289" type="System">
+                                            <param id="0" name="Variable">is_PotTerbuka</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="265444612927396">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="346113304401433" type="System">
+                                                    <param id="0" name="Variable">is_MieInside</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="746491716784734">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="449215850110960" type="System">
+                                                            <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="197782577292726" type="System">
+                                                            <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="643743728143538">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="526071802714679" type="System" />
+                                            </conditions>
+                                            <actions />
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="767739480408885">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="586682434941401" type="System" />
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="404278207969391">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="273633654883205" type="Saringan" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="851889100294892">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="351490832120886" type="Saringan">
+                                    <param id="0" name="Object">Mangkok</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="846771069703048">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="869602774722437" type="Mangkok">
+                                            <param id="0" name="Instance variable">is_SingleMangkok</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="227978250790190">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="948558504525234" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="329898778976182" type="Saringan">
+                                            <param id="0" name="X">Saringan.SaveX</param>
+                                            <param id="1" name="Y">Saringan.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="104967876621722">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="398455068149032" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="912947334348265" type="Saringan">
+                                    <param id="0" name="X">Saringan.SaveX</param>
+                                    <param id="1" name="Y">Saringan.SaveY</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="911812202414341" type="System">
+                                    <param id="0" name="Variable">is_SaringanTerisi</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
