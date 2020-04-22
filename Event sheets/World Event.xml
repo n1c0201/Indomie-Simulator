@@ -25,7 +25,11 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="157641533253900" type="System">
-                            <param id="0" name="Seconds">random(0, 3)</param>
+                            <param id="0" name="Seconds">random(0, 5)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="260472066108381" type="System">
+                            <param id="0" name="Variable">Slot1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="154939395272060" type="System">
                             <param id="0" name="Variable">Slot1P</param>
@@ -137,6 +141,52 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="580113384974775">
+                    <conditions>
+                        <condition id="0" name="On click" sid="254178237187546" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="193996707923952" type="System">
+                            <param id="0" name="Variable">Slot1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="647261878859875" type="Mouse">
+                            <param id="0" name="Object">Slot1Inv</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="826206605065967" type="Slot1Inv">
+                            <param id="0" name="Instance variable">BG</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="961100749335742" type="Slot1Inv">
+                            <param id="0" name="Instance variable">DB</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="711258175825550" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Kecap</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="305608729609796" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Mie</param>
+                            <param id="1" name="Value">round(random(0, 3))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="410572180333727" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Merica</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="317130676057460" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Sambal</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="598033333404625" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Tomat</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="366733225879718" title="Slot2">
@@ -156,6 +206,10 @@
                         </action>
                         <action id="-16" name="Wait" sid="271382783451448" type="System">
                             <param id="0" name="Seconds">random(0, 3)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="439159095094537" type="System">
+                            <param id="0" name="Variable">Slot2</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="613054639458423" type="System">
                             <param id="0" name="Variable">Slot2P</param>
@@ -267,6 +321,52 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="403223497424336">
+                    <conditions>
+                        <condition id="0" name="On click" sid="768384156908486" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="916718740332422" type="System">
+                            <param id="0" name="Variable">Slot2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="118248556774629" type="Mouse">
+                            <param id="0" name="Object">Slot2Inv</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="422015633899244" type="Slot2Inv">
+                            <param id="0" name="Instance variable">BG</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="795556041614115" type="Slot2Inv">
+                            <param id="0" name="Instance variable">DB</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="383348654787133" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Kecap</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="821288344055573" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Mie</param>
+                            <param id="1" name="Value">round(random(0, 3))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="318066456530744" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Merica</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="564171219601802" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Sambal</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="607535482533761" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Tomat</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="115009741224749" title="Slot3">
@@ -286,6 +386,10 @@
                         </action>
                         <action id="-16" name="Wait" sid="980797624436497" type="System">
                             <param id="0" name="Seconds">random(0, 3)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="264775997220477" type="System">
+                            <param id="0" name="Variable">Slot3</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="809578895489255" type="System">
                             <param id="0" name="Variable">Slot3P</param>
@@ -394,6 +498,52 @@
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">942</param>
                             <param id="3" name="Y">412</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="836760286455611">
+                    <conditions>
+                        <condition id="0" name="On click" sid="381995895756691" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="403365753420257" type="System">
+                            <param id="0" name="Variable">Slot3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="295560184717336" type="Mouse">
+                            <param id="0" name="Object">Slot3inv</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="319787396098647" type="Slot3inv">
+                            <param id="0" name="Instance variable">BG</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="805382990210739" type="Slot3inv">
+                            <param id="0" name="Instance variable">DB</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="223634220149263" type="Slot3inv">
+                            <param id="0" name="Instance variable">Kecap</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="814311519039582" type="Slot3inv">
+                            <param id="0" name="Instance variable">Mie</param>
+                            <param id="1" name="Value">round(random(0, 3))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="353439374142332" type="Slot3inv">
+                            <param id="0" name="Instance variable">Merica</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="695004597963382" type="Slot3inv">
+                            <param id="0" name="Instance variable">Sambal</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="834936132519884" type="Slot3inv">
+                            <param id="0" name="Instance variable">Tomat</param>
+                            <param id="1" name="Value">round(random(0, 1))</param>
                         </action>
                     </actions>
                 </event-block>

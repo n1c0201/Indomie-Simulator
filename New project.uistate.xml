@@ -62,5 +62,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Customer3/" />
         <folder expanded="1" path="animation-folder/Customer4/" />
         <folder expanded="1" path="animation-folder/Customer5/" />
+        <folder expanded="1" path="animation-folder/Slot1Inv/" />
+        <folder expanded="1" path="animation-folder/Slot2Inv/" />
+        <folder expanded="1" path="animation-folder/Slot3inv/" />
     </folders-expanded>
 </c2uistate>

@@ -657,6 +657,57 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Slot1Inv" sid="834607009438978">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="682670967155193" type="number" />
+                <instance-variable name="DB" sid="884103614560557" type="number" />
+                <instance-variable name="Kecap" sid="534797196848130" type="number" />
+                <instance-variable name="Mie" sid="122316022854731" type="number" />
+                <instance-variable name="Merica" sid="671093343154877" type="number" />
+                <instance-variable name="Sambal" sid="760722974277062" type="number" />
+                <instance-variable name="Tomat" sid="810509769444942" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682440592846730" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot2Inv" sid="625838291743909">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="231437987073727" type="number" />
+                <instance-variable name="DB" sid="241451537240478" type="number" />
+                <instance-variable name="Kecap" sid="350469244046384" type="number" />
+                <instance-variable name="Mie" sid="926229980622991" type="number" />
+                <instance-variable name="Merica" sid="593698814200039" type="number" />
+                <instance-variable name="Sambal" sid="613625881231137" type="number" />
+                <instance-variable name="Tomat" sid="487206408660507" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878779967911638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot3inv" sid="864803336396394">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="632092531564947" type="number" />
+                <instance-variable name="DB" sid="947001009625583" type="number" />
+                <instance-variable name="Kecap" sid="503465846109930" type="number" />
+                <instance-variable name="Mie" sid="621359774748691" type="number" />
+                <instance-variable name="Merica" sid="406943145883618" type="number" />
+                <instance-variable name="Sambal" sid="968971051622734" type="number" />
+                <instance-variable name="Tomat" sid="138930072053044" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745019434358918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

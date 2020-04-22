@@ -72,8 +72,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>683</x>
-                        <y>858</y>
+                        <x>685</x>
+                        <y>856</y>
                         <z>0</z>
                         <width>-56</width>
                         <height>300</height>
@@ -208,6 +208,99 @@
                         <y>861</y>
                         <z>0</z>
                         <width>-56</width>
+                        <height>300</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot1Inv" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BG>0</BG>
+                        <DB>0</DB>
+                        <Kecap>0</Kecap>
+                        <Mie>0</Mie>
+                        <Merica>0</Merica>
+                        <Sambal>0</Sambal>
+                        <Tomat>0</Tomat>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>696</x>
+                        <y>420</y>
+                        <z>0</z>
+                        <width>56</width>
+                        <height>300</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot2Inv" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BG>0</BG>
+                        <DB>0</DB>
+                        <Kecap>0</Kecap>
+                        <Mie>0</Mie>
+                        <Merica>0</Merica>
+                        <Sambal>0</Sambal>
+                        <Tomat>0</Tomat>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>853</x>
+                        <y>347</y>
+                        <z>0</z>
+                        <width>56</width>
+                        <height>300</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot3inv" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BG>0</BG>
+                        <DB>0</DB>
+                        <Kecap>0</Kecap>
+                        <Mie>0</Mie>
+                        <Merica>0</Merica>
+                        <Sambal>0</Sambal>
+                        <Tomat>0</Tomat>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>942</x>
+                        <y>412</y>
+                        <z>0</z>
+                        <width>56</width>
                         <height>300</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
