@@ -65,5 +65,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SendokSupPenuh/" />
         <folder expanded="1" path="animation-folder/MieDalamSaringan/" />
         <folder expanded="1" path="animation-folder/TimerSpriteSheet/" />
+        <folder expanded="1" path="animation-folder/TimerSpriteSheet2/" />
+        <folder expanded="1" path="animation-folder/MangkokGoreng/" />
+        <folder expanded="1" path="animation-folder/MangkokGoreng2/" />
+        <folder expanded="1" path="animation-folder/Mangkok3/" />
+        <folder expanded="1" path="animation-folder/Sup/" />
+        <folder expanded="1" path="animation-folder/MangkokKuah/" />
+        <folder expanded="1" path="animation-folder/MangkokKuah2/" />
     </folders-expanded>
 </c2uistate>

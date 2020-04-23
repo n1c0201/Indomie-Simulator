@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dalam Gerobak Event</name>
     <events>
+        <variable constant="0" name="is_Kuah" sid="486976470721954" static="0" type="number">0</variable>
+        <variable constant="0" name="is_Goreng" sid="921038829294650" static="0" type="number">0</variable>
+        <variable constant="0" name="is_TerisiSup" sid="294171580610413" static="0" type="number">0</variable>
+        <variable constant="0" name="is_MangkokTerisiMie" sid="962494562752584" static="0" type="number">0</variable>
+        <variable constant="0" name="is_MieReady" sid="668420738858578" static="0" type="number">0</variable>
         <variable constant="0" name="is_SaringanTerisi" sid="383020330771078" static="0" type="number">0</variable>
         <variable constant="0" name="is_MieInside" sid="475314799691172" static="0" type="number">0</variable>
         <variable constant="0" name="is_SendokSupTerisi" sid="829438264494556" static="0" type="number">0</variable>
@@ -108,8 +113,8 @@
                             <param id="0" name="Opacity">100</param>
                         </action>
                         <action id="-7" name="Set size" sid="775819170729657" type="Mangkok">
-                            <param id="0" name="Width">107</param>
-                            <param id="1" name="Height">58</param>
+                            <param id="0" name="Width">110</param>
+                            <param id="1" name="Height">46</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="560470323930227" type="Mangkok">
                             <param id="0" name="Instance variable">is_SingleMangkok</param>
@@ -337,6 +342,10 @@
                                     <param id="0" name="Variable">is_Terbuka</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-13" name="Set boolean" sid="733766090493628" type="Mie">
+                                    <param id="0" name="Instance variable">is_Goreng</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="272065795874266">
@@ -394,6 +403,10 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="363530665949671" type="System">
                                     <param id="0" name="Variable">is_Terbuka</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="798723760410313" type="Mie">
+                                    <param id="0" name="Instance variable">is_Kuah</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -455,6 +468,10 @@
                                     <param id="0" name="Variable">is_Terbuka</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-13" name="Set boolean" sid="250002181091655" type="Mie">
+                                    <param id="0" name="Instance variable">is_Kuah</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="586615727015393">
@@ -512,6 +529,10 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="523701403602111" type="System">
                                     <param id="0" name="Variable">is_Terbuka</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="931904773791715" type="Mie">
+                                    <param id="0" name="Instance variable">is_Kuah</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -1671,13 +1692,201 @@
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="372122261408203" type="Mie" />
-                                        <action id="-9" name="Set value" sid="367964839125779" type="System">
-                                            <param id="0" name="Variable">is_MieInside</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="443597021512171">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="745643937604693" type="System">
+                                                    <param id="0" name="Variable">is_MieInside</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="327163750582038">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="906617815549648" type="TimerSpriteSheet">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="401920813526699">
+                                                            <conditions>
+                                                                <condition id="-8" name="Is boolean instance variable set" sid="957590569232282" type="Mie">
+                                                                    <param id="0" name="Instance variable">is_Goreng</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions />
+                                                            <sub-events>
+                                                                <event-block sid="770025325912319">
+                                                                    <conditions>
+                                                                        <condition id="-14" name="Compare variable" sid="391928569280239" type="System">
+                                                                            <param id="0" name="Variable">is_Goreng</param>
+                                                                            <param id="1" name="Comparison">0</param>
+                                                                            <param id="2" name="Value">0</param>
+                                                                        </condition>
+                                                                    </conditions>
+                                                                    <actions />
+                                                                    <sub-events>
+                                                                        <event-block sid="638649982298520">
+                                                                            <conditions>
+                                                                                <condition id="-14" name="Compare variable" sid="967021278791941" type="System">
+                                                                                    <param id="0" name="Variable">is_Kuah</param>
+                                                                                    <param id="1" name="Comparison">0</param>
+                                                                                    <param id="2" name="Value">0</param>
+                                                                                </condition>
+                                                                            </conditions>
+                                                                            <actions>
+                                                                                <action id="-9" name="Destroy" sid="317840383367988" type="Mie" />
+                                                                                <action id="-9" name="Set value" sid="280656181601254" type="System">
+                                                                                    <param id="0" name="Variable">is_MieInside</param>
+                                                                                    <param id="1" name="Value">1</param>
+                                                                                </action>
+                                                                                <action id="4" name="Set animation" sid="286260256863663" type="TimerSpriteSheet">
+                                                                                    <param id="0" name="Animation">&quot;Ticking&quot;</param>
+                                                                                    <param id="1" name="From">0</param>
+                                                                                </action>
+                                                                                <action id="-9" name="Set value" sid="556940128667045" type="System">
+                                                                                    <param id="0" name="Variable">is_Goreng</param>
+                                                                                    <param id="1" name="Value">1</param>
+                                                                                </action>
+                                                                            </actions>
+                                                                        </event-block>
+                                                                        <event-block sid="400909751995601">
+                                                                            <conditions>
+                                                                                <condition id="-22" name="Else" sid="548365790013044" type="System" />
+                                                                            </conditions>
+                                                                            <actions>
+                                                                                <action id="-3" name="Set position" sid="981702551530919" type="Mie">
+                                                                                    <param id="0" name="X">Mie.SaveX</param>
+                                                                                    <param id="1" name="Y">Mie.SaveY</param>
+                                                                                </action>
+                                                                            </actions>
+                                                                        </event-block>
+                                                                    </sub-events>
+                                                                </event-block>
+                                                                <event-block sid="557096417089407">
+                                                                    <conditions>
+                                                                        <condition id="-22" name="Else" sid="722007776995874" type="System" />
+                                                                    </conditions>
+                                                                    <actions>
+                                                                        <action id="-9" name="Destroy" sid="291543141899495" type="Mie" />
+                                                                        <action id="-9" name="Set value" sid="799647152140794" type="System">
+                                                                            <param id="0" name="Variable">is_MieInside</param>
+                                                                            <param id="1" name="Value">1</param>
+                                                                        </action>
+                                                                        <action id="4" name="Set animation" sid="408054582321195" type="TimerSpriteSheet">
+                                                                            <param id="0" name="Animation">&quot;Ticking&quot;</param>
+                                                                            <param id="1" name="From">0</param>
+                                                                        </action>
+                                                                    </actions>
+                                                                </event-block>
+                                                            </sub-events>
+                                                        </event-block>
+                                                        <event-block sid="677287840896809">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="982395217523076" type="System" />
+                                                                <condition id="-8" name="Is boolean instance variable set" sid="301745623129070" type="Mie">
+                                                                    <param id="0" name="Instance variable">is_Kuah</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions />
+                                                            <sub-events>
+                                                                <event-block any="1" sid="358766763687379">
+                                                                    <conditions>
+                                                                        <condition id="-14" name="Compare variable" sid="744693190483759" type="System">
+                                                                            <param id="0" name="Variable">is_Kuah</param>
+                                                                            <param id="1" name="Comparison">0</param>
+                                                                            <param id="2" name="Value">0</param>
+                                                                        </condition>
+                                                                    </conditions>
+                                                                    <actions />
+                                                                    <sub-events>
+                                                                        <event-block sid="978793218676909">
+                                                                            <conditions>
+                                                                                <condition id="-14" name="Compare variable" sid="562978114903596" type="System">
+                                                                                    <param id="0" name="Variable">is_Goreng</param>
+                                                                                    <param id="1" name="Comparison">0</param>
+                                                                                    <param id="2" name="Value">0</param>
+                                                                                </condition>
+                                                                            </conditions>
+                                                                            <actions>
+                                                                                <action id="-9" name="Destroy" sid="987829966274846" type="Mie" />
+                                                                                <action id="-9" name="Set value" sid="580835776823028" type="System">
+                                                                                    <param id="0" name="Variable">is_MieInside</param>
+                                                                                    <param id="1" name="Value">1</param>
+                                                                                </action>
+                                                                                <action id="4" name="Set animation" sid="635893765532834" type="TimerSpriteSheet">
+                                                                                    <param id="0" name="Animation">&quot;Ticking&quot;</param>
+                                                                                    <param id="1" name="From">0</param>
+                                                                                </action>
+                                                                                <action id="-9" name="Set value" sid="127644640897016" type="System">
+                                                                                    <param id="0" name="Variable">is_Kuah</param>
+                                                                                    <param id="1" name="Value">1</param>
+                                                                                </action>
+                                                                            </actions>
+                                                                        </event-block>
+                                                                        <event-block sid="137132873577258">
+                                                                            <conditions>
+                                                                                <condition id="-22" name="Else" sid="744092566562307" type="System" />
+                                                                            </conditions>
+                                                                            <actions>
+                                                                                <action id="-3" name="Set position" sid="832350814307343" type="Mie">
+                                                                                    <param id="0" name="X">Mie.SaveX</param>
+                                                                                    <param id="1" name="Y">Mie.SaveY</param>
+                                                                                </action>
+                                                                            </actions>
+                                                                        </event-block>
+                                                                    </sub-events>
+                                                                </event-block>
+                                                                <event-block sid="189481522111854">
+                                                                    <conditions>
+                                                                        <condition id="-22" name="Else" sid="373304429477920" type="System" />
+                                                                    </conditions>
+                                                                    <actions>
+                                                                        <action id="-9" name="Destroy" sid="657260967348221" type="Mie" />
+                                                                        <action id="-9" name="Set value" sid="746488089377817" type="System">
+                                                                            <param id="0" name="Variable">is_MieInside</param>
+                                                                            <param id="1" name="Value">1</param>
+                                                                        </action>
+                                                                        <action id="4" name="Set animation" sid="445076423130022" type="TimerSpriteSheet">
+                                                                            <param id="0" name="Animation">&quot;Ticking&quot;</param>
+                                                                            <param id="1" name="From">0</param>
+                                                                        </action>
+                                                                    </actions>
+                                                                </event-block>
+                                                            </sub-events>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="784509223834349">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="664752757261191" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="981629692973922" type="Mie">
+                                                            <param id="0" name="X">Mie.SaveX</param>
+                                                            <param id="1" name="Y">Mie.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="427269226114205">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="204278044014332" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="129145718458666" type="Mie">
+                                                    <param id="0" name="X">Mie.SaveX</param>
+                                                    <param id="1" name="Y">Mie.SaveY</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="704301955730471">
                                     <conditions>
@@ -1790,6 +1999,85 @@
                                         </condition>
                                     </conditions>
                                     <actions />
+                                    <sub-events>
+                                        <event-block sid="192082276745656">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="847486946456128" type="System">
+                                                    <param id="0" name="Variable">is_TerisiSup</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="283244901786849">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="996395961471775" type="System">
+                                                            <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="977506108200167" type="Sup">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="852616225045376" type="Sup">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">Mangkok</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="828426498210242" type="System">
+                                                            <param id="0" name="Variable">is_TerisiSup</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-3" name="Set position" sid="439260543965184" type="SendokSup">
+                                                            <param id="0" name="X">SendokSup.SaveX</param>
+                                                            <param id="1" name="Y">SendokSup.SaveY</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="500913670909196" type="System">
+                                                            <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="4" name="Set animation" sid="288635610740932" type="SendokSup">
+                                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                            <param id="1" name="From">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="575217852364687">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="558852064275810" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="633551899513628" type="SendokSup">
+                                                            <param id="0" name="X">SendokSup.SaveX</param>
+                                                            <param id="1" name="Y">SendokSup.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="867235434055346">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="276753311206708" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="397700850847864" type="SendokSup">
+                                                    <param id="0" name="X">SendokSup.SaveX</param>
+                                                    <param id="1" name="Y">SendokSup.SaveY</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="918180016758391" type="System">
+                                                    <param id="0" name="Variable">is_SendokSupTerisi</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="905710261476839" type="SendokSup">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="374091723044001">
                                     <conditions>
@@ -1829,6 +2117,25 @@
         </event-group>
         <event-group description="" sid="220567136929666" title="Saringan">
             <sub-events>
+                <event-block sid="403770475067197">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="242993849395426" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Move to bottom" sid="160562689042945" type="MieDalamSaringan" />
+                    </actions>
+                </event-block>
+                <event-block sid="462786894022308">
+                    <conditions>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="610299866296410" type="Saringan" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="564761389680310" type="MieDalamSaringan">
+                            <param id="0" name="Pin to">Saringan</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="482411740548434">
                     <conditions>
                         <condition behavior="DragDrop" id="0" name="Is dragging" sid="729236972013891" type="Saringan" />
@@ -1871,32 +2178,57 @@
                                                             <param id="2" name="Value">0</param>
                                                         </condition>
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Set value" sid="197782577292726" type="System">
-                                                            <param id="0" name="Variable">is_SaringanTerisi</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="666548564667576">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="786400435680003" type="System">
+                                                                    <param id="0" name="Variable">is_MieReady</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="175329051178587" type="System">
+                                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                                <action id="-29" name="Move to object" sid="863871641943444" type="MieDalamSaringan">
+                                                                    <param id="0" name="Where">1</param>
+                                                                    <param id="1" name="Object">Saringan</param>
+                                                                </action>
+                                                                <action id="-9" name="Set value" sid="833668094597391" type="System">
+                                                                    <param id="0" name="Variable">is_MieInside</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="479368612841948">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="175526763978093" type="System" />
+                                                            </conditions>
+                                                            <actions />
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
-                                        <event-block sid="643743728143538">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="526071802714679" type="System" />
-                                            </conditions>
-                                            <actions />
-                                        </event-block>
                                     </sub-events>
-                                </event-block>
-                                <event-block sid="767739480408885">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="586682434941401" type="System" />
-                                    </conditions>
-                                    <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="111335695251845">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="102683809787605" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="538712657723665" type="MieDalamSaringan">
+                            <param id="0" name="X">Saringan.SaveX</param>
+                            <param id="1" name="Y">Saringan.SaveY</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="404278207969391">
                     <conditions>
@@ -1919,6 +2251,91 @@
                                         </condition>
                                     </conditions>
                                     <actions />
+                                    <sub-events>
+                                        <event-block sid="895537833908570">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="753225537832927" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="721037595481988" type="Saringan">
+                                                    <param id="0" name="X">Saringan.SaveX</param>
+                                                    <param id="1" name="Y">Saringan.SaveY</param>
+                                                </action>
+                                                <action id="-25" name="Move to bottom" sid="524099634634555" type="MieDalamSaringan" />
+                                                <action id="-9" name="Set value" sid="669577463581340" type="System">
+                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="657573262174124" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="582033947826567" type="MangkokGoreng">
+                                                    <param id="0" name="Pin to">Mangkok</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="-29" name="Move to object" sid="724770591634876" type="MangkokGoreng">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">Mangkok</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="249328485273653">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="479143928314506" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="505026419444490" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="123196831276378" type="Saringan">
+                                                    <param id="0" name="X">Saringan.SaveX</param>
+                                                    <param id="1" name="Y">Saringan.SaveY</param>
+                                                </action>
+                                                <action id="-25" name="Move to bottom" sid="555283964130309" type="MieDalamSaringan" />
+                                                <action id="-9" name="Set value" sid="160584836411844" type="System">
+                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="154233636952505" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action behavior="Pin" id="1" name="Unpin" sid="279179091006528" type="MangkokGoreng" />
+                                                <action id="-25" name="Move to bottom" sid="682758170466414" type="MangkokGoreng" />
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="214972648885486" type="MangkokGoreng2">
+                                                    <param id="0" name="Pin to">Mangkok</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="-29" name="Move to object" sid="371074467582975" type="MangkokGoreng2">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">Mangkok</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="850537971929757">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="176491057682700" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="176098387243740" type="Saringan">
+                                                    <param id="0" name="X">Saringan.SaveX</param>
+                                                    <param id="1" name="Y">Saringan.SaveY</param>
+                                                </action>
+                                                <action id="-25" name="Move to bottom" sid="124001032477486" type="MieDalamSaringan" />
+                                                <action id="-9" name="Set value" sid="890009154055869" type="System">
+                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="227978250790190">
                                     <conditions>
@@ -1946,9 +2363,46 @@
                                     <param id="0" name="Variable">is_SaringanTerisi</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="-25" name="Move to bottom" sid="903503032270478" type="MieDalamSaringan" />
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="231754682947624" title="Timer">
+            <sub-events>
+                <event-block sid="539857647877665">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="534006740214509" type="TimerSpriteSheet">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Number">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="506471704909085" type="System">
+                            <param id="0" name="Variable">is_MieReady</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="499974369365145">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="771719132514125" type="TimerSpriteSheet">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Number">53</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="203550591519458" type="System">
+                            <param id="0" name="Variable">is_MieReady</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="131210424857322" type="TimerSpriteSheet">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

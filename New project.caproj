@@ -19,6 +19,8 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
     </used-behaviors>
     <used-effects />
@@ -196,6 +198,8 @@
                 <instance-variables>
                     <instance-variable name="SaveX" sid="450776549626179" type="number" />
                     <instance-variable name="SaveY" sid="160059283731872" type="number" />
+                    <instance-variable name="is_Goreng" sid="693932843185728" type="boolean" />
+                    <instance-variable name="is_Kuah" sid="958039984914972" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="DragDrop" sid="486547283722176">
@@ -283,6 +287,9 @@
                     <behavior-type name="DragDrop" sid="677582870920524">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="376878607698809">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672694441949868" speed="5">
@@ -337,6 +344,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="613342341627269">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="288691210888960">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -455,7 +465,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192016661990347" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.428571" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png">
+                        <frame duration="1" hotspotX="0.59375" hotspotY="0.910714" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png">
                             <collision-poly>
                                 <point x="0" y="0" />
                                 <point x="0.5" y="0.857143" />
@@ -468,6 +478,10 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="2" loop="0" name="TerisiMie" pingpong="0" repeatcount="1" repeatto="0" sid="469889182614252" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saringan.png" />
+                        <frame duration="1" hotspotX="-4.77778" hotspotY="-9.9" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="SendokSup" sid="221425517375256">
@@ -479,6 +493,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="512127284949105">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="582904922286963">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -631,6 +648,11 @@
         </object-type>
         <object-type name="MieDalamSaringan" sid="631879410805436">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="276720777410138">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106472442820469" speed="5">
                     <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\MieDalamSaringan.png">
@@ -651,7 +673,83 @@
         <object-type name="TimerSpriteSheet" sid="688138624122608">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220215683792636" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960173374865357" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
+                </animation>
+                <animation framecount="55" loop="0" name="Ticking" pingpong="0" repeatcount="1" repeatto="0" sid="220215683792636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.464286" />
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.464286" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.448276" />
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.481481" />
+                    <frame duration="1" hotspotX="0.464286" hotspotY="0.481481" />
+                    <frame duration="1" hotspotX="0.464286" hotspotY="0.448276" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.583333" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.448276" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0.148148" y="0.137931" />
+                            <point x="1" y="0.310345" />
+                            <point x="1" y="0.137931" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.148148" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.517241" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.533333" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.535714" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.535714" hotspotY="0.576923" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.464286" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimerSpriteSheet2" sid="444989980441606">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583846840339000" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
                         <collision-poly>
                             <point x="0.02" y="0.0228571" />
@@ -662,6 +760,124 @@
                             <point x="0.5" y="0.948571" />
                             <point x="0.02" y="0.977143" />
                             <point x="0" y="0.497143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MangkokGoreng" sid="578195247625049">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="744524910939073">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396527114633403" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng1.png">
+                        <collision-poly>
+                            <point x="0.490909" y="0.130435" />
+                            <point x="0.690909" y="0.26087" />
+                            <point x="0.490909" y="0.304348" />
+                            <point x="0.309091" y="0.26087" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MangkokGoreng2" sid="884238853075060">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="100573918993763">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160688356683141" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng2.png">
+                        <collision-poly>
+                            <point x="0.0727273" y="0.173913" />
+                            <point x="0.490909" y="0.0869565" />
+                            <point x="0.927273" y="0.173913" />
+                            <point x="0.690909" y="0.26087" />
+                            <point x="0.490909" y="0.304348" />
+                            <point x="0.309091" y="0.26087" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mangkok3" sid="511422511287859">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569840673529712" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Mangkok.png">
+                        <collision-poly>
+                            <point x="0.0545455" y="0.130435" />
+                            <point x="0.490909" y="0" />
+                            <point x="0.945455" y="0.130435" />
+                            <point x="0.909091" y="0.478261" />
+                            <point x="0.872727" y="0.695652" />
+                            <point x="0.490909" y="1" />
+                            <point x="0.127273" y="0.695652" />
+                            <point x="0.0909091" y="0.478261" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sup" sid="611963123438989">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="356168581325926">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643595738462909" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="2" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Sup.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MangkokKuah" sid="762722731322957">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="446612056623365">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261532886038138" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah1.png">
+                        <collision-poly>
+                            <point x="0.0727273" y="0.173913" />
+                            <point x="0.490909" y="0.0869565" />
+                            <point x="0.927273" y="0.173913" />
+                            <point x="0.690909" y="0.26087" />
+                            <point x="0.490909" y="0.304348" />
+                            <point x="0.309091" y="0.26087" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MangkokKuah2" sid="243116530276589">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="791010093990680">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729507591721364" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah2.png">
+                        <collision-poly>
+                            <point x="0.0727273" y="0.173913" />
+                            <point x="0.490909" y="0.0434783" />
+                            <point x="0.927273" y="0.173913" />
+                            <point x="0.690909" y="0.26087" />
+                            <point x="0.490909" y="0.304348" />
+                            <point x="0.309091" y="0.26087" />
                         </collision-poly>
                     </frame>
                 </animation>
