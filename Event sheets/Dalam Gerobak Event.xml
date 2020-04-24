@@ -222,55 +222,77 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="172807265034783" type="Mangkok">
-                                            <param id="0" name="Instance variable">MangkokID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="184231303557959" type="Mangkok" />
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="156908366552508">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="758399821461477" type="Mangkok">
+                                                    <param id="0" name="Instance variable">MangkokID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="405714679755287" type="Mangkok" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="199427687415278">
+                                <event-block sid="863236112944667">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="381603605198472" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="565727425360950" type="System">
-                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="893736941497717" type="Mangkok">
-                                            <param id="0" name="Instance variable">MangkokID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
+                                        <condition id="-22" name="Else" sid="940683745683373" type="System" />
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="557546560348970" type="Mangkok" />
-                                        <action id="-9" name="Set value" sid="592625679173246" type="System">
-                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="689765889122939">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="652415880785294" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="353256680730799" type="System">
-                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="347493849726329" type="Mangkok">
-                                            <param id="0" name="Instance variable">MangkokID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="242809843359064" type="Mangkok" />
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="839603201658703">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="809416007491147" type="Mangkok">
+                                                    <param id="0" name="Instance variable">MangkokID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="963437284476928">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="888641904481648" type="System">
+                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="449771732407837" type="Mangkok" />
+                                                        <action id="-9" name="Set value" sid="952589381926674" type="System">
+                                                            <param id="0" name="Variable">is_MangkokFilled</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="934074989983443">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="485951660035595" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="111808452976978" type="Mangkok">
+                                                            <param id="0" name="X">Mangkok2.X</param>
+                                                            <param id="1" name="Y">Mangkok2.Y</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="126697055724746">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="503593634107558" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="871564454812277" type="Mangkok" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2201,6 +2223,10 @@
                                                                     <param id="0" name="Variable">is_MieInside</param>
                                                                     <param id="1" name="Value">0</param>
                                                                 </action>
+                                                                <action id="-9" name="Set value" sid="991292789540800" type="System">
+                                                                    <param id="0" name="Variable">is_MieReady</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
                                                             </actions>
                                                         </event-block>
                                                         <event-block sid="479368612841948">
@@ -2394,10 +2420,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="203550591519458" type="System">
-                            <param id="0" name="Variable">is_MieReady</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                         <action id="4" name="Set animation" sid="131210424857322" type="TimerSpriteSheet">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">0</param>
