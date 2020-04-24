@@ -19,5 +19,26 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="120526890498802">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="593091944017283" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="747501333372840" type="System">
+                    <param id="0" name="Variable">TimerS1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="229056530412685" type="System">
+                    <param id="0" name="Variable">TimerS2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="650111632690961" type="System">
+                    <param id="0" name="Variable">TimerS3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

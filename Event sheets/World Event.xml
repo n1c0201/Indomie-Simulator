@@ -4,21 +4,31 @@
     <name>World Event</name>
     <events>
         <variable constant="0" name="TimerS1" sid="213684065573128" static="0" type="number">0</variable>
+        <variable constant="0" name="TimerS2" sid="964201466625935" static="0" type="number">0</variable>
+        <variable constant="0" name="TimerS3" sid="743542212200792" static="0" type="number">0</variable>
         <variable constant="0" name="Slot1P" sid="857149136620559" static="0" type="number">0</variable>
         <variable constant="0" name="Slot2P" sid="802596159443928" static="0" type="number">0</variable>
         <variable constant="0" name="Slot3P" sid="406016357272691" static="0" type="number">0</variable>
         <variable constant="0" name="Slot1" sid="966301434313093" static="0" type="number">0</variable>
         <variable constant="0" name="Slot2" sid="768255469419800" static="0" type="number">0</variable>
         <variable constant="0" name="Slot3" sid="866844877143198" static="0" type="number">0</variable>
-        <event-block sid="722850380520653">
+        <event-block sid="340363263857208">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="510562104602674" type="System">
+                <condition id="-6" name="Every X seconds" sid="878216555971140" type="System">
                     <param id="0" name="Interval (seconds)">1.0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="195652600131937" type="System">
+                <action id="-10" name="Add to" sid="705215567538277" type="System">
                     <param id="0" name="Variable">TimerS1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="889617375581380" type="System">
+                    <param id="0" name="Variable">TimerS2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="410719505603456" type="System">
+                    <param id="0" name="Variable">TimerS3</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -34,7 +44,7 @@
                         </condition>
                         <condition id="-14" name="Compare variable" sid="663272557106370" type="System">
                             <param id="0" name="Variable">TimerS1</param>
-                            <param id="1" name="Comparison">0</param>
+                            <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">round(random(15, 20))</param>
                         </condition>
                     </conditions>
@@ -220,14 +230,16 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="906233558267011" type="System">
+                            <param id="0" name="Variable">TimerS2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">round(random(35, 45))</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="200644824709561" type="System">
                             <param id="0" name="Variable">Slot2</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="271382783451448" type="System">
-                            <param id="0" name="Seconds">random(0, 3)</param>
                         </action>
                         <action id="-9" name="Set value" sid="439159095094537" type="System">
                             <param id="0" name="Variable">Slot2</param>
@@ -400,6 +412,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="667546696771547" type="System">
+                            <param id="0" name="Variable">TimerS3</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">round(random(60, 70))</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="600108539647731" type="System">
@@ -571,81 +588,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="509671823169422">
-            <conditions>
-                <condition id="0" name="On click" sid="398423408618634" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                </condition>
-                <condition id="7" name="Cursor is over object" sid="194830702645078" type="Mouse">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="267170296774806" type="System">
-                    <param id="0" name="Variable">Slot1</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="718992610570286" type="System">
-                    <param id="0" name="Layout">Food Order</param>
-                </action>
-                <action id="-9" name="Set value" sid="954656273932286" type="System">
-                    <param id="0" name="Variable">Slot1</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="213556194036517">
-            <conditions>
-                <condition id="0" name="On click" sid="531921198623934" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                </condition>
-                <condition id="7" name="Cursor is over object" sid="871804054732061" type="Mouse">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="650590226099549" type="System">
-                    <param id="0" name="Variable">Slot2</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="927016744251302" type="System">
-                    <param id="0" name="Layout">Food Order</param>
-                </action>
-                <action id="-9" name="Set value" sid="424374736784191" type="System">
-                    <param id="0" name="Variable">Slot2</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="771403096242487">
-            <conditions>
-                <condition id="0" name="On click" sid="969410978907666" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                </condition>
-                <condition id="7" name="Cursor is over object" sid="120415823038876" type="Mouse">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="373862264290809" type="System">
-                    <param id="0" name="Variable">Slot3</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="924456642428423" type="System">
-                    <param id="0" name="Layout">Food Order</param>
-                </action>
-                <action id="-9" name="Set value" sid="437000416483489" type="System">
-                    <param id="0" name="Variable">Slot3</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="228645052767208">
             <conditions>
                 <condition id="0" name="On click" sid="758592500508317" type="Mouse">
