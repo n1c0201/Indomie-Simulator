@@ -20,6 +20,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
     </used-behaviors>
     <used-effects />
@@ -545,6 +546,9 @@
                 <behavior-type name="Fade" sid="983899825379138">
                     <behavior id="Fade" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="895171637274818">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849345916075134" speed="5">
@@ -571,6 +575,9 @@
                 <behavior-type name="Fade" sid="197480639433484">
                     <behavior id="Fade" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="330275188993972">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301441858032980" speed="5">
@@ -592,6 +599,9 @@
             <behaviors>
                 <behavior-type name="Fade" sid="206137201875410">
                     <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="615879501979330">
+                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -617,6 +627,9 @@
                 <behavior-type name="Fade" sid="118805531300990">
                     <behavior id="Fade" />
                 </behavior-type>
+                <behavior-type name="Persist" sid="752432663465920">
+                    <behavior id="Persist" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860011823349525" speed="5">
@@ -640,6 +653,9 @@
             <behaviors>
                 <behavior-type name="Fade" sid="143031493800476">
                     <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="717231904118351">
+                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -708,6 +724,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite5" sid="557271909423024">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214284002209562" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="709895627194418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985508858134335" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -715,12 +747,14 @@
         <layout>Main Menu.xml</layout>
         <layout>Dalem Gerobak.xml</layout>
         <layout>World.xml</layout>
+        <layout>Food Order.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Cutscene Event.xml</event-sheet>
         <event-sheet>Main Menu Event.xml</event-sheet>
         <event-sheet>Dalam Gerobak Event.xml</event-sheet>
         <event-sheet>World Event.xml</event-sheet>
+        <event-sheet>Food Order Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />

@@ -185,6 +185,12 @@
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
                         </action>
+                        <action id="-3" name="Create object" sid="563437853941095" type="System">
+                            <param id="0" name="Object to create">Customer1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X"> 600</param>
+                            <param id="3" name="Y">400</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -549,5 +555,21 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="509671823169422">
+            <conditions>
+                <condition id="0" name="On click" sid="398423408618634" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="194830702645078" type="Mouse">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="718992610570286" type="System">
+                    <param id="0" name="Layout">Food Order</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
