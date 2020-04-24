@@ -674,75 +674,406 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960173374865357" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
                 </animation>
-                <animation framecount="55" loop="0" name="Ticking" pingpong="0" repeatcount="1" repeatto="0" sid="220215683792636" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.464286" />
-                    <frame duration="1" hotspotX="0.481481" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.464286" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.481481" hotspotY="0.448276" />
-                    <frame duration="1" hotspotX="0.481481" hotspotY="0.481481" />
-                    <frame duration="1" hotspotX="0.464286" hotspotY="0.481481" />
-                    <frame duration="1" hotspotX="0.464286" hotspotY="0.448276" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.517241" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.517241" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.517241" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.6" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.583333" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.481481" hotspotY="0.448276" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                <animation framecount="56" loop="0" name="Ticking" pingpong="0" repeatcount="1" repeatto="0" sid="220215683792636" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
                         <collision-poly>
-                            <point x="0.148148" y="0.137931" />
-                            <point x="1" y="0.310345" />
-                            <point x="1" y="0.137931" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
-                            <point x="0.148148" y="1" />
+                            <point x="0" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.517241" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.535714" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.533333" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.535714" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.6" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.56" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.535714" hotspotY="0.576923" />
-                    <frame duration="1" hotspotX="0.538462" hotspotY="0.555556" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.464286" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.48" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.48" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.48" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.48" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.48" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
                 </animation>
             </animation-folder>
         </object-type>

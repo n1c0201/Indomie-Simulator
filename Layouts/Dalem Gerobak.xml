@@ -792,10 +792,10 @@
                         <y>291</y>
                         <z>0</z>
                         <width>50</width>
-                        <height>52</height>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.519999981</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
