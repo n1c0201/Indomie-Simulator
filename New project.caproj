@@ -10,10 +10,12 @@
     <unique-id>1qfx721kejmop</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -1274,12 +1276,14 @@
         <layout>Main Menu.xml</layout>
         <layout>Dalem Gerobak.xml</layout>
         <layout>World.xml</layout>
+        <layout>Food Order.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Cutscene Event.xml</event-sheet>
         <event-sheet>Main Menu Event.xml</event-sheet>
         <event-sheet>Dalam Gerobak Event.xml</event-sheet>
         <event-sheet>World Event.xml</event-sheet>
+        <event-sheet>Food Order Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
