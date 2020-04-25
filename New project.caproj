@@ -10,6 +10,7 @@
     <unique-id>1qfx721kejmop</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -515,6 +516,196 @@
                     </animation>
                     <animation framecount="1" loop="0" name="Filled" pingpong="0" repeatcount="1" repeatto="0" sid="204040856356775" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\SendokSupPenuh.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="IsiMangkok">
+            <object-type name="BawangGoreng" sid="922075741396888">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794092033224668" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\BawangGoreng.png">
+                            <collision-poly>
+                                <point x="0.490909" y="0.130435" />
+                                <point x="0.672727" y="0.217391" />
+                                <point x="0.490909" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DaunBawang" sid="158347798702531">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="325992989055494" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\DaunBawang.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Kecap" sid="411402186178010">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931645852012479" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Kecap.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokGoreng" sid="578195247625049">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="744524910939073">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396527114633403" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng1.png">
+                            <collision-poly>
+                                <point x="0.490909" y="0.130435" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.304348" />
+                                <point x="0.309091" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokGoreng2" sid="884238853075060">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="100573918993763">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160688356683141" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng2.png">
+                            <collision-poly>
+                                <point x="0.0727273" y="0.173913" />
+                                <point x="0.490909" y="0.0869565" />
+                                <point x="0.927273" y="0.173913" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.304348" />
+                                <point x="0.309091" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokKuah" sid="762722731322957">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="446612056623365">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261532886038138" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah1.png">
+                            <collision-poly>
+                                <point x="0.0727273" y="0.173913" />
+                                <point x="0.490909" y="0.0869565" />
+                                <point x="0.927273" y="0.173913" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.304348" />
+                                <point x="0.309091" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokKuah2" sid="243116530276589">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="791010093990680">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729507591721364" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah2.png">
+                            <collision-poly>
+                                <point x="0.0727273" y="0.173913" />
+                                <point x="0.490909" y="0.0434783" />
+                                <point x="0.927273" y="0.173913" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.304348" />
+                                <point x="0.309091" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokMicin" sid="497052767814124">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173729332855806" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokMicin1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MangkokMicin2" sid="181013449715942">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941216086089382" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokMicin2.png">
+                            <collision-poly>
+                                <point x="0.490909" y="0.217391" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.304348" />
+                                <point x="0.309091" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Merica" sid="671948360160031">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969830408305577" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Merica.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sambal" sid="233562979701683">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463583955978768" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Sambal.png">
+                            <collision-poly>
+                                <point x="0.490909" y="0.0869565" />
+                                <point x="0.654545" y="0.173913" />
+                                <point x="0.490909" y="0.26087" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sup" sid="611963123438989">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="356168581325926">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643595738462909" speed="5">
+                        <frame duration="1" hotspotX="0.509804" hotspotY="2" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Sup.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tomat" sid="300427165826120">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410052727373066" speed="5">
+                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Tomat.png">
+                            <collision-poly>
+                                <point x="0.490909" y="0.0869565" />
+                                <point x="0.690909" y="0.26087" />
+                                <point x="0.490909" y="0.173913" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1096,48 +1287,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="MangkokGoreng" sid="578195247625049">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="744524910939073">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396527114633403" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng1.png">
-                        <collision-poly>
-                            <point x="0.490909" y="0.130435" />
-                            <point x="0.690909" y="0.26087" />
-                            <point x="0.490909" y="0.304348" />
-                            <point x="0.309091" y="0.26087" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MangkokGoreng2" sid="884238853075060">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="100573918993763">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160688356683141" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokGoreng2.png">
-                        <collision-poly>
-                            <point x="0.0727273" y="0.173913" />
-                            <point x="0.490909" y="0.0869565" />
-                            <point x="0.927273" y="0.173913" />
-                            <point x="0.690909" y="0.26087" />
-                            <point x="0.490909" y="0.304348" />
-                            <point x="0.309091" y="0.26087" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Mangkok3" sid="511422511287859">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1157,62 +1306,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sup" sid="611963123438989">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="356168581325926">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643595738462909" speed="5">
-                    <frame duration="1" hotspotX="0.509804" hotspotY="2" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Sup.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MangkokKuah" sid="762722731322957">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="446612056623365">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261532886038138" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah1.png">
-                        <collision-poly>
-                            <point x="0.0727273" y="0.173913" />
-                            <point x="0.490909" y="0.0869565" />
-                            <point x="0.927273" y="0.173913" />
-                            <point x="0.690909" y="0.26087" />
-                            <point x="0.490909" y="0.304348" />
-                            <point x="0.309091" y="0.26087" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MangkokKuah2" sid="243116530276589">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="791010093990680">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729507591721364" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah2.png">
-                        <collision-poly>
-                            <point x="0.0727273" y="0.173913" />
-                            <point x="0.490909" y="0.0434783" />
-                            <point x="0.927273" y="0.173913" />
-                            <point x="0.690909" y="0.26087" />
-                            <point x="0.490909" y="0.304348" />
-                            <point x="0.309091" y="0.26087" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
+        <object-type name="Function" sid="305256820729016">
+            <plugin id="Function" />
         </object-type>
     </object-folder>
     <families />
@@ -1230,6 +1325,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
+        <global-instance type="Function" uid="45" />
     </global-instances>
     <sounds-folder />
     <music-folder />

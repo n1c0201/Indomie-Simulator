@@ -31,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Indomies/" />
         <folder expanded="1" path="object-folder/Isi mie/" />
         <folder expanded="1" path="object-folder/Alat-alat/" />
+        <folder expanded="1" path="object-folder/IsiMangkok/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -55,6 +56,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TutupPotGantung/" />
         <folder expanded="1" path="animation-folder/Saringan/" />
         <folder expanded="1" path="animation-folder/SendokSup/" />
+        <folder expanded="1" path="animation-folder/BawangGoreng/" />
+        <folder expanded="1" path="animation-folder/DaunBawang/" />
+        <folder expanded="1" path="animation-folder/Kecap/" />
+        <folder expanded="1" path="animation-folder/MangkokGoreng/" />
+        <folder expanded="1" path="animation-folder/MangkokGoreng2/" />
+        <folder expanded="1" path="animation-folder/MangkokKuah/" />
+        <folder expanded="1" path="animation-folder/MangkokKuah2/" />
+        <folder expanded="1" path="animation-folder/MangkokMicin/" />
+        <folder expanded="1" path="animation-folder/MangkokMicin2/" />
+        <folder expanded="1" path="animation-folder/Merica/" />
+        <folder expanded="1" path="animation-folder/Sambal/" />
+        <folder expanded="1" path="animation-folder/Sup/" />
+        <folder expanded="1" path="animation-folder/Tomat/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/HowToPlay/" />
@@ -66,11 +80,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MieDalamSaringan/" />
         <folder expanded="1" path="animation-folder/TimerSpriteSheet/" />
         <folder expanded="1" path="animation-folder/TimerSpriteSheet2/" />
-        <folder expanded="1" path="animation-folder/MangkokGoreng/" />
-        <folder expanded="1" path="animation-folder/MangkokGoreng2/" />
         <folder expanded="1" path="animation-folder/Mangkok3/" />
-        <folder expanded="1" path="animation-folder/Sup/" />
-        <folder expanded="1" path="animation-folder/MangkokKuah/" />
-        <folder expanded="1" path="animation-folder/MangkokKuah2/" />
     </folders-expanded>
 </c2uistate>

@@ -209,6 +209,44 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="493591361288679">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="484226584664124" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="869286656262728" type="Mangkok">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="800824132930882">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="627017588495101" type="Mangkok">
+                                            <param id="0" name="Instance variable">MangkokID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="292079199358499">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="135703996670599" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="279699087115317" type="Function">
+                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="726113182865535">
                             <conditions>
                                 <condition id="-22" name="Else" sid="516384263166412" type="System" />
@@ -263,13 +301,36 @@
                                                             <param id="2" name="Value">0</param>
                                                         </condition>
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="449771732407837" type="Mangkok" />
-                                                        <action id="-9" name="Set value" sid="952589381926674" type="System">
-                                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="548735550535432">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="158700000834181" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSup</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">0</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="509806590419074" type="Mangkok" />
+                                                                <action id="-9" name="Set value" sid="897158415465591" type="System">
+                                                                    <param id="0" name="Variable">is_MangkokFilled</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="763985917136868">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="157491960844639" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-3" name="Set position" sid="266565345098446" type="Mangkok">
+                                                                    <param id="0" name="X">Mangkok2.X</param>
+                                                                    <param id="1" name="Y">Mangkok2.Y</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                                 <event-block sid="934074989983443">
                                                     <conditions>
@@ -1775,6 +1836,9 @@
                                                                                     <param id="0" name="Variable">is_Goreng</param>
                                                                                     <param id="1" name="Value">1</param>
                                                                                 </action>
+                                                                                <action id="-16" name="Set opacity" sid="788078382684445" type="TimerSpriteSheet">
+                                                                                    <param id="0" name="Opacity">100</param>
+                                                                                </action>
                                                                             </actions>
                                                                         </event-block>
                                                                         <event-block sid="400909751995601">
@@ -1803,6 +1867,9 @@
                                                                         <action id="4" name="Set animation" sid="408054582321195" type="TimerSpriteSheet">
                                                                             <param id="0" name="Animation">&quot;Ticking&quot;</param>
                                                                             <param id="1" name="From">0</param>
+                                                                        </action>
+                                                                        <action id="-16" name="Set opacity" sid="987429159294737" type="TimerSpriteSheet">
+                                                                            <param id="0" name="Opacity">100</param>
                                                                         </action>
                                                                     </actions>
                                                                 </event-block>
@@ -1926,9 +1993,20 @@
                         <event-block sid="773206593027464">
                             <conditions>
                                 <condition id="-22" name="Else" sid="456998971386418" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="209315470536246" type="Mie">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" sid="189292411754632" type="Mie">
+                                <action id="-9" name="Destroy" sid="189292411754632" type="Mie" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="256708604399018">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="556391512222882" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="189705815612540" type="Mie">
                                     <param id="0" name="X">Mie.SaveX</param>
                                     <param id="1" name="Y">Mie.SaveY</param>
                                 </action>
@@ -2215,6 +2293,9 @@
                                                                     <param id="0" name="Variable">is_SaringanTerisi</param>
                                                                     <param id="1" name="Value">1</param>
                                                                 </action>
+                                                                <action id="-16" name="Set opacity" sid="474662504562563" type="MieDalamSaringan">
+                                                                    <param id="0" name="Opacity">100</param>
+                                                                </action>
                                                                 <action id="-29" name="Move to object" sid="863871641943444" type="MieDalamSaringan">
                                                                     <param id="0" name="Where">1</param>
                                                                     <param id="1" name="Object">Saringan</param>
@@ -2226,6 +2307,13 @@
                                                                 <action id="-9" name="Set value" sid="991292789540800" type="System">
                                                                     <param id="0" name="Variable">is_MieReady</param>
                                                                     <param id="1" name="Value">0</param>
+                                                                </action>
+                                                                <action id="4" name="Set animation" sid="648239553289420" type="TimerSpriteSheet">
+                                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                                    <param id="1" name="From">0</param>
+                                                                </action>
+                                                                <action id="-16" name="Set opacity" sid="354201385862613" type="TimerSpriteSheet">
+                                                                    <param id="0" name="Opacity">0</param>
                                                                 </action>
                                                             </actions>
                                                         </event-block>
@@ -2286,29 +2374,57 @@
                                                     <param id="2" name="Value">0</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="-3" name="Set position" sid="721037595481988" type="Saringan">
-                                                    <param id="0" name="X">Saringan.SaveX</param>
-                                                    <param id="1" name="Y">Saringan.SaveY</param>
-                                                </action>
-                                                <action id="-25" name="Move to bottom" sid="524099634634555" type="MieDalamSaringan" />
-                                                <action id="-9" name="Set value" sid="669577463581340" type="System">
-                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="657573262174124" type="System">
-                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action behavior="Pin" id="0" name="Pin to object" sid="582033947826567" type="MangkokGoreng">
-                                                    <param id="0" name="Pin to">Mangkok</param>
-                                                    <param id="1" name="Mode">0</param>
-                                                </action>
-                                                <action id="-29" name="Move to object" sid="724770591634876" type="MangkokGoreng">
-                                                    <param id="0" name="Where">0</param>
-                                                    <param id="1" name="Object">Mangkok</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="617422660331469">
+                                                    <conditions>
+                                                        <condition id="-10" name="Compare opacity" sid="994089980857093" type="MieDalamSaringan">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Opacity">100</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="586009978617980" type="Saringan">
+                                                            <param id="0" name="X">Saringan.SaveX</param>
+                                                            <param id="1" name="Y">Saringan.SaveY</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="268935915839471" type="MieDalamSaringan">
+                                                            <param id="0" name="Opacity">0</param>
+                                                        </action>
+                                                        <action id="-25" name="Move to bottom" sid="702950223262111" type="MieDalamSaringan" />
+                                                        <action id="-9" name="Set value" sid="523512361970753" type="System">
+                                                            <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="387184447462326" type="System">
+                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="924998845817009" type="MangkokGoreng">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="738241531105625" type="MangkokGoreng">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">Mangkok</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="953013761150651">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="933373340629701" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="765482342335740" type="Saringan">
+                                                            <param id="0" name="X">Saringan.SaveX</param>
+                                                            <param id="1" name="Y">Saringan.SaveY</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="444806529206202" type="MieDalamSaringan">
+                                                            <param id="0" name="Opacity">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="249328485273653">
                                             <conditions>
@@ -2319,31 +2435,59 @@
                                                     <param id="2" name="Value">1</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="-3" name="Set position" sid="123196831276378" type="Saringan">
-                                                    <param id="0" name="X">Saringan.SaveX</param>
-                                                    <param id="1" name="Y">Saringan.SaveY</param>
-                                                </action>
-                                                <action id="-25" name="Move to bottom" sid="555283964130309" type="MieDalamSaringan" />
-                                                <action id="-9" name="Set value" sid="160584836411844" type="System">
-                                                    <param id="0" name="Variable">is_SaringanTerisi</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="154233636952505" type="System">
-                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                    <param id="1" name="Value">2</param>
-                                                </action>
-                                                <action behavior="Pin" id="1" name="Unpin" sid="279179091006528" type="MangkokGoreng" />
-                                                <action id="-25" name="Move to bottom" sid="682758170466414" type="MangkokGoreng" />
-                                                <action behavior="Pin" id="0" name="Pin to object" sid="214972648885486" type="MangkokGoreng2">
-                                                    <param id="0" name="Pin to">Mangkok</param>
-                                                    <param id="1" name="Mode">0</param>
-                                                </action>
-                                                <action id="-29" name="Move to object" sid="371074467582975" type="MangkokGoreng2">
-                                                    <param id="0" name="Where">0</param>
-                                                    <param id="1" name="Object">Mangkok</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="172966061432716">
+                                                    <conditions>
+                                                        <condition id="-10" name="Compare opacity" sid="491559780369133" type="MieDalamSaringan">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Opacity">100</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="301422880274753" type="Saringan">
+                                                            <param id="0" name="X">Saringan.SaveX</param>
+                                                            <param id="1" name="Y">Saringan.SaveY</param>
+                                                        </action>
+                                                        <action id="-25" name="Move to bottom" sid="314678791129817" type="MieDalamSaringan" />
+                                                        <action id="-16" name="Set opacity" sid="643501928259043" type="MieDalamSaringan">
+                                                            <param id="0" name="Opacity">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="591992456030824" type="System">
+                                                            <param id="0" name="Variable">is_SaringanTerisi</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="626037513922872" type="System">
+                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                            <param id="1" name="Value">2</param>
+                                                        </action>
+                                                        <action behavior="Pin" id="1" name="Unpin" sid="426859506538488" type="MangkokGoreng" />
+                                                        <action id="-25" name="Move to bottom" sid="818020154623532" type="MangkokGoreng" />
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="696665393657437" type="MangkokGoreng2">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="872583639482110" type="MangkokGoreng2">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">Mangkok</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="183717945914456">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="692697407526089" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="561200221150403" type="Saringan">
+                                                            <param id="0" name="X">Saringan.SaveX</param>
+                                                            <param id="1" name="Y">Saringan.SaveY</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="103275083232713" type="MieDalamSaringan">
+                                                            <param id="0" name="Opacity">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="850537971929757">
                                             <conditions>
@@ -2416,7 +2560,7 @@
                     <conditions>
                         <condition id="3" name="Compare frame" sid="771719132514125" type="TimerSpriteSheet">
                             <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Number">53</param>
+                            <param id="1" name="Number">55</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2424,9 +2568,78 @@
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">0</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="487006767401969" type="TimerSpriteSheet">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="568593241169592" title="Seasonings">
+            <sub-events>
+                <event-block sid="879573786194632">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="400081291567574" type="SaosKuah" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="146908498246385">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="771592980536977" type="SaosKuah">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="920514225911337" type="SaosKuah" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="696411901513441">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="981656900809116" type="SaosGoreng" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="978320634799899">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="644254950742886" type="SaosGoreng">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="792992838192206" type="SaosGoreng" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="407193329550026">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="866121825600673" type="Bumbu" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="556234676070935">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="162972898800372" type="Bumbu">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="566329014444275" type="Bumbu" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="635782917996778">
+            <conditions>
+                <condition id="0" name="On function" sid="124730324069584" type="Function">
+                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
