@@ -670,6 +670,557 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+
+                <object-type name="Customer1" sid="462136881524696">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="983899825379138">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="895171637274818">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849345916075134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="953987890974605">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Customer2" sid="755167408500219">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="197480639433484">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="330275188993972">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301441858032980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.2" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.693333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer3" sid="133788559017378">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="206137201875410">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="615879501979330">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294234878035738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan3.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0533333" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.714286" y="0.0533333" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.0714286" y="0.986667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer4" sid="372518551992432">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="118805531300990">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="752432663465920">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860011823349525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan4.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.0866667" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.571429" y="0.08" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Customer5" sid="683355507183898">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="143031493800476">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="717231904118351">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405174152681570" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan5.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.146667" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.773333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot1Inv" sid="834607009438978">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="682670967155193" type="number" />
+                <instance-variable name="DB" sid="884103614560557" type="number" />
+                <instance-variable name="Kecap" sid="534797196848130" type="number" />
+                <instance-variable name="Mie" sid="122316022854731" type="number" />
+                <instance-variable name="Merica" sid="671093343154877" type="number" />
+                <instance-variable name="Sambal" sid="760722974277062" type="number" />
+                <instance-variable name="Tomat" sid="810509769444942" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Persist" sid="927752000177710">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682440592846730" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot2Inv" sid="625838291743909">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="231437987073727" type="number" />
+                <instance-variable name="DB" sid="241451537240478" type="number" />
+                <instance-variable name="Kecap" sid="350469244046384" type="number" />
+                <instance-variable name="Mie" sid="926229980622991" type="number" />
+                <instance-variable name="Merica" sid="593698814200039" type="number" />
+                <instance-variable name="Sambal" sid="613625881231137" type="number" />
+                <instance-variable name="Tomat" sid="487206408660507" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Persist" sid="625615875409101">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878779967911638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot3inv" sid="864803336396394">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BG" sid="632092531564947" type="number" />
+                <instance-variable name="DB" sid="947001009625583" type="number" />
+                <instance-variable name="Kecap" sid="503465846109930" type="number" />
+                <instance-variable name="Mie" sid="621359774748691" type="number" />
+                <instance-variable name="Merica" sid="406943145883618" type="number" />
+                <instance-variable name="Sambal" sid="968971051622734" type="number" />
+                <instance-variable name="Tomat" sid="138930072053044" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Persist" sid="647963343084931">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745019434358918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="557271909423024">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214284002209562" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitButton" sid="709895627194418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985508858134335" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\XButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="190121182918857">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\OrderScreen.png" />
+        </object-type>
+        <object-type name="Sprite7" sid="647393466328738">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116925287886072" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\PersonTemplate.png">
+                        <collision-poly>
+                            <point x="0.321429" y="0.06" />
+                            <point x="0.678571" y="0.06" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="549522298466275">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="ArraySlot1" sid="971204007861892">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="187874541378708">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\OrderScreen.png" />
+        </object-type>
+        <object-type name="Screen" sid="292596641841856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702949387269337" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\OrderScreen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="881955005154386">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985641161592771" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieGoreng.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="121801018152829">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795616001707279" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.511628" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\BawangGoreng.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0232558" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0232558" />
+                            <point x="0.947368" y="0.488372" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0526316" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="KecapBotol" sid="613640365866089">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334972947007122" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\Kecap.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.102941" />
+                            <point x="0.5" y="0.0294118" />
+                            <point x="0.95" y="0.0147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.95" y="0.985294" />
+                            <point x="0.5" y="1" />
+                            <point x="0.05" y="0.985294" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bungkus" sid="728259055676846">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237092480177572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieGoreng.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="358181119999819">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BawangGorengBotol" sid="646053748943777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694075415334140" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.511628" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\BawangGoreng.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0232558" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0232558" />
+                            <point x="0.947368" y="0.488372" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0526316" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DaunBawangMangkok" sid="377750759283222">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663496522679391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\DaunBawang.png">
+                        <collision-poly>
+                            <point x="0.147059" y="0.208333" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.852941" y="0.208333" />
+                            <point x="0.970588" y="0.5" />
+                            <point x="0.852941" y="0.791667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147059" y="0.791667" />
+                            <point x="0.0294118" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MericaBotol" sid="920435525919348">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="622457848391884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\Merica.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.102941" />
+                            <point x="0.5" y="0.0294118" />
+                            <point x="0.95" y="0.0147059" />
+                            <point x="0.95" y="0.985294" />
+                            <point x="0.5" y="1" />
+                            <point x="0.05" y="0.985294" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SambalBotol" sid="777288619252294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104783118060582" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\SaosSambel.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.102941" />
+                            <point x="0.5" y="0.0294118" />
+                            <point x="0.95" y="0.0147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.95" y="0.985294" />
+                            <point x="0.5" y="1" />
+                            <point x="0.05" y="0.985294" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TomatBotol" sid="428793222150454">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966357078244806" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Saos\SaosTomat.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.102941" />
+                            <point x="0.5" y="0.0294118" />
+                            <point x="0.95" y="0.0147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.95" y="0.985294" />
+                            <point x="0.5" y="1" />
+                            <point x="0.05" y="0.985294" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="223501607606315">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="ArraySlot2" sid="602806159442995">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="ArraySlot3" sid="568474366403751">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="BungkusKuah" sid="984730436190895">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="460700607256633" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieBawang.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person1" sid="758096450325657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298027143275012" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person2" sid="712582861607294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868623207833054" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.2" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.693333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person3" sid="378012758957431">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794866868850733" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan3.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0533333" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.714286" y="0.0533333" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.0714286" y="0.986667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person4" sid="944758430786816">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621959863783297" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan4.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.0866667" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.571429" y="0.08" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person5" sid="161022707731159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604940533147480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan5.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.146667" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.773333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+
         <object-type name="TiledBackground" sid="479033963296819">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Background.png" />
@@ -1266,9 +1817,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Function" sid="305256820729016">
-            <plugin id="Function" />
-        </object-type>
+
     </object-folder>
     <families />
     <layout-folder>
