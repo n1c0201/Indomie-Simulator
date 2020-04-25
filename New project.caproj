@@ -670,8 +670,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-
-                <object-type name="Customer1" sid="462136881524696">
+        <object-type name="Customer1" sid="462136881524696">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Fade" sid="983899825379138">
@@ -1220,7 +1219,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-
         <object-type name="TiledBackground" sid="479033963296819">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Background.png" />
@@ -1817,7 +1815,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-
     </object-folder>
     <families />
     <layout-folder>
@@ -1835,8 +1832,8 @@
         <event-sheet>Food Order Event.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="8" />
-        <global-instance type="Function" uid="45" />
+        <global-instance type="Mouse" uid="72" />
+        <global-instance type="Function" uid="73" />
     </global-instances>
     <sounds-folder />
     <music-folder />
