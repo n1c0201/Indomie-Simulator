@@ -10,7 +10,7 @@
                     <param id="1" name="Click type">0</param>
                 </condition>
                 <condition id="7" name="Cursor is over object" sid="471341302634535" type="Mouse">
-                    <param id="0" name="Object">Sprite6</param>
+                    <param id="0" name="Object">ExitButton</param>
                 </condition>
             </conditions>
             <actions>
@@ -37,6 +37,108 @@
                 <action id="-10" name="Add to" sid="650111632690961" type="System">
                     <param id="0" name="Variable">TimerS3</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350873773957129">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="788699416309844" type="Slot1Inv">
+                    <param id="0" name="Instance variable">BG</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="954300233393050" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="738625036436978">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="297529382561187" type="Slot1Inv">
+                    <param id="0" name="Instance variable">BG</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="416968335189426" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682703052947559">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="344023353231474" type="Slot1Inv">
+                    <param id="0" name="Instance variable">DB</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="849457017440042" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">900</param>
+                    <param id="3" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="190994996444164">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="923633586252912" type="Slot1Inv">
+                    <param id="0" name="Instance variable">DB</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="996511130085770" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">900</param>
+                    <param id="3" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="947486001982404">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="849516569697199" type="Slot1Inv">
+                    <param id="0" name="Instance variable">Mie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="490701232568311" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">700</param>
+                    <param id="3" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919992165407364">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="716262670383461" type="Slot1Inv">
+                    <param id="0" name="Instance variable">Merica</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="715253657489165" type="System">
+                    <param id="0" name="Object to create">Sprite7</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">600</param>
+                    <param id="3" name="Y">400</param>
                 </action>
             </actions>
         </event-block>
