@@ -137,7 +137,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="887636602882510" type="System">
-                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="0" name="Object to create">BawangGorengBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">584</param>
                             <param id="3" name="Y">204</param>
@@ -154,7 +154,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="460167716213898" type="System">
-                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="0" name="Object to create">DaunBawangMangkok</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">474</param>
                             <param id="3" name="Y">218</param>
@@ -171,7 +171,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="270557899952101" type="System">
-                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="0" name="Object to create">KecapBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">912</param>
                             <param id="3" name="Y">196</param>
@@ -268,7 +268,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="821037956361674" type="System">
-                            <param id="0" name="Object to create">Merica</param>
+                            <param id="0" name="Object to create">MericaBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">671</param>
                             <param id="3" name="Y">196</param>
@@ -285,7 +285,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="416173687501692" type="System">
-                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="0" name="Object to create">SambalBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">753</param>
                             <param id="3" name="Y">196</param>
@@ -302,7 +302,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="552692941034979" type="System">
-                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="0" name="Object to create">TomatBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">831</param>
                             <param id="3" name="Y">196</param>
@@ -408,7 +408,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="389492634777709" type="System">
-                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="0" name="Object to create">BawangGorengBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">584</param>
                             <param id="3" name="Y">371</param>
@@ -425,7 +425,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="858290144766537" type="System">
-                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="0" name="Object to create">DaunBawangMangkok</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">474</param>
                             <param id="3" name="Y">385</param>
@@ -442,7 +442,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="965271125456094" type="System">
-                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="0" name="Object to create">KecapBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">912</param>
                             <param id="3" name="Y">363</param>
@@ -539,7 +539,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="496614641522712" type="System">
-                            <param id="0" name="Object to create">Merica</param>
+                            <param id="0" name="Object to create">MericaBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">671</param>
                             <param id="3" name="Y">363</param>
@@ -556,7 +556,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="817629608701919" type="System">
-                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="0" name="Object to create">SambalBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">753</param>
                             <param id="3" name="Y">363</param>
@@ -573,7 +573,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="335661164630844" type="System">
-                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="0" name="Object to create">TomatBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">831</param>
                             <param id="3" name="Y">363</param>
@@ -679,7 +679,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="130772533537606" type="System">
-                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="0" name="Object to create">BawangGorengBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">584</param>
                             <param id="3" name="Y">538</param>
@@ -696,7 +696,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="434491728973214" type="System">
-                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="0" name="Object to create">DaunBawangMangkok</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">474</param>
                             <param id="3" name="Y">552</param>
@@ -713,7 +713,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="266631465642255" type="System">
-                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="0" name="Object to create">KecapBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">912</param>
                             <param id="3" name="Y">530</param>
@@ -810,7 +810,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="963504111902039" type="System">
-                            <param id="0" name="Object to create">Merica</param>
+                            <param id="0" name="Object to create">MericaBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">671</param>
                             <param id="3" name="Y">530</param>
@@ -827,7 +827,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="849021462728151" type="System">
-                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="0" name="Object to create">SambalBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">753</param>
                             <param id="3" name="Y">530</param>
@@ -844,7 +844,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="890964765078014" type="System">
-                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="0" name="Object to create">TomatBotol</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">831</param>
                             <param id="3" name="Y">530</param>
