@@ -61,8 +61,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Kecap/" />
         <folder expanded="1" path="animation-folder/MangkokGoreng/" />
         <folder expanded="1" path="animation-folder/MangkokGoreng2/" />
-        <folder expanded="1" path="animation-folder/MangkokKuah/" />
-        <folder expanded="1" path="animation-folder/MangkokKuah2/" />
         <folder expanded="1" path="animation-folder/MangkokMicin/" />
         <folder expanded="1" path="animation-folder/MangkokMicin2/" />
         <folder expanded="1" path="animation-folder/Merica/" />

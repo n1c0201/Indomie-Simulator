@@ -199,8 +199,6 @@
                 <instance-variables>
                     <instance-variable name="SaveX" sid="450776549626179" type="number" />
                     <instance-variable name="SaveY" sid="160059283731872" type="number" />
-                    <instance-variable name="is_Goreng" sid="693932843185728" type="boolean" />
-                    <instance-variable name="is_Kuah" sid="958039984914972" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="DragDrop" sid="486547283722176">
@@ -553,6 +551,10 @@
             </object-type>
             <object-type name="MangkokGoreng" sid="578195247625049">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="284902206150112" type="number" />
+                    <instance-variable name="SaveY" sid="996992832291217" type="number" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Pin" sid="744524910939073">
                         <behavior id="Pin" />
@@ -584,50 +586,6 @@
                             <collision-poly>
                                 <point x="0.0727273" y="0.173913" />
                                 <point x="0.490909" y="0.0869565" />
-                                <point x="0.927273" y="0.173913" />
-                                <point x="0.690909" y="0.26087" />
-                                <point x="0.490909" y="0.304348" />
-                                <point x="0.309091" y="0.26087" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="MangkokKuah" sid="762722731322957">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="446612056623365">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261532886038138" speed="5">
-                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah1.png">
-                            <collision-poly>
-                                <point x="0.0727273" y="0.173913" />
-                                <point x="0.490909" y="0.0869565" />
-                                <point x="0.927273" y="0.173913" />
-                                <point x="0.690909" y="0.26087" />
-                                <point x="0.490909" y="0.304348" />
-                                <point x="0.309091" y="0.26087" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="MangkokKuah2" sid="243116530276589">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="791010093990680">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729507591721364" speed="5">
-                        <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokKuah2.png">
-                            <collision-poly>
-                                <point x="0.0727273" y="0.173913" />
-                                <point x="0.490909" y="0.0434783" />
                                 <point x="0.927273" y="0.173913" />
                                 <point x="0.690909" y="0.26087" />
                                 <point x="0.490909" y="0.304348" />

@@ -54,56 +54,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MangkokKuah2" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>406</x>
-                        <y>513</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>36</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MangkokKuah" uid="35">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>406</x>
-                        <y>513</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="MangkokGoreng" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -111,6 +61,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <SaveX>406</SaveX>
+                        <SaveY>513</SaveY>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
                     </behavior-instances>
@@ -346,8 +300,6 @@
                     <instance-variables>
                         <SaveX>739</SaveX>
                         <SaveY>576</SaveY>
-                        <is_Goreng>false</is_Goreng>
-                        <is_Kuah>false</is_Kuah>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="DragDrop">
