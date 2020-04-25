@@ -978,6 +978,119 @@
         <object-type name="Text2" sid="223501607606315">
             <plugin id="Text" />
         </object-type>
+        <object-type global="1" name="ArraySlot2" sid="602806159442995">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="ArraySlot3" sid="568474366403751">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="BungkusKuah" sid="984730436190895">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="460700607256633" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieBawang.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person1" sid="758096450325657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298027143275012" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person2" sid="712582861607294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868623207833054" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.2" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.693333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person3" sid="378012758957431">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794866868850733" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan3.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0533333" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.714286" y="0.0533333" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.0714286" y="0.986667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person4" sid="944758430786816">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621959863783297" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan4.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.0866667" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.571429" y="0.08" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Person5" sid="161022707731159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604940533147480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan5.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.146667" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.773333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

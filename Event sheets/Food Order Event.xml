@@ -40,107 +40,818 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="350873773957129">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="788699416309844" type="Slot1Inv">
-                    <param id="0" name="Instance variable">BG</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="954300233393050" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">400</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="738625036436978">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="297529382561187" type="Slot1Inv">
-                    <param id="0" name="Instance variable">BG</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="416968335189426" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">400</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="682703052947559">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="344023353231474" type="Slot1Inv">
-                    <param id="0" name="Instance variable">DB</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="849457017440042" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">900</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="190994996444164">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="923633586252912" type="Slot1Inv">
-                    <param id="0" name="Instance variable">DB</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="996511130085770" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">900</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="947486001982404">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="849516569697199" type="Slot1Inv">
-                    <param id="0" name="Instance variable">Mie</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="490701232568311" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">700</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="919992165407364">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="716262670383461" type="Slot1Inv">
-                    <param id="0" name="Instance variable">Merica</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="715253657489165" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">600</param>
-                    <param id="3" name="Y">400</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="820326336060300" title="Slot1Spawn">
+            <sub-events>
+                <event-block sid="434006664879374">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="867789594701463" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="175796978447331" type="System">
+                            <param id="0" name="Object to create">Person1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">203</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478215901298361">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="182559588244115" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="236239065195760" type="System">
+                            <param id="0" name="Object to create">Person2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">203</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="438394287696943">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="571043327202910" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="479448745714751" type="System">
+                            <param id="0" name="Object to create">Person3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">203</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="618242673007219">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="741228983316198" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="159190868970002" type="System">
+                            <param id="0" name="Object to create">Person4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">203</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="952024228933587">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="241559181548121" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="777841653756928" type="System">
+                            <param id="0" name="Object to create">Person5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">203</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="742037995841111">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="127157269297629" type="ArraySlot1">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="887636602882510" type="System">
+                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">584</param>
+                            <param id="3" name="Y">204</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="823650109559521">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="890813553400653" type="ArraySlot1">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="460167716213898" type="System">
+                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">474</param>
+                            <param id="3" name="Y">218</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="145240002241273">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="370315090773813" type="ArraySlot1">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="270557899952101" type="System">
+                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">912</param>
+                            <param id="3" name="Y">196</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="644060736663240">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="975901945332092" type="ArraySlot1">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="933698992561038" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">205</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="721878298029029">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="808456114377032" type="ArraySlot1">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="922133363253523" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">205</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="412938235609857" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">220</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748259908694935">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="566425674186077" type="ArraySlot1">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="663781170425088" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">205</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="638345115525490">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="403227310269311" type="ArraySlot1">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="407155275642270" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">205</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="319101415796050" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">220</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="727355699507222">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="311343930375089" type="ArraySlot1">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="821037956361674" type="System">
+                            <param id="0" name="Object to create">Merica</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">671</param>
+                            <param id="3" name="Y">196</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="297040875135201">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="840556949050088" type="ArraySlot1">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="416173687501692" type="System">
+                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">753</param>
+                            <param id="3" name="Y">196</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="726284198473885">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="932971224611542" type="ArraySlot1">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="552692941034979" type="System">
+                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">831</param>
+                            <param id="3" name="Y">196</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="484660538445377" title="Slot2Spawn">
+            <sub-events>
+                <event-block sid="315735074417887">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="431367414942268" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="652472240289893" type="System">
+                            <param id="0" name="Object to create">Person1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">361</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="588096847573417">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="378967356125898" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="989862332711348" type="System">
+                            <param id="0" name="Object to create">Person2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">361</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705219352409278">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="346922191392262" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="432111332511456" type="System">
+                            <param id="0" name="Object to create">Person3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">361</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="114994685572953">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="382163178121702" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="565116424522262" type="System">
+                            <param id="0" name="Object to create">Person4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">361</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="339064959917558">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="706910525228045" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="103242645513027" type="System">
+                            <param id="0" name="Object to create">Person5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">361</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="933067430870707">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="507222692138755" type="ArraySlot2">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="389492634777709" type="System">
+                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">584</param>
+                            <param id="3" name="Y">371</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="963126624422106">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="159771412846133" type="ArraySlot2">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="858290144766537" type="System">
+                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">474</param>
+                            <param id="3" name="Y">385</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="486767902414457">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="457354652713951" type="ArraySlot2">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="965271125456094" type="System">
+                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">912</param>
+                            <param id="3" name="Y">363</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="198481089149792">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="423064654710644" type="ArraySlot2">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="544518231086914" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">372</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="457347398865109">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="772690767935992" type="ArraySlot2">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="139592622167863" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">372</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="620720736383032" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">387</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="839205750353849">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="693897523269773" type="ArraySlot2">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="376706715075544" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">372</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="170124394620712">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="186439103060093" type="ArraySlot2">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="529598772913106" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">372</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="209269640968508" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">387</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="184645907641257">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="548453609945040" type="ArraySlot2">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="496614641522712" type="System">
+                            <param id="0" name="Object to create">Merica</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">671</param>
+                            <param id="3" name="Y">363</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="732160546838752">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="677050130180087" type="ArraySlot2">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="817629608701919" type="System">
+                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">753</param>
+                            <param id="3" name="Y">363</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="431196173239550">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="736335555354706" type="ArraySlot2">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="335661164630844" type="System">
+                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">831</param>
+                            <param id="3" name="Y">363</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="670954263485619" title="Slot3Spawn">
+            <sub-events>
+                <event-block sid="353077323265903">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="545830929173045" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="798027052499796" type="System">
+                            <param id="0" name="Object to create">Person1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">525</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="707345045222037">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="353894904930431" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="403199722326234" type="System">
+                            <param id="0" name="Object to create">Person2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">525</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="452506920458829">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="888873479523514" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="737668328280389" type="System">
+                            <param id="0" name="Object to create">Person3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">525</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="107622391424288">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="204374955564698" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="591411875391805" type="System">
+                            <param id="0" name="Object to create">Person4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">525</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="994035123158902">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="426641179565204" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="404126087996772" type="System">
+                            <param id="0" name="Object to create">Person5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">124</param>
+                            <param id="3" name="Y">525</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422248666288656">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="162211434303789" type="ArraySlot3">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="130772533537606" type="System">
+                            <param id="0" name="Object to create">BawangGoreng</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">584</param>
+                            <param id="3" name="Y">538</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="488993937560130">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="195333591764489" type="ArraySlot3">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="434491728973214" type="System">
+                            <param id="0" name="Object to create">DaunBawang</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">474</param>
+                            <param id="3" name="Y">552</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="146419519255386">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="543965053066850" type="ArraySlot3">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="266631465642255" type="System">
+                            <param id="0" name="Object to create">Kecap</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">912</param>
+                            <param id="3" name="Y">530</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="838259333678252">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="717202602076487" type="ArraySlot3">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="445804207428553" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">539</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221265888588843">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="577107813606330" type="ArraySlot3">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="781451657514897" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">539</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="544329672453949" type="System">
+                            <param id="0" name="Object to create">Bungkus</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">554</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="345275139358007">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="645472162890836" type="ArraySlot3">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="391672668643073" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">539</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="929932804021154">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="474260293943049" type="ArraySlot3">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="655585279803930" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">539</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="237124519951593" type="System">
+                            <param id="0" name="Object to create">BungkusKuah</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">554</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="241416839847875">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="353657971916662" type="ArraySlot3">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="963504111902039" type="System">
+                            <param id="0" name="Object to create">Merica</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">671</param>
+                            <param id="3" name="Y">530</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="392688733435059">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="629562915858101" type="ArraySlot3">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="849021462728151" type="System">
+                            <param id="0" name="Object to create">Sambal</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">753</param>
+                            <param id="3" name="Y">530</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="102506224115859">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="802291003324610" type="ArraySlot3">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="890964765078014" type="System">
+                            <param id="0" name="Object to create">Tomat</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">831</param>
+                            <param id="3" name="Y">530</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

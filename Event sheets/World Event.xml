@@ -197,7 +197,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="305608729609796" type="Slot1Inv">
                             <param id="0" name="Instance variable">Mie</param>
-                            <param id="1" name="Value">round(random(1, 3))</param>
+                            <param id="1" name="Value">round(random(1, 4))</param>
                         </action>
                         <action id="-10" name="Set value" sid="410572180333727" type="Slot1Inv">
                             <param id="0" name="Instance variable">Merica</param>
@@ -268,7 +268,7 @@
                         <condition id="-14" name="Compare variable" sid="906233558267011" type="System">
                             <param id="0" name="Variable">TimerS2</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">round(random(35, 45))</param>
+                            <param id="2" name="Value">round(random(0, 5))</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -420,7 +420,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="821288344055573" type="Slot2Inv">
                             <param id="0" name="Instance variable">Mie</param>
-                            <param id="1" name="Value">round(random(0, 3))</param>
+                            <param id="1" name="Value">round(random(1, 4))</param>
                         </action>
                         <action id="-10" name="Set value" sid="318066456530744" type="Slot2Inv">
                             <param id="0" name="Instance variable">Merica</param>
@@ -433,6 +433,41 @@
                         <action id="-10" name="Set value" sid="607535482533761" type="Slot2Inv">
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="10" name="Insert" sid="776933369746955" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.BG</param>
+                            <param id="1" name="Index">0</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="389563423733330" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.DB</param>
+                            <param id="1" name="Index">1</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="764997328268904" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Kecap</param>
+                            <param id="1" name="Index">2</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="144632687909334" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Mie</param>
+                            <param id="1" name="Index">3</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="310700859958340" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Merica</param>
+                            <param id="1" name="Index">4</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="367896757224234" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Sambal</param>
+                            <param id="1" name="Index">5</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="286234116430958" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Tomat</param>
+                            <param id="1" name="Index">6</param>
+                            <param id="2" name="Axis">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -450,16 +485,13 @@
                         <condition id="-14" name="Compare variable" sid="667546696771547" type="System">
                             <param id="0" name="Variable">TimerS3</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">round(random(60, 70))</param>
+                            <param id="2" name="Value">round(random(0, 5))</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="600108539647731" type="System">
                             <param id="0" name="Variable">Slot3</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="980797624436497" type="System">
-                            <param id="0" name="Seconds">random(0, 3)</param>
                         </action>
                         <action id="-9" name="Set value" sid="264775997220477" type="System">
                             <param id="0" name="Variable">Slot3</param>
@@ -605,7 +637,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="814311519039582" type="Slot3inv">
                             <param id="0" name="Instance variable">Mie</param>
-                            <param id="1" name="Value">round(random(0, 3))</param>
+                            <param id="1" name="Value">round(random(1, 4))</param>
                         </action>
                         <action id="-10" name="Set value" sid="353439374142332" type="Slot3inv">
                             <param id="0" name="Instance variable">Merica</param>
@@ -618,6 +650,41 @@
                         <action id="-10" name="Set value" sid="834936132519884" type="Slot3inv">
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
+                        </action>
+                        <action id="10" name="Insert" sid="454642030546220" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.BG</param>
+                            <param id="1" name="Index">0</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="762494205850047" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.DB</param>
+                            <param id="1" name="Index">1</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="675327309808826" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.Kecap</param>
+                            <param id="1" name="Index">2</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="475836616953329" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.Mie</param>
+                            <param id="1" name="Index">3</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="494319702700834" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.Merica</param>
+                            <param id="1" name="Index">4</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="540923815970223" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.Sambal</param>
+                            <param id="1" name="Index">5</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="792055816115032" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3Inv.Tomat</param>
+                            <param id="1" name="Index">6</param>
+                            <param id="2" name="Axis">0</param>
                         </action>
                     </actions>
                 </event-block>

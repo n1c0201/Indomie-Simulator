@@ -357,6 +357,20 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="ArraySlot2" uid="40">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="ArraySlot3" uid="51">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>
