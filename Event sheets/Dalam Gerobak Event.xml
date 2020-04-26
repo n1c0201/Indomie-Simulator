@@ -2767,5 +2767,23 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="461793682901769" title="TransitionButton">
+            <sub-events>
+                <event-block sid="294186394107324">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="973848396989395" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">World</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="317331128881040" type="System">
+                            <param id="0" name="Layout">World</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
