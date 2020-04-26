@@ -2785,5 +2785,30 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="498079572309600" title="TimerPelanggan">
+            <sub-events>
+                <event-block sid="934460711780969">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="841613316715712" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="871630850417666" type="System">
+                            <param id="0" name="Variable">TimerS1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="450903045112473" type="System">
+                            <param id="0" name="Variable">TimerS2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="814645781337980" type="System">
+                            <param id="0" name="Variable">TimerS3</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
