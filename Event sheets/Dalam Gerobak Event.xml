@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dalam Gerobak Event</name>
     <events>
+        <variable constant="0" name="is_TerisiSaosGoreng_or_Kuah" sid="383992551872374" static="0" type="number">0</variable>
+        <variable constant="0" name="is_TerisiBumbu" sid="579618262481231" static="0" type="number">0</variable>
         <variable constant="0" name="is_TerisiBawangGoreng" sid="375672905982022" static="0" type="number">0</variable>
         <variable constant="0" name="is_TerisiDaunBawang" sid="795783299003393" static="0" type="number">0</variable>
         <variable constant="0" name="is_TerisiTomat" sid="153450060748002" static="0" type="number">0</variable>
@@ -252,49 +254,7 @@
                                                             <param id="2" name="Value">1</param>
                                                         </condition>
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="519178246391132" type="Mangkok" />
-                                                        <action id="-3" name="Set position" sid="316454497691793" type="MangkokGoreng">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="612432411495341" type="MangkokGoreng" />
-                                                        <action id="-16" name="Set opacity" sid="829325478438330" type="MangkokGoreng">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-3" name="Set position" sid="227948342334216" type="Sup">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="721295963627572" type="Sup" />
-                                                        <action id="-16" name="Set opacity" sid="131486143240172" type="Sup">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="832255101428304" type="System">
-                                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="531941654319787" type="System">
-                                                            <param id="0" name="Variable">is_Kuah</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="394202113733278" type="System">
-                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="882742439269594" type="System">
-                                                            <param id="0" name="Variable">is_TerisiSup</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="446334496532075" type="System">
-                                                            <param id="0" name="Variable">is_Goreng</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="251353584696288" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
                                                     <sub-events>
                                                         <event-block sid="307705540073054">
                                                             <conditions>
@@ -328,8 +288,44 @@
                                                                     <param id="1" name="Comparison">0</param>
                                                                     <param id="2" name="Value">1</param>
                                                                 </condition>
+                                                                <condition id="-14" name="Compare variable" sid="339507590535678" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="579192171697540" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBumbu</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
                                                             </conditions>
-                                                            <actions />
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="922032503058004" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="637895783445931" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="360947267779087" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="927456121921548">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="941501914884392" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="700596152944538" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="230036895333790" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="677916886092920" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
                                                         </event-block>
                                                     </sub-events>
                                                 </event-block>
@@ -339,39 +335,70 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-9" name="Destroy" sid="636106685089330" type="Mangkok" />
-                                                        <action id="-3" name="Set position" sid="211361975699642" type="MangkokGoreng">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="543270357615378" type="MangkokGoreng" />
-                                                        <action id="-16" name="Set opacity" sid="129094526818024" type="MangkokGoreng">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="796122753496646" type="System">
-                                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="883766129155813" type="System">
-                                                            <param id="0" name="Variable">is_Kuah</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="807286295350997" type="System">
-                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="993411382339423" type="System">
-                                                            <param id="0" name="Variable">is_TerisiSup</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="237499386789462" type="System">
-                                                            <param id="0" name="Variable">is_Goreng</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="139492187222950" type="Function">
+                                                        <action id="0" name="Call function" sid="643704088768704" type="Function">
                                                             <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
                                                             <param id="1" name="Parameter {n}"></param>
                                                         </action>
+                                                        <action id="0" name="Call function" sid="197290827828013" type="Function">
+                                                            <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                            <param id="1" name="Parameter {n}"></param>
+                                                        </action>
                                                     </actions>
+                                                    <sub-events>
+                                                        <event-block sid="355612283924058">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="657684438687830" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBawangGoreng</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="821463032740979" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiDaunBawang</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="477548357953625" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiMerica</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="572005858407538" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiTomat</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="284444978734734" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiKecap</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="433225512056044" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSambal</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="492607104146984" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="676599790816400" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="471372339467132">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="517429830008568" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="405752620591163" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="273464252339849" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
@@ -394,105 +421,159 @@
                                                             <param id="2" name="Value">1</param>
                                                         </condition>
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="972820448743404" type="Mangkok" />
-                                                        <action id="-3" name="Set position" sid="563616849421689" type="MangkokGoreng">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="795295636572817" type="MangkokGoreng" />
-                                                        <action id="-16" name="Set opacity" sid="668308199820768" type="MangkokGoreng">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-3" name="Set position" sid="384093190435680" type="MangkokGoreng2">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="964074724391437" type="MangkokGoreng2" />
-                                                        <action id="-16" name="Set opacity" sid="780183566207504" type="MangkokGoreng2">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-3" name="Set position" sid="245980976313225" type="Sup">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="163540271318301" type="Sup" />
-                                                        <action id="-16" name="Set opacity" sid="953953368411308" type="Sup">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="675651937807422" type="System">
-                                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="135198664672441" type="System">
-                                                            <param id="0" name="Variable">is_Kuah</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="714025969784939" type="System">
-                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="868711138331101" type="System">
-                                                            <param id="0" name="Variable">is_TerisiSup</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="571256607922190" type="System">
-                                                            <param id="0" name="Variable">is_Goreng</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="413022644941564" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="148625408844579">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="645214241233210" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBawangGoreng</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="222078518040888" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiDaunBawang</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="350001173224993" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiMerica</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="882991997605955" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiTomat</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="556960682144425" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiKecap</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="150908690627684" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSambal</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="516066693260746" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBumbu</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="595214344029450" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="595596532382945" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="774030360602671" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="226925621313739" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="331649272398641">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="709571055007286" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="948972127255676" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="587933963732770" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="871070578642911" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                                 <event-block sid="597957059282747">
                                                     <conditions>
                                                         <condition id="-22" name="Else" sid="901106715007545" type="System" />
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="252975717830755" type="Mangkok" />
-                                                        <action id="-3" name="Set position" sid="164792788054506" type="MangkokGoreng">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="309264479309966" type="MangkokGoreng" />
-                                                        <action id="-16" name="Set opacity" sid="343968434804601" type="MangkokGoreng">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-3" name="Set position" sid="430613025258721" type="MangkokGoreng2">
-                                                            <param id="0" name="X">MangkokGoreng.SaveX</param>
-                                                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
-                                                        </action>
-                                                        <action id="-25" name="Move to bottom" sid="402080287831650" type="MangkokGoreng2" />
-                                                        <action id="-16" name="Set opacity" sid="382287157199581" type="MangkokGoreng2">
-                                                            <param id="0" name="Opacity">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="434221145117242" type="System">
-                                                            <param id="0" name="Variable">is_MangkokFilled</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="758283841450371" type="System">
-                                                            <param id="0" name="Variable">is_Kuah</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="361160496675243" type="System">
-                                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="614491226016297" type="System">
-                                                            <param id="0" name="Variable">is_TerisiSup</param>
-                                                            <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="-9" name="Set value" sid="501878979787360" type="System">
-                                                            <param id="0" name="Variable">is_Goreng</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="797930098812213" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="320528139824853">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="637640855189480" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBawangGoreng</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="953539057106148" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiDaunBawang</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="257896912700609" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiMerica</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="379297295488280" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiTomat</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="398513445138109" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiKecap</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="295606426085287" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSambal</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="145273614098882" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBumbu</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="226699103369533" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="261264843461536" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="154184746502321" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="991621039952838" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="456809342206261">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="763854299698728" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="758390114233989" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="759339461512743" type="Function">
+                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                                <action id="0" name="Call function" sid="804527802124137" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
@@ -541,11 +622,66 @@
                                                             <param id="0" name="Variable">is_Goreng</param>
                                                             <param id="1" name="Value">1</param>
                                                         </action>
-                                                        <action id="0" name="Call function" sid="419888609867444" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
                                                     </actions>
+                                                    <sub-events>
+                                                        <event-block sid="982598604347079">
+                                                            <conditions />
+                                                            <actions />
+                                                        </event-block>
+                                                        <event-block sid="114128744378697">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="288305477110615" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiBawangGoreng</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="895181198348307" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiDaunBawang</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="492783211164226" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiMerica</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="483953703263418" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiTomat</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="415831877358892" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiKecap</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                                <condition id="-14" name="Compare variable" sid="363381000707273" type="System">
+                                                                    <param id="0" name="Variable">is_TerisiSambal</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="570643421135246" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="583414017439119" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="515820118568890">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="271912235531606" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Destroy" sid="558046463877361" type="Mangkok" />
+                                                                <action id="0" name="Call function" sid="865444407287479" type="Function">
+                                                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                                                    <param id="1" name="Parameter {n}"></param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                                 <event-block sid="438313101873429">
                                                     <conditions>
@@ -556,10 +692,6 @@
                                                         <action id="-9" name="Set value" sid="387460702127689" type="System">
                                                             <param id="0" name="Variable">is_MangkokFilled</param>
                                                             <param id="1" name="Value">0</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="592556971745281" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -2776,76 +2908,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="568593241169592" title="Seasonings">
-            <sub-events>
-                <event-block sid="879573786194632">
-                    <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="400081291567574" type="SaosKuah" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="146908498246385">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="771592980536977" type="SaosKuah">
-                                    <param id="0" name="Object">TongSampah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="920514225911337" type="SaosKuah" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="696411901513441">
-                    <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="981656900809116" type="SaosGoreng" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="978320634799899">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="644254950742886" type="SaosGoreng">
-                                    <param id="0" name="Object">TongSampah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="792992838192206" type="SaosGoreng" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="407193329550026">
-                    <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="866121825600673" type="Bumbu" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="556234676070935">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="162972898800372" type="Bumbu">
-                                    <param id="0" name="Object">TongSampah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="566329014444275" type="Bumbu" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="695629963978404" title="Functions">
-            <sub-events>
-                <event-block sid="635782917996778">
-                    <conditions>
-                        <condition id="0" name="On function" sid="124730324069584" type="Function">
-                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="461793682901769" title="TransitionButton">
             <sub-events>
                 <event-block sid="294186394107324">
@@ -2907,6 +2969,10 @@
                             </conditions>
                             <actions>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="546068917166297" type="MangkokGoreng2">
+                                    <param id="0" name="Pin to">Mangkok</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="194902336929828" type="MangkokGoreng">
                                     <param id="0" name="Pin to">Mangkok</param>
                                     <param id="1" name="Mode">0</param>
                                 </action>
@@ -3098,6 +3164,52 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="619592302044618">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="231768064115116" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="369098926914568">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="245870550248566" type="System">
+                                    <param id="0" name="Variable">is_TerisiBumbu</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="375744859520326" type="MangkokMicin">
+                                    <param id="0" name="Pin to">Mangkok</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="163586913332442">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="838375541093261" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="156422861160219">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="699574336228130" type="System">
+                                    <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="239094257773214" type="MangkokMicin2">
+                                    <param id="0" name="Pin to">Mangkok</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="334352092793064" title="Saos di Rak">
@@ -3145,7 +3257,44 @@
                                             <param id="0" name="Variable">is_TerisiKecap</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-29" name="Move to object" sid="786855763355674" type="Kecap">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Mangkok</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="450903289211487">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="481868769549449" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="827761256973987" type="Kecap">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="811128222611008">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="213952582786584" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="525214181198706" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="445095496418720" type="Kecap">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="546619561945408">
                                     <conditions>
@@ -3221,7 +3370,44 @@
                                             <param id="0" name="Variable">is_TerisiSambal</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-29" name="Move to object" sid="121918803927764" type="Sambal">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Mangkok</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="151488162124765">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="520704192631336" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="240956087605413" type="Sambal">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="508372875726833">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="183236126000013" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="507783056950898" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="555154744927020" type="Sambal">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="940448909155544">
                                     <conditions>
@@ -3297,7 +3483,44 @@
                                             <param id="0" name="Variable">is_TerisiTomat</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-29" name="Move to object" sid="883427737790564" type="Tomat">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Mangkok</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="842778451213880">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="514286817293606" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="270640769077303" type="Tomat">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="705399171176973">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="533251696811722" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="113614261148697" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="893104061343000" type="Tomat">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="388872870560518">
                                     <conditions>
@@ -3373,7 +3596,44 @@
                                             <param id="0" name="Variable">is_TerisiMerica</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-29" name="Move to object" sid="138475599403288" type="Merica">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Mangkok</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="618137056064809">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="318148601909108" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="603977909621307" type="Merica">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="946386368200464">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="551666154289183" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="816379720173754" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="459147112250031" type="Merica">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="248879430241248">
                                     <conditions>
@@ -3484,7 +3744,44 @@
                                             <param id="1" name="From">0</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="952199820798818" type="SendokBawang" />
+                                        <action id="-29" name="Move to object" sid="265330728409114" type="DaunBawang">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">MangkokGoreng</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="126955789993354">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="356824167324803" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="251290350358689" type="DaunBawang">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="608183290758810">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="763392010649235" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="366082916434221" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="260771179099436" type="DaunBawang">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="733074865366475">
                                     <conditions>
@@ -3563,6 +3860,39 @@
                                             <param id="1" name="Y">BawangGoreng2.SaveY</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="559556834084397">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="858887262012895" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="159666347994966" type="BawangGoreng">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="321206000475765">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="111460367880545" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="379124119326879" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="577217536145283" type="BawangGoreng">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="872927548766096">
                                     <conditions>
@@ -3594,6 +3924,617 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="649924414108926" title="Micin">
+            <sub-events>
+                <event-block sid="954219360429431">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="990753266063520" type="Bumbu" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="280506446451789">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="150149014235897" type="Bumbu">
+                                    <param id="0" name="Object">Mangkok</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="427366681263480">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="205659762053883" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="816284204153496" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="510769908214239" type="Bumbu" />
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="840818819910829" type="MangkokMicin">
+                                            <param id="0" name="Pin to">Mangkok</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="852385940037072" type="MangkokMicin">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="195466600861146" type="System">
+                                            <param id="0" name="Variable">is_TerisiBumbu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="216734170447213">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="290047865308378" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="923639678724895" type="MangkokMicin">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="258872872701836">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="852608944160309" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="897211315145860" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-29" name="Move to object" sid="773385229200885" type="MangkokMicin">
+                                                    <param id="0" name="Where">0</param>
+                                                    <param id="1" name="Object">MangkokGoreng2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="403770091215952">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="920270268191514" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="679286970627401" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="101888950494221" type="Bumbu">
+                                            <param id="0" name="X">Bumbu.SaveX</param>
+                                            <param id="1" name="Y">Bumbu.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="951624455471059">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="346990045340872" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="123886110000875" type="Bumbu">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="524211543750461" type="Bumbu" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="502105374722639">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="274114921213581" type="SaosGoreng" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="274505560490008">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="975890647168082" type="SaosGoreng">
+                                    <param id="0" name="Object">Mangkok</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="739458957452030">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="183147867517793" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="452224726868062" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="651991725384220">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="655144108973887" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="959465315028433">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="172614167693565" type="System">
+                                                            <param id="0" name="Variable">is_Goreng</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="221057438473836" type="SaosGoreng" />
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="566067514691077" type="MangkokMicin2">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="525450144778039" type="MangkokMicin2">
+                                                            <param id="0" name="Opacity">100</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="118281354475614" type="MangkokMicin2">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">MangkokGoreng</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="635927847102898" type="System">
+                                                            <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="977772806610068">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="909775517801205" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="602640243250093" type="SaosGoreng">
+                                                            <param id="0" name="X">SaosGoreng.SaveX</param>
+                                                            <param id="1" name="Y">SaosGoreng.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="134405835104086">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="285438114809409" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="443870402699704" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="630061589684387">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="589572343973091" type="System">
+                                                            <param id="0" name="Variable">is_Goreng</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="500774131497156" type="SaosGoreng" />
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="410800480384738" type="MangkokMicin2">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="134796528659608" type="MangkokMicin2">
+                                                            <param id="0" name="Opacity">100</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="345054406723349" type="MangkokMicin2">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">MangkokGoreng</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="379197065748348" type="System">
+                                                            <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="303922467330056">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="728488338681763" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="999093731438945" type="SaosGoreng">
+                                                            <param id="0" name="X">SaosGoreng.SaveX</param>
+                                                            <param id="1" name="Y">SaosGoreng.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="515800813967010">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="361812984959051" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="818506622583551" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="904323271734181" type="SaosGoreng">
+                                            <param id="0" name="X">SaosGoreng.SaveX</param>
+                                            <param id="1" name="Y">SaosGoreng.SaveY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="554316537411944">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="505403089733720" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="639021189294105" type="SaosGoreng">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="993988095151229" type="SaosGoreng" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="396580595884636">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="930461814392464" type="SaosKuah" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="729481816070185">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="570508395982052" type="SaosKuah">
+                                    <param id="0" name="Object">Mangkok</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="366500108247678">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="616350454780970" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="356860622514952" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="460337647608656">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="559444148235189" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="292057469489367">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="863601527281558" type="System">
+                                                            <param id="0" name="Variable">is_Kuah</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="957654171178340" type="SaosKuah" />
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="346804294101755" type="MangkokMicin2">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="799343413215693" type="MangkokMicin2">
+                                                            <param id="0" name="Opacity">100</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="122775237053856" type="MangkokMicin2">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">MangkokGoreng</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="941211436477586" type="System">
+                                                            <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="362958475183707">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="938663202746263" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="952785320369011" type="SaosKuah">
+                                                            <param id="0" name="X">SaosKuah.SaveX</param>
+                                                            <param id="1" name="Y">SaosKuah.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="862642896967416">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="489939678312016" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="829725150566676" type="System">
+                                                    <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="495943615786114">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="640774958811380" type="System">
+                                                            <param id="0" name="Variable">is_Kuah</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="469496756251665" type="SaosKuah" />
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="996090734932491" type="MangkokMicin2">
+                                                            <param id="0" name="Pin to">Mangkok</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-16" name="Set opacity" sid="114541299546669" type="MangkokMicin2">
+                                                            <param id="0" name="Opacity">100</param>
+                                                        </action>
+                                                        <action id="-29" name="Move to object" sid="938806390815583" type="MangkokMicin2">
+                                                            <param id="0" name="Where">0</param>
+                                                            <param id="1" name="Object">MangkokGoreng</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="444706485287373" type="System">
+                                                            <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="438162111388225">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="294468492338989" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="904893308077689" type="SaosKuah">
+                                                            <param id="0" name="X">SaosKuah.SaveX</param>
+                                                            <param id="1" name="Y">SaosKuah.SaveY</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="507407628730963">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="248767506896784" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="709666783460520" type="System">
+                                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="802054998141073">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="818079490420187" type="System">
+                                                    <param id="0" name="Variable">is_TerisiSup</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="764060175443049" type="SaosKuah">
+                                                    <param id="0" name="X">SaosKuah.SaveX</param>
+                                                    <param id="1" name="Y">SaosKuah.SaveY</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="167372236595861">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="483398675692149" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="425407499747496" type="SaosKuah">
+                                                    <param id="0" name="X">SaosKuah.SaveX</param>
+                                                    <param id="1" name="Y">SaosKuah.SaveY</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="111336545952171">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="360662103703355" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="624831149847697" type="SaosKuah">
+                                    <param id="0" name="Object">TongSampah</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="881797506341503" type="SaosKuah" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="695629963978404" title="Functions">
+            <sub-events>
+                <event-block sid="635782917996778">
+                    <conditions>
+                        <condition id="0" name="On function" sid="124730324069584" type="Function">
+                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="493495705914419">
+                    <conditions>
+                        <condition id="0" name="On function" sid="775888155162063" type="Function">
+                            <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="905334424781847" type="MangkokGoreng">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="978486475906672" type="MangkokGoreng" />
+                        <action id="-16" name="Set opacity" sid="183964275057693" type="MangkokGoreng">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="757349373933444" type="MangkokGoreng2">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="946733362115243" type="MangkokGoreng2">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="372701324948640" type="Sup">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="537912494062188" type="Sup" />
+                        <action id="-16" name="Set opacity" sid="863567971380208" type="Sup">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="105241131371732" type="System">
+                            <param id="0" name="Variable">is_Kuah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="455521149059739" type="System">
+                            <param id="0" name="Variable">is_MangkokTerisiMie</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="102617157231113" type="System">
+                            <param id="0" name="Variable">is_TerisiSup</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="752742424249901" type="System">
+                            <param id="0" name="Variable">is_Goreng</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="124495498126346" type="System">
+                            <param id="0" name="Variable">is_MangkokFilled</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="199893812578750" type="System">
+                            <param id="0" name="Variable">is_TerisiKecap</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="679659354321817" type="System">
+                            <param id="0" name="Variable">is_TerisiSambal</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="377075123273366" type="System">
+                            <param id="0" name="Variable">is_TerisiTomat</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="417291729878045" type="System">
+                            <param id="0" name="Variable">is_TerisiMerica</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="644966431730842" type="System">
+                            <param id="0" name="Variable">is_TerisiBawangGoreng</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="335218581652926" type="System">
+                            <param id="0" name="Variable">is_TerisiDaunBawang</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="157922592537627" type="System">
+                            <param id="0" name="Variable">is_TerisiBumbu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="101340374624345" type="System">
+                            <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="736225936126372" type="Kecap">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="973245915451276" type="Kecap">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="252885445089327" type="Sambal">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="132051487958029" type="Sambal">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="223661994642694" type="Tomat">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="895095217602321" type="Tomat">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="659880821429739" type="Merica">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="912266514763095" type="Merica">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="580624072468746" type="BawangGoreng">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="278588128437015" type="BawangGoreng">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="608283191233139" type="DaunBawang">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="912054749819181" type="DaunBawang">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="763983250042105" type="MangkokMicin">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="451229001976280" type="MangkokMicin">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="418012154573292" type="MangkokMicin2">
+                            <param id="0" name="X">MangkokGoreng.SaveX</param>
+                            <param id="1" name="Y">MangkokGoreng.SaveY</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="418133277993682" type="MangkokMicin2">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
