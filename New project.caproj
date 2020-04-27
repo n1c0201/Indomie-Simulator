@@ -1102,6 +1102,7 @@
                 <instance-variable name="Merica" sid="671093343154877" type="number" />
                 <instance-variable name="Sambal" sid="760722974277062" type="number" />
                 <instance-variable name="Tomat" sid="810509769444942" type="number" />
+                <instance-variable name="Portion" sid="561175981652090" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Persist" sid="927752000177710">
@@ -1124,6 +1125,7 @@
                 <instance-variable name="Merica" sid="593698814200039" type="number" />
                 <instance-variable name="Sambal" sid="613625881231137" type="number" />
                 <instance-variable name="Tomat" sid="487206408660507" type="number" />
+                <instance-variable name="Portion" sid="677408754822538" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Persist" sid="625615875409101">
@@ -1146,6 +1148,7 @@
                 <instance-variable name="Merica" sid="406943145883618" type="number" />
                 <instance-variable name="Sambal" sid="968971051622734" type="number" />
                 <instance-variable name="Tomat" sid="138930072053044" type="number" />
+                <instance-variable name="Portion" sid="195570765286541" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Persist" sid="647963343084931">
@@ -2424,6 +2427,40 @@
                             <point x="0.5" y="0.753333" />
                             <point x="0.107143" y="0.98" />
                             <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BungkusKare" sid="734207066634587">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909986401465502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieKari.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BungkusSoto" sid="348823214755801">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335129225190285" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\InsideGerobak\Indomie\IndomieSoto.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

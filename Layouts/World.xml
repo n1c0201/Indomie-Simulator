@@ -231,6 +231,7 @@
                         <Merica>0</Merica>
                         <Sambal>0</Sambal>
                         <Tomat>0</Tomat>
+                        <Portion>0</Portion>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -265,6 +266,7 @@
                         <Merica>0</Merica>
                         <Sambal>0</Sambal>
                         <Tomat>0</Tomat>
+                        <Portion>0</Portion>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -299,6 +301,7 @@
                         <Merica>0</Merica>
                         <Sambal>0</Sambal>
                         <Tomat>0</Tomat>
+                        <Portion>0</Portion>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />

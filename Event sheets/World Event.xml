@@ -192,6 +192,10 @@
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
                         </action>
+                        <action id="-10" name="Set value" sid="194167378875885" type="Slot1Inv">
+                            <param id="0" name="Instance variable">Portion</param>
+                            <param id="1" name="Value">round(random(1, 2))</param>
+                        </action>
                         <action id="10" name="Insert" sid="322314358630541" type="ArraySlot1">
                             <param id="0" name="Value">Slot1Inv.BG</param>
                             <param id="1" name="Index">0</param>
@@ -227,11 +231,10 @@
                             <param id="1" name="Index">6</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="-3" name="Create object" sid="563437853941095" type="System">
-                            <param id="0" name="Object to create">Customer1</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X"> 600</param>
-                            <param id="3" name="Y">400</param>
+                        <action id="10" name="Insert" sid="548365655216894" type="ArraySlot1">
+                            <param id="0" name="Value">Slot1Inv.Portion</param>
+                            <param id="1" name="Index">7</param>
+                            <param id="2" name="Axis">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -249,7 +252,7 @@
                         <condition id="-14" name="Compare variable" sid="906233558267011" type="System">
                             <param id="0" name="Variable">TimerS2</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">round(random(0, 5))</param>
+                            <param id="2" name="Value">round(random(40, 50))</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -396,6 +399,10 @@
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
                         </action>
+                        <action id="-10" name="Set value" sid="406532690801238" type="Slot2Inv">
+                            <param id="0" name="Instance variable">Portion</param>
+                            <param id="1" name="Value">round(random(1, 2))</param>
+                        </action>
                         <action id="10" name="Insert" sid="776933369746955" type="ArraySlot2">
                             <param id="0" name="Value">Slot2Inv.BG</param>
                             <param id="1" name="Index">0</param>
@@ -431,6 +438,11 @@
                             <param id="1" name="Index">6</param>
                             <param id="2" name="Axis">0</param>
                         </action>
+                        <action id="10" name="Insert" sid="180733215254087" type="ArraySlot2">
+                            <param id="0" name="Value">Slot2Inv.Portion</param>
+                            <param id="1" name="Index">7</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -447,7 +459,7 @@
                         <condition id="-14" name="Compare variable" sid="667546696771547" type="System">
                             <param id="0" name="Variable">TimerS3</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">round(random(0, 5))</param>
+                            <param id="2" name="Value">round(random(50, 60))</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -594,6 +606,10 @@
                             <param id="0" name="Instance variable">Tomat</param>
                             <param id="1" name="Value">round(random(0, 1))</param>
                         </action>
+                        <action id="-10" name="Set value" sid="245999615926322" type="Slot3inv">
+                            <param id="0" name="Instance variable">Portion</param>
+                            <param id="1" name="Value">round(random(1, 2))</param>
+                        </action>
                         <action id="10" name="Insert" sid="454642030546220" type="ArraySlot3">
                             <param id="0" name="Value">Slot3Inv.BG</param>
                             <param id="1" name="Index">0</param>
@@ -627,6 +643,11 @@
                         <action id="10" name="Insert" sid="792055816115032" type="ArraySlot3">
                             <param id="0" name="Value">Slot3Inv.Tomat</param>
                             <param id="1" name="Index">6</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="10" name="Insert" sid="794302603813508" type="ArraySlot3">
+                            <param id="0" name="Value">Slot3inv.Portion</param>
+                            <param id="1" name="Index">7</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                     </actions>
