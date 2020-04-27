@@ -4478,6 +4478,10 @@
                             <param id="0" name="Variable">is_TerisiSaosGoreng_or_Kuah</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="568275786662773" type="System">
+                            <param id="0" name="Variable">is_IndomieFilled</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="-3" name="Set position" sid="736225936126372" type="Kecap">
                             <param id="0" name="X">MangkokGoreng.SaveX</param>
                             <param id="1" name="Y">MangkokGoreng.SaveY</param>
@@ -4762,8 +4766,14 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">is_MangkokTerisiMie</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="766379262696710" type="Mangkok">
+                            <param id="0" name="Instance variable">MangkokID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="784283031076737" type="Mangkok" />
                         <action id="-9" name="Set value" sid="446044278981965" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Value">0</param>
@@ -4820,7 +4830,6 @@
                             <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="-9" name="Destroy" sid="784283031076737" type="Mangkok" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -4969,8 +4978,14 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">is_MangkokTerisiMie</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="695588560224157" type="Mangkok">
+                            <param id="0" name="Instance variable">MangkokID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="670404562474063" type="Mangkok" />
                         <action id="-9" name="Set value" sid="165348654778523" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Value">0</param>
@@ -5027,7 +5042,6 @@
                             <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="-9" name="Destroy" sid="670404562474063" type="Mangkok" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -5176,8 +5190,14 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">is_MangkokTerisiMie</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="573915351008380" type="Mangkok">
+                            <param id="0" name="Instance variable">MangkokID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="887984338170909" type="Mangkok" />
                         <action id="-9" name="Set value" sid="702918616479465" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Value">0</param>
@@ -5234,7 +5254,6 @@
                             <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="-9" name="Destroy" sid="887984338170909" type="Mangkok" />
                     </actions>
                 </event-block>
             </sub-events>

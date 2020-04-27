@@ -1675,6 +1675,11 @@
         </object-type>
         <object-type name="TimerSpriteSheet" sid="688138624122608">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="719004343341023">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960173374865357" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\TimerSpriteSheet.png" />
