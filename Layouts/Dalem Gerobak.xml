@@ -29,85 +29,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sup" uid="34">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>406</x>
-                        <y>513</y>
-                        <z>0</z>
-                        <width>102</width>
-                        <height>10</height>
-                        <depth>0</depth>
-                        <hotspotX>0.509803951</hotspotX>
-                        <hotspotY>2</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MangkokGoreng" uid="32">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <SaveX>406</SaveX>
-                        <SaveY>513</SaveY>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>406</x>
-                        <y>513</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MangkokGoreng2" uid="33">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>406</x>
-                        <y>513</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="MainGerobak" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -173,6 +94,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -246,6 +168,31 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
+                <instance type="TempatKain" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>474.99432373</x>
+                        <y>511.063903809</y>
+                        <z>0</z>
+                        <width>362.503997803</width>
+                        <height>112.124816895</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
                 <instance type="Mangkok2" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -268,24 +215,188 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="TempatKain" uid="16">
+                <instance type="Sup" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>474.99432373</x>
-                        <y>511.063903809</y>
+                        <x>406</x>
+                        <y>513</y>
                         <z>0</z>
-                        <width>362.503997803</width>
-                        <height>112.124816895</height>
+                        <width>102</width>
+                        <height>10</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.509803951</hotspotX>
+                        <hotspotY>2</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Kecap" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Sambal" uid="42">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Tomat" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Merica" uid="44">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>405</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="MangkokGoreng" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>406</SaveX>
+                        <SaveY>513</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="MangkokGoreng2" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>406</x>
+                        <y>513</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5090909</hotspotX>
+                        <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
                         <opacity>0</opacity>
                     </world>
@@ -308,6 +419,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -342,6 +454,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -376,6 +489,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -413,6 +527,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -448,6 +563,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -483,6 +599,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -519,6 +636,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -553,6 +671,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -588,6 +707,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -611,6 +731,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -644,6 +767,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -759,11 +883,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>424</x>
-                        <y>780</y>
+                        <x>406</x>
+                        <y>513</y>
                         <z>0</z>
                         <width>110</width>
                         <height>46</height>
@@ -771,7 +899,7 @@
                         <hotspotX>0.5090909</hotspotX>
                         <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="DaunBawang" uid="38">
@@ -781,11 +909,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>499</x>
-                        <y>806</y>
+                        <x>406</x>
+                        <y>513</y>
                         <z>0</z>
                         <width>110</width>
                         <height>46</height>
@@ -793,29 +925,7 @@
                         <hotspotX>0.5090909</hotspotX>
                         <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Kecap" uid="39">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>235</x>
-                        <y>806</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="MangkokMicin" uid="40">
@@ -825,11 +935,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>585</x>
-                        <y>818</y>
+                        <x>406</x>
+                        <y>513</y>
                         <z>0</z>
                         <width>110</width>
                         <height>46</height>
@@ -837,7 +951,7 @@
                         <hotspotX>0.5090909</hotspotX>
                         <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="MangkokMicin2" uid="41">
@@ -847,11 +961,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>720</x>
-                        <y>830</y>
+                        <x>406</x>
+                        <y>513</y>
                         <z>0</z>
                         <width>110</width>
                         <height>46</height>
@@ -859,73 +977,7 @@
                         <hotspotX>0.5090909</hotspotX>
                         <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sambal" uid="42">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>782</x>
-                        <y>829</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Tomat" uid="43">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>887</x>
-                        <y>826</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Merica" uid="44">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>964</x>
-                        <y>817</y>
-                        <z>0</z>
-                        <width>110</width>
-                        <height>46</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5090909</hotspotX>
-                        <hotspotY>0.521739125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="World" uid="76">
@@ -970,6 +1022,281 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ServeButton" uid="78">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>380</x>
+                        <y>636</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SaosSambel" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>233</SaveX>
+                        <SaveY>343</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>233</x>
+                        <y>343</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>136</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SaosTomat" uid="81">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>377</SaveX>
+                        <SaveY>343</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>377</x>
+                        <y>343</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>136</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Merica2" uid="82">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>329</SaveX>
+                        <SaveY>343</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>329</x>
+                        <y>343</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>136</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Kecap2" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>281</SaveX>
+                        <SaveY>343</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>281</x>
+                        <y>343</y>
+                        <z>0</z>
+                        <width>40</width>
+                        <height>136</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Rak" uid="79">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>312</x>
+                        <y>343</y>
+                        <z>0</z>
+                        <width>230</width>
+                        <height>152</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504273534</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BawangGoreng2" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveX>481</SaveX>
+                        <SaveY>356</SaveY>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>481</x>
+                        <y>356</y>
+                        <z>0</z>
+                        <width>38</width>
+                        <height>86</height>
+                        <depth>0</depth>
+                        <hotspotX>0.526315808</hotspotX>
+                        <hotspotY>0.511627913</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="DaunBawangSendok" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>556</x>
+                        <y>373</y>
+                        <z>0</z>
+                        <width>68</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SendokBawang" uid="86">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SaveSizeX>84</SaveSizeX>
+                        <SaveSizeY>14</SaveSizeY>
+                        <is_Taking>false</is_Taking>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>556</x>
+                        <y>373</y>
+                        <z>0</z>
+                        <width>68</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.571428597</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>

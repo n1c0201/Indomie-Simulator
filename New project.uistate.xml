@@ -13,11 +13,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Main Menu</layout>
         <layout order="2">Cutscene Start</layout>
         <layout order="4">Dalem Gerobak</layout>
-        <layout active="1" order="6">World</layout>
+        <layout order="6">World</layout>
         <layout order="8">Food Order</layout>
         <event-sheet order="1">Main Menu Event</event-sheet>
         <event-sheet order="3">Cutscene Event</event-sheet>
-        <event-sheet order="5">Dalam Gerobak Event</event-sheet>
+        <event-sheet active="1" order="5">Dalam Gerobak Event</event-sheet>
         <event-sheet order="7">World Event</event-sheet>
         <event-sheet order="9">Food Order Event</event-sheet>
     </open-tabs>
@@ -34,6 +34,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Isi mie/" />
         <folder expanded="1" path="object-folder/Alat-alat/" />
         <folder expanded="1" path="object-folder/IsiMangkok/" />
+        <folder expanded="1" path="object-folder/Buttons/" />
+        <folder expanded="1" path="object-folder/Saos di Rak/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -69,6 +71,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sambal/" />
         <folder expanded="1" path="animation-folder/Sup/" />
         <folder expanded="1" path="animation-folder/Tomat/" />
+        <folder expanded="1" path="animation-folder/World/" />
+        <folder expanded="1" path="animation-folder/CookPressed/" />
+        <folder expanded="1" path="animation-folder/ServeButton/" />
+        <folder expanded="1" path="animation-folder/SaosSambel/" />
+        <folder expanded="1" path="animation-folder/SaosTomat/" />
+        <folder expanded="1" path="animation-folder/Merica2/" />
+        <folder expanded="1" path="animation-folder/Kecap2/" />
+        <folder expanded="1" path="animation-folder/Rak/" />
         <folder expanded="1" path="animation-folder/Customer1/" />
         <folder expanded="1" path="animation-folder/Customer2/" />
         <folder expanded="1" path="animation-folder/Customer3/" />
@@ -110,7 +120,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Mangkok3/" />
         <folder expanded="1" path="animation-folder/WorldPressed/" />
         <folder expanded="1" path="animation-folder/Cook/" />
-        <folder expanded="1" path="animation-folder/World/" />
-        <folder expanded="1" path="animation-folder/CookPressed/" />
+        <folder expanded="1" path="animation-folder/1zrfennv/" />
+        <folder expanded="1" path="animation-folder/BawangGoreng2/" />
+        <folder expanded="1" path="animation-folder/DaunBawang2/" />
+        <folder expanded="1" path="animation-folder/SendokBawang/" />
+        <folder expanded="1" path="animation-folder/DaunBawangSendok/" />
     </folders-expanded>
 </c2uistate>

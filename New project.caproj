@@ -65,6 +65,9 @@
                     <behavior-type name="DragDrop" sid="307658944658210">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="446479864851272">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892363298251132" speed="5">
@@ -97,6 +100,9 @@
                     <behavior-type name="DragDrop" sid="965005937044281">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="745392533716541">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285696808056700" speed="5">
@@ -126,6 +132,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="811617498589210">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="722742963663561">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -158,6 +167,9 @@
                     <behavior-type name="DragDrop" sid="152873570849126">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="107084627681244">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816331713578694" speed="5">
@@ -189,6 +201,9 @@
                     <behavior-type name="DragDrop" sid="660233644896859">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="236959389484946">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225985691088939" speed="5">
@@ -205,6 +220,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="486547283722176">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="947025617963890">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -233,6 +251,9 @@
                     <behavior-type name="DragDrop" sid="955606197969607">
                         <behavior id="DragnDrop" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="314450628499532">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918735784556257" speed="5">
@@ -259,6 +280,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="240105347493907">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="670776420481104">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -330,6 +354,11 @@
             </object-type>
             <object-type name="Pot" sid="823766205365345">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="614102043175549">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357779376619237" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -369,6 +398,11 @@
             </object-type>
             <object-type name="TempatKain" sid="149001045271539">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="242207706751107">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481469032077492" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -384,6 +418,9 @@
                 <behaviors>
                     <behavior-type name="CustomMovement" sid="502717218898387">
                         <behavior id="custom" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="554660060424333">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -412,6 +449,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="239674209892680">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="126401892372553">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -462,6 +502,9 @@
                 <behaviors>
                     <behavior-type name="DragDrop" sid="260743151776522">
                         <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="380255878937668">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -523,6 +566,14 @@
         <object-folder name="IsiMangkok">
             <object-type name="BawangGoreng" sid="922075741396888">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="214537860865599">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="830909971139362">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794092033224668" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\BawangGoreng.png">
@@ -537,6 +588,14 @@
             </object-type>
             <object-type name="DaunBawang" sid="158347798702531">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="753356493874390">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="248031170020072">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="325992989055494" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\DaunBawang.png" />
@@ -545,6 +604,14 @@
             </object-type>
             <object-type name="Kecap" sid="411402186178010">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="876501702790722">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="759766553119687">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931645852012479" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Kecap.png" />
@@ -560,6 +627,9 @@
                 <behaviors>
                     <behavior-type name="Pin" sid="744524910939073">
                         <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Persist" sid="153233147772717">
+                        <behavior id="Persist" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -581,6 +651,9 @@
                     <behavior-type name="Pin" sid="100573918993763">
                         <behavior id="Pin" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="324910752635386">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160688356683141" speed="5">
@@ -599,6 +672,14 @@
             </object-type>
             <object-type name="MangkokMicin" sid="497052767814124">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="282199495384536">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="933463063721188">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173729332855806" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokMicin1.png" />
@@ -607,6 +688,14 @@
             </object-type>
             <object-type name="MangkokMicin2" sid="181013449715942">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="302100379888218">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="107185270925441">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941216086089382" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\MangkokMicin2.png">
@@ -622,6 +711,14 @@
             </object-type>
             <object-type name="Merica" sid="671948360160031">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="982368078455188">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="755441564585617">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969830408305577" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Merica.png" />
@@ -630,6 +727,14 @@
             </object-type>
             <object-type name="Sambal" sid="233562979701683">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="349354223416956">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="594100694307104">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463583955978768" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Sambal.png">
@@ -648,6 +753,9 @@
                     <behavior-type name="Pin" sid="356168581325926">
                         <behavior id="Pin" />
                     </behavior-type>
+                    <behavior-type name="Persist" sid="655920159895910">
+                        <behavior id="Persist" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643595738462909" speed="5">
@@ -657,6 +765,14 @@
             </object-type>
             <object-type name="Tomat" sid="300427165826120">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Persist" sid="673823489004885">
+                        <behavior id="Persist" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="256376692820472">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410052727373066" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.521739" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Indomie\Isi Mie\Tomat.png">
@@ -664,6 +780,194 @@
                                 <point x="0.490909" y="0.0869565" />
                                 <point x="0.690909" y="0.26087" />
                                 <point x="0.490909" y="0.173913" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="World" sid="347386683489728">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789457387898249" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\World.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.03125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="1" y="0.5" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.03125" y="0.96875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CookPressed" sid="261368082099204">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206775689625479" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\CookPressed.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.03125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="1" y="0.5" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.03125" y="0.96875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Buttons">
+            <object-type name="ServeButton" sid="525916081012505">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="890559932817037" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Downloads\ServeButton.png">
+                            <collision-poly>
+                                <point x="0.025" y="0.025" />
+                                <point x="0.5" y="0" />
+                                <point x="0.975" y="0.025" />
+                                <point x="1" y="0.5" />
+                                <point x="0.975" y="0.975" />
+                                <point x="0.5" y="1" />
+                                <point x="0.025" y="0.975" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Saos di Rak">
+            <object-type name="SaosSambel" sid="299593177768677">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="425483903328262" type="number" />
+                    <instance-variable name="SaveY" sid="247910595677253" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="320562082390779">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539674070245814" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\SaosSambel.png">
+                            <collision-poly>
+                                <point x="0.35" y="0.102941" />
+                                <point x="0.5" y="0.0294118" />
+                                <point x="0.95" y="0.0147059" />
+                                <point x="1" y="0.5" />
+                                <point x="0.95" y="0.985294" />
+                                <point x="0.5" y="1" />
+                                <point x="0.05" y="0.985294" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SaosTomat" sid="935770603487499">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="920850722405357" type="number" />
+                    <instance-variable name="SaveY" sid="324099878139569" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="441469004911637">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864568643721147" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\SaosTomat.png">
+                            <collision-poly>
+                                <point x="0.35" y="0.102941" />
+                                <point x="0.5" y="0.0294118" />
+                                <point x="0.95" y="0.0147059" />
+                                <point x="1" y="0.5" />
+                                <point x="0.95" y="0.985294" />
+                                <point x="0.5" y="1" />
+                                <point x="0.05" y="0.985294" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Merica2" sid="485711721448069">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="300904073990664" type="number" />
+                    <instance-variable name="SaveY" sid="146159244935842" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="100089431784397">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616863561412186" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\Merica.png">
+                            <collision-poly>
+                                <point x="0.35" y="0.102941" />
+                                <point x="0.5" y="0.0294118" />
+                                <point x="0.95" y="0.0147059" />
+                                <point x="0.95" y="0.985294" />
+                                <point x="0.5" y="1" />
+                                <point x="0.05" y="0.985294" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Kecap2" sid="349742179826362">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="747593131593702" type="number" />
+                    <instance-variable name="SaveY" sid="729265609973985" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="301655745090692">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474144541189612" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\Kecap.png">
+                            <collision-poly>
+                                <point x="0.35" y="0.102941" />
+                                <point x="0.5" y="0.0294118" />
+                                <point x="0.95" y="0.0147059" />
+                                <point x="1" y="0.5" />
+                                <point x="0.95" y="0.985294" />
+                                <point x="0.5" y="1" />
+                                <point x="0.05" y="0.985294" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rak" sid="239898529501324">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838752788910702" speed="5">
+                        <frame duration="1" hotspotX="0.504274" hotspotY="0.5" original-source="C:\Users\Nicholas\Downloads\Rak.png">
+                            <collision-poly>
+                                <point x="0.42735" y="0.694444" />
+                                <point x="0.57265" y="0.694444" />
+                                <point x="0.974359" y="0.958333" />
+                                <point x="0.495726" y="1" />
+                                <point x="0" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1864,41 +2168,113 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="World" sid="347386683489728">
+        <object-type name="1zrfennv" sid="554010314742349">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789457387898249" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\World.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570408585607000" speed="5">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.5" original-source="C:\Users\Nicholas\AppData\Local\Temp\1zrfennv.bmp" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BawangGoreng2" sid="182422106636034">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SaveX" sid="469177523533615" type="number" />
+                <instance-variable name="SaveY" sid="677045375275039" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="311385041677867">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Persist" sid="772459452509133">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218771266821229" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.511628" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\BawangGoreng.png">
                         <collision-poly>
-                            <point x="0.03125" y="0.03125" />
-                            <point x="0.5" y="0" />
-                            <point x="0.96875" y="0.03125" />
-                            <point x="1" y="0.5" />
-                            <point x="0.96875" y="0.96875" />
-                            <point x="0.5" y="1" />
-                            <point x="0.03125" y="0.96875" />
-                            <point x="0" y="0.5" />
+                            <point x="0.0526316" y="0.0232558" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0232558" />
+                            <point x="0.947368" y="0.488372" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0526316" y="0.488372" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="CookPressed" sid="261368082099204">
+        <object-type name="DaunBawang2" sid="477032501226447">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206775689625479" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\CookPressed.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172872299114812" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\DaunBawang.png">
                         <collision-poly>
-                            <point x="0.03125" y="0.03125" />
-                            <point x="0.5" y="0" />
-                            <point x="0.96875" y="0.03125" />
-                            <point x="1" y="0.5" />
-                            <point x="0.96875" y="0.96875" />
+                            <point x="0.147059" y="0.208333" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.852941" y="0.208333" />
+                            <point x="0.970588" y="0.5" />
+                            <point x="0.852941" y="0.791667" />
                             <point x="0.5" y="1" />
-                            <point x="0.03125" y="0.96875" />
-                            <point x="0" y="0.5" />
+                            <point x="0.147059" y="0.791667" />
+                            <point x="0.0294118" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SendokBawang" sid="868095223611814">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SaveSizeX" sid="723533235375599" type="number" />
+                <instance-variable name="SaveSizeY" sid="757648775184271" type="number" />
+                <instance-variable name="is_Taking" sid="511858907172048" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="811257371906297">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560179007601971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.571429" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\SendokBawang.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.428571" />
+                            <point x="1" y="0" />
+                            <point x="0.97619" y="0.428571" />
+                            <point x="0.928571" y="0.571429" />
+                            <point x="0.0238095" y="0.857143" />
+                            <point x="0.047619" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DaunBawangSendok" sid="403084430328588">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Persist" sid="918867223253684">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371610530583698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\DaunBawangSendok.png">
+                        <collision-poly>
+                            <point x="0.147059" y="0.208333" />
+                            <point x="0.911765" y="0.125" />
+                            <point x="0.970588" y="0.5" />
+                            <point x="0.852941" y="0.791667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147059" y="0.791667" />
+                            <point x="0.0294118" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="WithoutSpoon" pingpong="0" repeatcount="1" repeatto="0" sid="575114880859140" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\DaunBawang.png" />
                 </animation>
             </animation-folder>
         </object-type>
