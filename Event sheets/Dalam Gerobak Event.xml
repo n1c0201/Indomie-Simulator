@@ -4552,7 +4552,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="708545754242411" type="System">
-                            <param id="0" name="Object to create">Sprite11</param>
+                            <param id="0" name="Object to create">ExitGiveTo</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">880</param>
                             <param id="3" name="Y">220</param>
@@ -4600,11 +4600,11 @@
                         <condition id="6" name="On object clicked" sid="866352838855737" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">Sprite11</param>
+                            <param id="2" name="Object clicked">ExitGiveTo</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="116213564022095" type="Sprite11" />
+                        <action id="-9" name="Destroy" sid="116213564022095" type="ExitGiveTo" />
                         <action id="-9" name="Destroy" sid="541972579659174" type="GiveTo" />
                         <action id="-9" name="Destroy" sid="232340534452494" type="GiveSlot1" />
                         <action id="-9" name="Destroy" sid="155103309764149" type="GiveSlot2" />
@@ -4930,5 +4930,52 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="334268262414639">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="508169149010797" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GiveSlot1</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="156997300588862" type="ArraySlot1">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiBawangGoreng</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="182838474693814" type="ArraySlot1">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiDaunBawang</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="875022708617763" type="ArraySlot1">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiKecap</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="230606306541258" type="ArraySlot1">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiMerica</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="843531639361957" type="ArraySlot1">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiSambal</param>
+                </condition>
+                <condition id="0" name="Compare at X" sid="193318809761204" type="ArraySlot1">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">is_TerisiTomat</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="244359314721890" type="System">
+                    <param id="0" name="Object to create">Customer3</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">300</param>
+                    <param id="3" name="Y">300</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

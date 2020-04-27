@@ -2392,7 +2392,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite11" sid="178989512256281">
+        <object-type name="ExitGiveTo" sid="178989512256281">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520722932468724" speed="5">

@@ -1494,7 +1494,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite11" uid="92">
+                <instance type="ExitGiveTo" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
