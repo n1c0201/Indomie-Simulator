@@ -45,7 +45,7 @@
                         <condition id="-14" name="Compare variable" sid="663272557106370" type="System">
                             <param id="0" name="Variable">TimerS1</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">round(random(0, 3))</param>
+                            <param id="2" name="Value">round(random(10, 15))</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -61,17 +61,10 @@
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Value">round(random(1, 5))</param>
                         </action>
-                        <action id="0" name="Call function" sid="393294480106508" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="240701705503231">
                     <conditions>
-                        <condition id="0" name="On function" sid="924713217412336" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="875918395799854" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Comparison">0</param>
@@ -89,9 +82,6 @@
                 </event-block>
                 <event-block sid="409213140339622">
                     <conditions>
-                        <condition id="0" name="On function" sid="749171631081982" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="432067760042035" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Comparison">0</param>
@@ -109,9 +99,6 @@
                 </event-block>
                 <event-block sid="592002207091267">
                     <conditions>
-                        <condition id="0" name="On function" sid="970764011558846" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="194348074661427" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Comparison">0</param>
@@ -129,9 +116,6 @@
                 </event-block>
                 <event-block sid="535926589004999">
                     <conditions>
-                        <condition id="0" name="On function" sid="851001333261213" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="460594859475364" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Comparison">0</param>
@@ -149,9 +133,6 @@
                 </event-block>
                 <event-block sid="631427998460712">
                     <conditions>
-                        <condition id="0" name="On function" sid="764894572506969" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot1&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="100276994951637" type="System">
                             <param id="0" name="Variable">Slot1P</param>
                             <param id="1" name="Comparison">0</param>
@@ -284,17 +265,10 @@
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Value">round(random(1, 5))</param>
                         </action>
-                        <action id="0" name="Call function" sid="845480188882864" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="610161073745504">
                     <conditions>
-                        <condition id="0" name="On function" sid="128897676133619" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="935381745611917" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Comparison">0</param>
@@ -312,9 +286,6 @@
                 </event-block>
                 <event-block sid="851786271095354">
                     <conditions>
-                        <condition id="0" name="On function" sid="575011688446283" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="174086752029525" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Comparison">0</param>
@@ -332,9 +303,6 @@
                 </event-block>
                 <event-block sid="902691659925211">
                     <conditions>
-                        <condition id="0" name="On function" sid="996718461727982" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="139379241353699" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Comparison">0</param>
@@ -352,9 +320,6 @@
                 </event-block>
                 <event-block sid="779296663750523">
                     <conditions>
-                        <condition id="0" name="On function" sid="976240305912808" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="821905448925528" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Comparison">0</param>
@@ -372,9 +337,6 @@
                 </event-block>
                 <event-block sid="687674293954633">
                     <conditions>
-                        <condition id="0" name="On function" sid="502218922845903" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot2&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="670469456658105" type="System">
                             <param id="0" name="Variable">Slot2P</param>
                             <param id="1" name="Comparison">0</param>
@@ -501,17 +463,10 @@
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Value">round(random(1, 5))</param>
                         </action>
-                        <action id="0" name="Call function" sid="503906453921797" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="882077692113098">
                     <conditions>
-                        <condition id="0" name="On function" sid="642465664429238" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="130730043268617" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Comparison">0</param>
@@ -529,9 +484,6 @@
                 </event-block>
                 <event-block sid="700436239521502">
                     <conditions>
-                        <condition id="0" name="On function" sid="993481301202668" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="683429528415282" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Comparison">0</param>
@@ -549,9 +501,6 @@
                 </event-block>
                 <event-block sid="904466710271641">
                     <conditions>
-                        <condition id="0" name="On function" sid="975911337363054" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="795761208849952" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Comparison">0</param>
@@ -569,9 +518,6 @@
                 </event-block>
                 <event-block sid="137738609804805">
                     <conditions>
-                        <condition id="0" name="On function" sid="768131838145812" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="148409489997966" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Comparison">0</param>
@@ -589,9 +535,6 @@
                 </event-block>
                 <event-block sid="167042417503923">
                     <conditions>
-                        <condition id="0" name="On function" sid="476494787995284" type="Function">
-                            <param id="0" name="Name">&quot;SpawnSlot3&quot;</param>
-                        </condition>
                         <condition id="-14" name="Compare variable" sid="173519735277743" type="System">
                             <param id="0" name="Variable">Slot3P</param>
                             <param id="1" name="Comparison">0</param>

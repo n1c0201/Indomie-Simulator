@@ -4538,5 +4538,397 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="647887172893417" title="GiveToGUI">
+            <sub-events>
+                <event-block sid="319296682453965">
+                    <conditions>
+                        <condition id="0" name="On click" sid="383485806724978" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="690168929846461" type="Mouse">
+                            <param id="0" name="Object">ServeButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="708545754242411" type="System">
+                            <param id="0" name="Object to create">Sprite11</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">880</param>
+                            <param id="3" name="Y">220</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="545726692289608" type="System">
+                            <param id="0" name="Object to create">GiveTo</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">640</param>
+                            <param id="3" name="Y">360</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="862090534149792" type="System">
+                            <param id="0" name="Object to create">GiveSlot1</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">496</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="725924859602942" type="System">
+                            <param id="0" name="Object to create">GiveSlot2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">496</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="936137167465261" type="System">
+                            <param id="0" name="Object to create">GiveSlot3</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">496</param>
+                        </action>
+                        <action id="0" name="Call function" sid="946334811957139" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="211885225600668" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="750598632854823" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="495405405684549">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="866352838855737" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Sprite11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="116213564022095" type="Sprite11" />
+                        <action id="-9" name="Destroy" sid="541972579659174" type="GiveTo" />
+                        <action id="-9" name="Destroy" sid="232340534452494" type="GiveSlot1" />
+                        <action id="-9" name="Destroy" sid="155103309764149" type="GiveSlot2" />
+                        <action id="-9" name="Destroy" sid="626663754342009" type="GiveSlot3" />
+                        <action id="-9" name="Destroy" sid="166417986605855" type="Customer1" />
+                        <action id="-9" name="Destroy" sid="423263256732997" type="Customer2" />
+                        <action id="-9" name="Destroy" sid="994147422143246" type="Customer3" />
+                        <action id="-9" name="Destroy" sid="144595250331835" type="Customer4" />
+                        <action id="-9" name="Destroy" sid="142871920786178" type="Customer5" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="499591820579891" title="Slot1Give">
+            <sub-events>
+                <event-block sid="219500052279165">
+                    <conditions>
+                        <condition id="0" name="On function" sid="140766192627879" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="911924017486573" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="316669991340919" type="System">
+                            <param id="0" name="Object to create">Customer1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119410355507298">
+                    <conditions>
+                        <condition id="0" name="On function" sid="285733997402623" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="796154429361633" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="992321698669476" type="System">
+                            <param id="0" name="Object to create">Customer2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="792793977276275">
+                    <conditions>
+                        <condition id="0" name="On function" sid="417437946928456" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="485005249598981" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="190886634965337" type="System">
+                            <param id="0" name="Object to create">Customer3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="470997427757883">
+                    <conditions>
+                        <condition id="0" name="On function" sid="773485980908295" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="729579070455110" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="269774338489647" type="System">
+                            <param id="0" name="Object to create">Customer4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425356825452847">
+                    <conditions>
+                        <condition id="0" name="On function" sid="682878215651325" type="Function">
+                            <param id="0" name="Name">&quot;Slot1&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="229353452852677" type="System">
+                            <param id="0" name="Variable">Slot1P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="690284790202495" type="System">
+                            <param id="0" name="Object to create">Customer5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">482</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="137708085677875" title="Slot2Give">
+            <sub-events>
+                <event-block sid="116940265230075">
+                    <conditions>
+                        <condition id="0" name="On function" sid="811020245681664" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="538619908402585" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="501377165125046" type="System">
+                            <param id="0" name="Object to create">Customer1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="484335124775973">
+                    <conditions>
+                        <condition id="0" name="On function" sid="823368776631587" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="393008079765806" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="230837610494004" type="System">
+                            <param id="0" name="Object to create">Customer2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368720081424885">
+                    <conditions>
+                        <condition id="0" name="On function" sid="731924180960229" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="253335221826851" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="850121524569945" type="System">
+                            <param id="0" name="Object to create">Customer3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="298918997971163">
+                    <conditions>
+                        <condition id="0" name="On function" sid="882976881942425" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="113937908547247" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="662034354426338" type="System">
+                            <param id="0" name="Object to create">Customer4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536671485480047">
+                    <conditions>
+                        <condition id="0" name="On function" sid="467138986776218" type="Function">
+                            <param id="0" name="Name">&quot;Slot2&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="209057395858506" type="System">
+                            <param id="0" name="Variable">Slot2P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="581626676724759" type="System">
+                            <param id="0" name="Object to create">Customer5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">641</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="499923325350299" title="Slot3Give">
+            <sub-events>
+                <event-block sid="428107616496570">
+                    <conditions>
+                        <condition id="0" name="On function" sid="750017087285863" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="181482561386134" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="939548294132755" type="System">
+                            <param id="0" name="Object to create">Customer1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="287901468236412">
+                    <conditions>
+                        <condition id="0" name="On function" sid="136243101071891" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="474629804052448" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="713638417610714" type="System">
+                            <param id="0" name="Object to create">Customer2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="340034273396235">
+                    <conditions>
+                        <condition id="0" name="On function" sid="502601765421770" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="849786642401273" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="747203329634325" type="System">
+                            <param id="0" name="Object to create">Customer3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536101972945376">
+                    <conditions>
+                        <condition id="0" name="On function" sid="142890239176764" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="546289723061018" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="703283460094510" type="System">
+                            <param id="0" name="Object to create">Customer4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453051076934234">
+                    <conditions>
+                        <condition id="0" name="On function" sid="575207155802545" type="Function">
+                            <param id="0" name="Name">&quot;Slot3&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="221388396088247" type="System">
+                            <param id="0" name="Variable">Slot3P</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="576899169078347" type="System">
+                            <param id="0" name="Object to create">Customer5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">800</param>
+                            <param id="3" name="Y">353</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

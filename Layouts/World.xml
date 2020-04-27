@@ -68,7 +68,6 @@
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -102,7 +101,6 @@
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -136,7 +134,6 @@
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -170,7 +167,6 @@
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -204,7 +200,6 @@
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Persist" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

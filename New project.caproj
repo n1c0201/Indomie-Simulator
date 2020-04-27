@@ -980,9 +980,6 @@
                 <behavior-type name="Fade" sid="983899825379138">
                     <behavior id="Fade" />
                 </behavior-type>
-                <behavior-type name="Persist" sid="895171637274818">
-                    <behavior id="Persist" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849345916075134" speed="5">
@@ -1009,9 +1006,6 @@
                 <behavior-type name="Fade" sid="197480639433484">
                     <behavior id="Fade" />
                 </behavior-type>
-                <behavior-type name="Persist" sid="330275188993972">
-                    <behavior id="Persist" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301441858032980" speed="5">
@@ -1033,9 +1027,6 @@
             <behaviors>
                 <behavior-type name="Fade" sid="206137201875410">
                     <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="Persist" sid="615879501979330">
-                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1061,9 +1052,6 @@
                 <behavior-type name="Fade" sid="118805531300990">
                     <behavior id="Fade" />
                 </behavior-type>
-                <behavior-type name="Persist" sid="752432663465920">
-                    <behavior id="Persist" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860011823349525" speed="5">
@@ -1087,9 +1075,6 @@
             <behaviors>
                 <behavior-type name="Fade" sid="143031493800476">
                     <behavior id="Fade" />
-                </behavior-type>
-                <behavior-type name="Persist" sid="717231904118351">
-                    <behavior id="Persist" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -2275,6 +2260,172 @@
                 </animation>
                 <animation framecount="1" loop="0" name="WithoutSpoon" pingpong="0" repeatcount="1" repeatto="0" sid="575114880859140" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas\Documents\GitHub\Indomie-Simulator\Art Files\InsideGerobak\Saos\DaunBawang.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="153237643855331">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331573302138714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GiveToGUI" sid="118318093275712">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640782193215211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\GiveToGUI.png">
+                        <collision-poly>
+                            <point x="0.0857143" y="0.12" />
+                            <point x="0.5" y="0.015" />
+                            <point x="0.917857" y="0.115" />
+                            <point x="0.953571" y="0.5" />
+                            <point x="0.942857" y="0.92" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.0607143" y="0.915" />
+                            <point x="0.0535714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GiveTo" sid="540864359590783">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544212169752115" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\GiveToGUI.png">
+                        <collision-poly>
+                            <point x="0.0857143" y="0.12" />
+                            <point x="0.5" y="0.015" />
+                            <point x="0.917857" y="0.115" />
+                            <point x="0.953571" y="0.5" />
+                            <point x="0.942857" y="0.92" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.0607143" y="0.915" />
+                            <point x="0.0535714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GiveSlot1" sid="787103632581883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645561865234678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\GiveToButton.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GiveSlot2" sid="596811418053969">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160725117747048" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\GiveToButton.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GiveSlot3" sid="186134480144184">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237426491364550" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\GiveToButton.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.984375" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.984375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.015625" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="282735853028082">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919933515289204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="161999335410607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108133026564237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\XButton.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="178989512256281">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520722932468724" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GUI Elements\Buttons\XButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="926413520288705">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958182736758110" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\Pelanggan\Pelanggan1.png">
+                        <collision-poly>
+                            <point x="0.535714" y="0.1" />
+                            <point x="0.464286" y="0.1" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.753333" />
+                            <point x="0.107143" y="0.98" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
