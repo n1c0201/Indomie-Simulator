@@ -1525,7 +1525,7 @@
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Score: 0</text>
-                        <scale>1</scale>
+                        <scale>2</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1540,8 +1540,8 @@
                         <x>3</x>
                         <y>4</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>297</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
