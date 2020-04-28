@@ -12,12 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Main Menu</layout>
         <layout order="2">Cutscene Start</layout>
-        <layout order="4">Dalem Gerobak</layout>
+        <layout active="1" order="4">Dalem Gerobak</layout>
         <layout order="6">World</layout>
         <layout order="8">Food Order</layout>
         <event-sheet order="1">Main Menu Event</event-sheet>
         <event-sheet order="3">Cutscene Event</event-sheet>
-        <event-sheet active="1" order="5">Dalam Gerobak Event</event-sheet>
+        <event-sheet order="5">Dalam Gerobak Event</event-sheet>
         <event-sheet order="7">World Event</event-sheet>
         <event-sheet order="9">Food Order Event</event-sheet>
     </open-tabs>

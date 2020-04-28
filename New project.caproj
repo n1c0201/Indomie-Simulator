@@ -2471,6 +2471,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpriteFont2" sid="174673442828096">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont3" sid="890459693882469">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

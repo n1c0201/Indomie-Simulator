@@ -684,5 +684,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="830588189329919">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="306361892047312" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="186714874201299" type="SpriteFont2">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
