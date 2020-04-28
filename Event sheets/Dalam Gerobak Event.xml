@@ -245,7 +245,12 @@
                                                     <param id="2" name="Value">1</param>
                                                 </condition>
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="0" name="Call function" sid="637895783445931" type="Function">
+                                                    <param id="0" name="Name">&quot;Rip 25&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
                                             <sub-events>
                                                 <event-block sid="765813229835031">
                                                     <conditions>
@@ -302,10 +307,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="922032503058004" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="637895783445931" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="360947267779087" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -318,10 +319,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="700596152944538" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="230036895333790" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="677916886092920" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -336,10 +333,6 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-9" name="Destroy" sid="636106685089330" type="Mangkok" />
-                                                        <action id="0" name="Call function" sid="643704088768704" type="Function">
-                                                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
                                                         <action id="0" name="Call function" sid="197290827828013" type="Function">
                                                             <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                             <param id="1" name="Parameter {n}"></param>
@@ -412,7 +405,12 @@
                                                     <param id="2" name="Value">2</param>
                                                 </condition>
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="0" name="Call function" sid="618455095788673" type="Function">
+                                                    <param id="0" name="Name">&quot;Rip 50&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
                                             <sub-events>
                                                 <event-block sid="252406053416658">
                                                     <conditions>
@@ -469,10 +467,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="595596532382945" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="774030360602671" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="226925621313739" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -485,10 +479,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="948972127255676" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="587933963732770" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="871070578642911" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -548,10 +538,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="261264843461536" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="154184746502321" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="991621039952838" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -564,10 +550,6 @@
                                                             </conditions>
                                                             <actions>
                                                                 <action id="-9" name="Destroy" sid="758390114233989" type="Mangkok" />
-                                                                <action id="0" name="Call function" sid="759339461512743" type="Function">
-                                                                    <param id="0" name="Name">&quot;Rip Indomie Rip Money&apos;&quot;</param>
-                                                                    <param id="1" name="Parameter {n}"></param>
-                                                                </action>
                                                                 <action id="0" name="Call function" sid="804527802124137" type="Function">
                                                                     <param id="0" name="Name">&quot;Reset Everything&quot;</param>
                                                                     <param id="1" name="Parameter {n}"></param>
@@ -4392,10 +4374,28 @@
                 <event-block sid="635782917996778">
                     <conditions>
                         <condition id="0" name="On function" sid="124730324069584" type="Function">
-                            <param id="0" name="Name">&quot;Rip Indomie Rip Money&quot;</param>
+                            <param id="0" name="Name">&quot;Rip 25&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="354355888863961" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="839467004211300">
+                    <conditions>
+                        <condition id="0" name="On function" sid="614084559016960" type="Function">
+                            <param id="0" name="Name">&quot;Rip 50&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="590922236096181" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="493495705914419">
                     <conditions>
