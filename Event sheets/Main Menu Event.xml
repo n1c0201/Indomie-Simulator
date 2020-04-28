@@ -42,6 +42,9 @@
                     <param id="0" name="Variable">Menu_Select</param>
                     <param id="1" name="Value">2</param>
                 </action>
+                <action id="-2" name="Go to layout" sid="343092184560858" type="System">
+                    <param id="0" name="Layout">HowToPlay</param>
+                </action>
             </actions>
         </event-block>
     </events>

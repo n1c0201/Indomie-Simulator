@@ -2479,6 +2479,73 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
+        <object-type name="Sprite11" sid="981700591326601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378668017096485" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\Tutorials\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\Tutorials\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\Tutorials\3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="XButton" sid="742356337379875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300788242153791" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\XButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NextButton" sid="896891409474573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183585240207018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\NextButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PrevButton" sid="636739999062087">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833698989824089" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\NextButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2487,6 +2554,7 @@
         <layout>Dalem Gerobak.xml</layout>
         <layout>World.xml</layout>
         <layout>Food Order.xml</layout>
+        <layout>HowToPlay.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Cutscene Event.xml</event-sheet>
@@ -2494,6 +2562,7 @@
         <event-sheet>Dalam Gerobak Event.xml</event-sheet>
         <event-sheet>World Event.xml</event-sheet>
         <event-sheet>Food Order Event.xml</event-sheet>
+        <event-sheet>HowToPlay Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="72" />
