@@ -16,8 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="6">World</layout>
         <layout order="8">Food Order</layout>
         <layout order="10">HowToPlay</layout>
-        <event-sheet order="1">Main Menu Event</event-sheet>
-        <event-sheet active="1" order="3">Cutscene Event</event-sheet>
+        <event-sheet active="1" order="1">Main Menu Event</event-sheet>
+        <event-sheet order="3">Cutscene Event</event-sheet>
         <event-sheet order="5">Dalam Gerobak Event</event-sheet>
         <event-sheet order="7">World Event</event-sheet>
         <event-sheet order="9">Food Order Event</event-sheet>
