@@ -1,5 +1,5 @@
 
-![](C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\Title.png)
+![](.\Art Files\Title.png)
 
 <h2>A Group effort by:</h2>
 
