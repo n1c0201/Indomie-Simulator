@@ -1,5 +1,5 @@
 
-![Indomie-Simulator-Title](./Art Files/Title.png)
+![Indomie-Simulator-Title](/Art Files/Title.png)
 
 <h2>A Group effort by:</h2>
 
