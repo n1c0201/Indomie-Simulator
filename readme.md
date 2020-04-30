@@ -16,7 +16,15 @@ Watch as your business grow tenfold as more clients come in and difficulty incre
 
 Be careful not to cook the wrong indomie and get the customer angry though !
 
+- requirements:
 
+  video
+
+  documentation: how to play, contribution (brief)
+
+  another post: more complete contribution
+
+  about
 
 Blippy Trance by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/5759-blippy-trance
@@ -25,3 +33,4 @@ License: http://creativecommons.org/licenses/by/4.0/
 The Entertainer by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/5765-the-entertainer
 License: http://creativecommons.org/licenses/by/4.0/
+
