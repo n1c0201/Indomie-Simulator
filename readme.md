@@ -1,5 +1,7 @@
 
-![Indomie-Simulator-Title](/Art Files/Title.png)
+<p align="center">
+	<img height="200" src="./Art Files/Title.png">
+</p>
 
 <h2>A Group effort by:</h2>
 
