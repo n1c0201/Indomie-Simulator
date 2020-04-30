@@ -1,10 +1,11 @@
-<h1>Epic indomie cooking simulator</h1>
+
+![](C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\Title.png)
+
 <h2>A Group effort by:</h2>
+
 	- Bryan Putra
 	- Nicholas Arthur
 	- Jason Christian
-
-
 
 ## In this amazing game....
 
