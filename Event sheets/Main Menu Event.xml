@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Main Menu Event</name>
     <events>
+        <variable constant="0" name="audioOn" sid="693005215322165" static="0" type="number">1</variable>
         <variable constant="0" name="Menu_Select" sid="884263598846418" static="0" type="number">0</variable>
         <event-block sid="512231225174983">
             <conditions>
@@ -59,7 +60,89 @@
                     <param id="0" name="Audio file">blippy</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;blippy&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="325931183527248" type="AudioButton">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="416774564666570">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="348523279894845" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AudioButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="363244955485589" type="System">
+                    <param id="0" name="Variable">audioOn</param>
+                    <param id="1" name="Value">audioOn = 0 ? 1 : 0</param>
+                </action>
+                <action id="5" name="Set frame" sid="179947611972744" type="AudioButton">
+                    <param id="0" name="Frame number">audioOn</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="742972574196596">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="353149330266777" type="System">
+                            <param id="0" name="Variable">audioOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="320827759882959" type="Audio">
+                            <param id="0" name="Audio file">blippy</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;blippy&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="585462205372009">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="658649116942094" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="406357739274746" type="Audio" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="746406705329852">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="192593211472945" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AboutButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="519679182365021" type="System">
+                    <param id="0" name="Layout">About</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="232466125019126">
+            <conditions>
+                <condition id="0" name="On ended" sid="108186903847213" type="Audio">
+                    <param id="0" name="Tag">&quot;blippy&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="741249931732458" type="System">
+                    <param id="0" name="Variable">audioOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="680796707413712" type="Audio">
+                    <param id="0" name="Audio file">blippy</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;blippy&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -1535,7 +1535,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848266638460905" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848266638460905" speed="8">
                     <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan1.png">
                         <collision-poly>
                             <point x="0.238596" y="0.302222" />
@@ -1549,7 +1549,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="8" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="893416375114898" speed="5">
+                <animation framecount="8" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="893416375114898" speed="7">
                     <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan1.png" />
                     <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan2.png" />
                     <frame duration="1" hotspotX="0.501754" hotspotY="0.502222" original-source="C:\Users\Nicholas Arthur\Desktop\Contruct 2\Art Files\GerobakAnimation\GerobakJalan3.png" />
@@ -2578,6 +2578,72 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="AudioButton" sid="986085975795258">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576913336551978" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\AudioButton2.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\AudioButton.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackgroundBlurred" sid="865527585545843">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986697911443972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\BackgroundBlurred.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="About" sid="612318995268201">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745635054786540" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\About.png">
+                        <collision-poly>
+                            <point x="0.142969" y="0.254167" />
+                            <point x="0.5" y="0.115278" />
+                            <point x="0.607813" y="0.697222" />
+                            <point x="0.24375" y="0.5" />
+                            <point x="0.932813" y="0.880556" />
+                            <point x="0.5" y="0.891667" />
+                            <point x="0.246875" y="0.561111" />
+                            <point x="0.0585938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AboutButton" sid="642928344844771">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="840838927367685" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nakam\Documents\GitHub\Indomie-Simulator\Art Files\GUI Elements\Buttons\AboutButton.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2587,6 +2653,7 @@
         <layout>World.xml</layout>
         <layout>Food Order.xml</layout>
         <layout>HowToPlay.xml</layout>
+        <layout>About.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Cutscene Event.xml</event-sheet>
@@ -2595,6 +2662,7 @@
         <event-sheet>World Event.xml</event-sheet>
         <event-sheet>Food Order Event.xml</event-sheet>
         <event-sheet>HowToPlay Event.xml</event-sheet>
+        <event-sheet>About.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="72" />

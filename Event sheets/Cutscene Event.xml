@@ -18,13 +18,26 @@
                 <action id="-16" name="Wait" sid="465104499380690" type="System">
                     <param id="0" name="Seconds">1.5</param>
                 </action>
-                <action id="0" name="Play" sid="850345440786190" type="Audio">
-                    <param id="0" name="Audio file">entertainer</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="513537816831862">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="720192807952509" type="System">
+                            <param id="0" name="Variable">audioOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="850345440786190" type="Audio">
+                            <param id="0" name="Audio file">entertainer</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;ent&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="673376356858883">
             <conditions>

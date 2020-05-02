@@ -5281,5 +5281,25 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="610187679628053">
+            <conditions>
+                <condition id="0" name="On ended" sid="484143702321128" type="Audio">
+                    <param id="0" name="Tag">&quot;ent&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="989758942075109" type="System">
+                    <param id="0" name="Variable">audioOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="706771817802731" type="Audio">
+                    <param id="0" name="Audio file">entertainer</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;ent&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -10,18 +10,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Main Menu</layout>
+        <layout order="0">Main Menu</layout>
         <layout order="2">Cutscene Start</layout>
         <layout order="4">Dalem Gerobak</layout>
         <layout order="6">World</layout>
         <layout order="8">Food Order</layout>
         <layout order="10">HowToPlay</layout>
+        <layout active="1" order="12">About</layout>
         <event-sheet order="1">Main Menu Event</event-sheet>
         <event-sheet order="3">Cutscene Event</event-sheet>
         <event-sheet order="5">Dalam Gerobak Event</event-sheet>
         <event-sheet order="7">World Event</event-sheet>
         <event-sheet order="9">Food Order Event</event-sheet>
         <event-sheet order="11">HowToPlay Event</event-sheet>
+        <event-sheet order="13">About</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,7 +33,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Indomies/" />
         <folder expanded="1" path="object-folder/Isi mie/" />
         <folder expanded="1" path="object-folder/Alat-alat/" />
@@ -39,7 +41,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Buttons/" />
         <folder expanded="1" path="object-folder/Saos di Rak/" />
         <folder expanded="0" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -145,5 +147,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PrevButton/" />
         <folder expanded="1" path="animation-folder/World2/" />
         <folder expanded="1" path="animation-folder/Title/" />
+        <folder expanded="1" path="animation-folder/AudioButton/" />
+        <folder expanded="1" path="animation-folder/BackgroundBlurred/" />
+        <folder expanded="1" path="animation-folder/About/" />
+        <folder expanded="1" path="animation-folder/AboutButton/" />
     </folders-expanded>
 </c2uistate>
