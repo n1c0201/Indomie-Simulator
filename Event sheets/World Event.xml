@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>World Event</name>
     <events>
+        <variable constant="0" name="Notification" sid="583629431813002" static="0" type="number">0</variable>
         <variable constant="0" name="TimerS1" sid="213684065573128" static="0" type="number">0</variable>
         <variable constant="0" name="TimerS2" sid="964201466625935" static="0" type="number">0</variable>
         <variable constant="0" name="TimerS3" sid="743542212200792" static="0" type="number">0</variable>
@@ -236,6 +237,10 @@
                             <param id="1" name="Index">7</param>
                             <param id="2" name="Axis">0</param>
                         </action>
+                        <action id="-10" name="Add to" sid="678232049466171" type="System">
+                            <param id="0" name="Variable">Notification</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -442,6 +447,10 @@
                             <param id="0" name="Value">Slot2Inv.Portion</param>
                             <param id="1" name="Index">7</param>
                             <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="292592361111971" type="System">
+                            <param id="0" name="Variable">Notification</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -650,6 +659,10 @@
                             <param id="1" name="Index">7</param>
                             <param id="2" name="Axis">0</param>
                         </action>
+                        <action id="-10" name="Add to" sid="868055537450443" type="System">
+                            <param id="0" name="Variable">Notification</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -691,6 +704,23 @@
             <actions>
                 <action id="0" name="Set text" sid="186714874201299" type="SpriteFont2">
                     <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="539320139773145">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="703934920827769" type="System">
+                    <param id="0" name="Variable">Notification</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="179020724784126" type="System">
+                    <param id="0" name="Object to create">Notif</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">76</param>
+                    <param id="3" name="Y">494</param>
                 </action>
             </actions>
         </event-block>

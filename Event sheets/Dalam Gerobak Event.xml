@@ -4732,110 +4732,138 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">GiveSlot1</param>
                         </condition>
-                        <condition id="0" name="Compare at X" sid="156997300588862" type="ArraySlot1">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiBawangGoreng</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="182838474693814" type="ArraySlot1">
-                            <param id="0" name="X">1</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiDaunBawang</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="875022708617763" type="ArraySlot1">
-                            <param id="0" name="X">2</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiKecap</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="230606306541258" type="ArraySlot1">
-                            <param id="0" name="X">4</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiMerica</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="843531639361957" type="ArraySlot1">
-                            <param id="0" name="X">5</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiSambal</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="193318809761204" type="ArraySlot1">
-                            <param id="0" name="X">6</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiTomat</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="268978857795386" type="ArraySlot1">
-                            <param id="0" name="X">7</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_MangkokTerisiMie</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="766379262696710" type="Mangkok">
-                            <param id="0" name="Instance variable">MangkokID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="784283031076737" type="Mangkok" />
-                        <action id="-9" name="Set value" sid="446044278981965" type="System">
-                            <param id="0" name="Variable">Slot1P</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="653692739384743" type="System">
-                            <param id="0" name="Variable">Slot1</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="505902344035601" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">0</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="305667588812030" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">1</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="810358164040087" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">2</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="496884125531052" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">3</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="805727647897925" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">4</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="944778040451995" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">5</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="585076261224793" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">6</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="959162563987691" type="ArraySlot1">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">7</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="748573961728029" type="System">
-                            <param id="0" name="Variable">TimerS1</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Call function" sid="364507991612337" type="Function">
-                            <param id="0" name="Name">&quot;Reset Everything&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-10" name="Add to" sid="971678529056306" type="System">
-                            <param id="0" name="Variable">Score</param>
-                            <param id="1" name="Value">100</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="427487319148441">
+                            <conditions>
+                                <condition id="0" name="Compare at X" sid="114296000261167" type="ArraySlot1">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiBawangGoreng</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="361392478817292" type="ArraySlot1">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiDaunBawang</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="658813774601393" type="ArraySlot1">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiKecap</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="449740775888689" type="ArraySlot1">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiMerica</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="676484510153886" type="ArraySlot1">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiSambal</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="778004576422692" type="ArraySlot1">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiTomat</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="536394043707870" type="ArraySlot1">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_MangkokTerisiMie</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="842436162989275" type="Mangkok">
+                                    <param id="0" name="Instance variable">MangkokID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="625931143866293" type="Mangkok" />
+                                <action id="-9" name="Set value" sid="366081421613060" type="System">
+                                    <param id="0" name="Variable">Slot1P</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="922775432479319" type="System">
+                                    <param id="0" name="Variable">Slot1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="121853876458459" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">0</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="191242193163382" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="171941729393842" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="291010873304585" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="969130678795362" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="493028413618278" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">5</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="927576421855146" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="814733117059053" type="ArraySlot1">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="731240267911666" type="System">
+                                    <param id="0" name="Variable">TimerS1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="606697661739423" type="Function">
+                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-10" name="Add to" sid="803882020432694" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="628171956795857" type="System">
+                                    <param id="0" name="Variable">Notification</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="125554465000017">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="912863315830103" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="850796481157654" type="System">
+                                    <param id="0" name="Object to create">Sprite13</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">482</param>
+                                    <param id="3" name="Y">353</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="814470099326561" type="System">
+                                    <param id="0" name="Seconds">0.6</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="721445580294137" type="Sprite13" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -5051,7 +5079,151 @@
                             <param id="0" name="Variable">Score</param>
                             <param id="1" name="Value">100</param>
                         </action>
+                        <action id="-11" name="Subtract from" sid="913087264070771" type="System">
+                            <param id="0" name="Variable">Notification</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
+                </event-block>
+                <event-block sid="680296396239963">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="237471057362774" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">GiveSlot2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="573072225741957">
+                            <conditions>
+                                <condition id="0" name="Compare at X" sid="964984898257809" type="ArraySlot2">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiBawangGoreng</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="735067306028010" type="ArraySlot2">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiDaunBawang</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="163808605210293" type="ArraySlot2">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiKecap</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="663773082079514" type="ArraySlot2">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiMerica</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="224484326771737" type="ArraySlot2">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiSambal</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="572154118362222" type="ArraySlot2">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiTomat</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="204295676256708" type="ArraySlot2">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_MangkokTerisiMie</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="898425917417345" type="Mangkok">
+                                    <param id="0" name="Instance variable">MangkokID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="525693749737269" type="Mangkok" />
+                                <action id="-9" name="Set value" sid="966979637341017" type="System">
+                                    <param id="0" name="Variable">Slot2P</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="866903698373916" type="System">
+                                    <param id="0" name="Variable">Slot2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="366822622285649" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">0</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="157634132024324" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="293768547679275" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="696111088160246" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="830222091419165" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="476928924216431" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">5</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="756774958789234" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="317366353626891" type="ArraySlot2">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="775893294811031" type="System">
+                                    <param id="0" name="Variable">TimerS2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="301823183856173" type="Function">
+                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-10" name="Add to" sid="559159603669008" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="230265774593647" type="System">
+                                    <param id="0" name="Variable">Notification</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="397812670829301">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="419177589168950" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="953298098115049" type="System">
+                                    <param id="0" name="Object to create">Sprite13</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">641</param>
+                                    <param id="3" name="Y">353</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="358908089802788" type="System">
+                                    <param id="0" name="Seconds">0.6</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="577944104460181" type="Sprite13" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -5164,110 +5336,138 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">GiveSlot3</param>
                         </condition>
-                        <condition id="0" name="Compare at X" sid="687278842261213" type="ArraySlot3">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiBawangGoreng</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="327383804097533" type="ArraySlot3">
-                            <param id="0" name="X">1</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiDaunBawang</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="121676639604278" type="ArraySlot3">
-                            <param id="0" name="X">2</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiKecap</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="450495738083688" type="ArraySlot3">
-                            <param id="0" name="X">4</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiMerica</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="706455932452985" type="ArraySlot3">
-                            <param id="0" name="X">5</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiSambal</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="988905471866537" type="ArraySlot3">
-                            <param id="0" name="X">6</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_TerisiTomat</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="111653730959716" type="ArraySlot3">
-                            <param id="0" name="X">7</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">is_MangkokTerisiMie</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="573915351008380" type="Mangkok">
-                            <param id="0" name="Instance variable">MangkokID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="887984338170909" type="Mangkok" />
-                        <action id="-9" name="Set value" sid="702918616479465" type="System">
-                            <param id="0" name="Variable">Slot3P</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="220372341834870" type="System">
-                            <param id="0" name="Variable">Slot3</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="166280434130739" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">0</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="573698297054658" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">1</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="286651985529053" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">2</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="569295048021973" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">3</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="140367032111388" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">4</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="895219422632123" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">5</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="938533663835140" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">6</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="10" name="Insert" sid="476875276609699" type="ArraySlot3">
-                            <param id="0" name="Value">0</param>
-                            <param id="1" name="Index">7</param>
-                            <param id="2" name="Axis">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="839416429779749" type="System">
-                            <param id="0" name="Variable">TimerS3</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Call function" sid="327315845618061" type="Function">
-                            <param id="0" name="Name">&quot;Reset Everything&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-10" name="Add to" sid="600507144557002" type="System">
-                            <param id="0" name="Variable">Score</param>
-                            <param id="1" name="Value">100</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="841770865830218">
+                            <conditions>
+                                <condition id="0" name="Compare at X" sid="616838365731495" type="ArraySlot3">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiBawangGoreng</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="638484888548943" type="ArraySlot3">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiDaunBawang</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="417672172822690" type="ArraySlot3">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiKecap</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="386553989300330" type="ArraySlot3">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiMerica</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="635307490877919" type="ArraySlot3">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiSambal</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="276433027415461" type="ArraySlot3">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_TerisiTomat</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="642650442364798" type="ArraySlot3">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">is_MangkokTerisiMie</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="803883047962520" type="Mangkok">
+                                    <param id="0" name="Instance variable">MangkokID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="944454548436117" type="Mangkok" />
+                                <action id="-9" name="Set value" sid="293124872854139" type="System">
+                                    <param id="0" name="Variable">Slot3P</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="317101876060348" type="System">
+                                    <param id="0" name="Variable">Slot3</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="940680045740117" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">0</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="290804181928349" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="238561073529427" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="412290226688384" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="878688667245626" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="852612002860447" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">5</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="890381046738231" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="570071422496679" type="ArraySlot3">
+                                    <param id="0" name="Value">0</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="466887216755793" type="System">
+                                    <param id="0" name="Variable">TimerS3</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="245829796942043" type="Function">
+                                    <param id="0" name="Name">&quot;Reset Everything&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-10" name="Add to" sid="199025431212164" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="507610206529305" type="System">
+                                    <param id="0" name="Variable">Notification</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="564146629909813">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="173591156919007" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="125801263311043" type="System">
+                                    <param id="0" name="Object to create">Sprite13</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">800</param>
+                                    <param id="3" name="Y">353</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="548752046217453" type="System">
+                                    <param id="0" name="Seconds">0.6</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="266130000140974" type="Sprite13" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
